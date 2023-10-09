@@ -12,7 +12,7 @@
 
 ## Figma
 
-[Hackathon Website Template Figma Design File](https://www.figma.com/file/K6GYDv7zusQ2pdFJIj4juG/rosehack-2024?type=design&node-id=0-1&mode=design&t=VBwHuJveQJofdj6e-0)
+[RoseHack 2024 Website Figma Design File](https://www.figma.com/file/K6GYDv7zusQ2pdFJIj4juG/rosehack-2024?type=design&node-id=0-1&mode=design&t=VBwHuJveQJofdj6e-0)
 
 ## Node.js
 
