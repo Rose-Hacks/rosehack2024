@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import landingCircleBlue from "../../../public/svg/landing-circle-blue.svg";
-import landingCirclePink from "../../../public/svg/landing-circle-pink.svg";
-import landingCircle from "../../../public/svg/landing-circle.svg";
-import landingTriangle from "../../../public/svg/landing-triangles.svg";
+import landingCircleBlue from "../../../public/svg/landing/landing-circle-blue.svg";
+import landingCirclePink from "../../../public/svg/landing/landing-circle-pink.svg";
+import landingCircle from "../../../public/svg/landing/landing-circle.svg";
+import landingTriangle from "../../../public/svg/landing/landing-triangles.svg";
 const LandingCircle = ({ className }) => {
   return (
     <div className={className}>

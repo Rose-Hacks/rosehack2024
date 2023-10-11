@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        rosehack: {
+        hackathon: {
           "pink-200": "#ED4F8C",
           "pink-100": "#FF92C5",
           blue: "#68C9FF",

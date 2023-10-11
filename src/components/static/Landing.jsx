@@ -9,7 +9,7 @@ import pink100blur from "../../../public/svg/pink-100-blur.svg";
 
 const Landing = () => {
   return (
-    <div className="w-full relative overflow-x-clip">
+    <div className="w-full relative ">
       <Image
         src={building}
         alt="building"
