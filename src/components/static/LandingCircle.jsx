@@ -13,7 +13,7 @@ const LandingCircle = ({ className }) => {
           <Image
             alt="landing circle"
             src={landingCircleBlue}
-            className="w-full animate-[spin_5s_ease-in-out_infinite]"
+            className="w-full animate-[spin_5s_ease-in-out_infinite] "
           />
         </div>
         <div className="w-full absolute right-1/2 translate-x-1/2 top-1/2 -translate-y-1/2">
