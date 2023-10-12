@@ -67,7 +67,7 @@ jobs:
           browser: chrome
           build: npm run build
           start: npm run start
-          wait-on: "http://localhost:3000"
+          wait-on: "http://localhost:3020"
     env:
       NEXT_PUBLIC_FIREBASE_API_KEY: ${{secrets.NEXT_PUBLIC_FIREBASE_API_KEY}}
       NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: ${{secrets.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN}}
