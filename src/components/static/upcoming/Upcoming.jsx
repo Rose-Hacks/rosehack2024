@@ -1,4 +1,4 @@
-import Landing from "../Landing.jsx";
+import Landing from "./Landing.jsx";
 
 const Upcoming = () => {
   return (

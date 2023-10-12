@@ -1,62 +1,53 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
+import { useState, useEffect } from "react";
+import { CONFIG } from "@/data/Config";
 
-const CountDown = ({ className }) => {
-  const [diffTime, setDiffTIme] = useState(
-    new Date("January 13, 2024 12:00:00") - new Date()
-  );
-  useEffect(() => {
-    const interval = setInterval(
-      () => setDiffTIme(new Date("January 13, 2024 12:00:00") - new Date()),
-      1000
-    );
-
-    return () => clearInterval(interval);
-  }, []);
+const Digits = ({ value, text }) => {
   return (
-    <div className={className}>
-      <div className="backdrop-blur-md rounded-3xl">
-        <div className="p-2 border-[1px] rounded-t-3xl border-white/20 w-full font-nasalization text-lg md:text-3xl text-white bg-gradient-to-r from-white/20 to-white/0">
-          January 13-14
-        </div>
-        <div className="border-t-0 border-[1px] rounded-b-3xl border-white/20 p-2 w-full text-white bg-gradient-to-b from-black/50 to-black/0 font-orbitron flex flex-col items-center">
-          <div className="text-2xl md:text-4xl flex items-end min-w-3/4 justify-evenly">
-            <p>{Math.ceil(diffTime / (1000 * 60 * 60 * 24))}</p>
-            <p className="text-[10px] md:text-xs mx-1">days</p>
-            <p>
-              {Math.ceil((diffTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))}{" "}
-              : {Math.ceil((diffTime % (1000 * 60 * 60)) / (1000 * 60))} :{" "}
-              {Math.ceil((diffTime % (1000 * 60)) / 1000)}
-            </p>
-          </div>
-          <Link
-            target="_blank"
-            href="https://forms.gle/Pr8HMgaLWunGjWVv6"
-            className="no-underline hover:scale-110 duration-300 text-white relative bg-gradient-to-r from-hackathon-pink-200 to-hackathon-blue min-w-1/2 rounded-full my-3"
-          >
-            <div className="absolute bg-gradient-to-r from-hackathon-pink-200 to-hackathon-blue w-full h-full rounded-full blur-sm" />
-            <p className="relative text-base md:text-xl bg-black/80 m-[0.5px]  hover:bg-gradient-to-r from-hackathon-pink-200 to-hackathon-blue rounded-full py-1 text-center w-full px-4 ">
-              interest form
-            </p>
-          </Link>
-        </div>
+    <div className="flex flex-col items-center mr-3 md:mr-5 gap-2">
+      <div className="flex items-center">
+        <p className="bg-cutie-blue-200/75 mb-0 h-10 md:h-16 text-lg md:text-3xl font-bold w-8 md:w-14 flex items-center justify-center rounded-lg drop-shadow-md mr-1 md:mr-2">
+          {Math.floor(value / 10)}
+        </p>
+        <p className="bg-cutie-blue-200/75 mb-0 h-10 md:h-16 text-lg md:text-3xl font-bold w-8 md:w-14 flex items-center justify-center rounded-lg drop-shadow-md">
+          {value % 10}
+        </p>
       </div>
-      <div className="border-t-0 rounded-b-3xl p-2 w-full text-white bg-gradient-to-b font-orbitron flex flex-col">
-        <div className="ml-5 self-start text-base md:text-xl flex items-end min-w-3/4 justify-start"></div>
-        <Link
-          target="_blank"
-          href="https://crowdfunding.ucr.edu/o/university-of-california-riverside/i/ucrcrowdfunding/s/winc-fy24"
-          className="self-center !z-50 no-underline hover:scale-110 duration-300 text-white relative bg-gradient-to-r from-hackathon-pink-200 to-hackathon-blue min-w-1/2 rounded-full my-4"
-        >
-          <div className="absolute bg-gradient-to-r from-hackathon-pink-200 to-hackathon-blue w-full h-full rounded-full blur-sm" />
-          <p className="relative text-base md:text-lg bg-black/80 m-[0.5px]  hover:bg-gradient-to-r from-hackathon-pink-200 to-hackathon-blue rounded-full py-1 text-center w-full px-4 ">
-            donate now
-          </p>
-        </Link>
-      </div>
+      <p className="text-xs md:text-base">{text}</p>
     </div>
   );
 };
 
-export default CountDown;
+const Countdown = () => {
+  const [time, setTime] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const diff = CONFIG.date - new Date();
+
+      setTime({
+        days: Math.ceil(diff / (1000 * 60 * 60 * 24)),
+        hours: Math.ceil((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.ceil((diff % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.ceil((diff % (1000 * 60 * 60)) / 1000) % 60,
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="flex">
+      {Object.entries(time).map(([text, value], index) => (
+        <Digits key={index} text={text} value={value} />
+      ))}
+    </div>
+  );
+};
+
+export default Countdown;

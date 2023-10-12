@@ -2,15 +2,15 @@
 "use client";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Poppins } from "next/font/google";
 import { SessionProvider } from "next-auth/react";
 import { Toaster } from "react-hot-toast";
+import { Orbitron, Montserrat } from "next/font/google";
 
-const poppins = Poppins({
+const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron" });
+const montserrat = Montserrat({
+  weight: ["variable"],
   subsets: ["latin"],
-  display: "swap",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-poppins",
+  variable: "--font-montserrat",
 });
 
 export default function RootLayout({ children, session }) {
@@ -22,7 +22,7 @@ export default function RootLayout({ children, session }) {
         className="h-full"
       >
         <body
-          className={`${poppins.variable} flex flex-col lg:flex-row h-full`}
+          className={`${orbitron.variable} ${montserrat.variable} bg-black`}
         >
           <Toaster />
           {children}
