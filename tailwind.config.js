@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        hackathon: {
+        rosehack: {
           "pink-200": "#ED4F8C",
           "pink-100": "#FF92C5",
           blue: "#68C9FF",
@@ -18,6 +18,10 @@ module.exports = {
         nasalization: ["nasalization", "sans-serif"],
         montserrat: ["var(--font-montserrat)", "sans-serif"],
         orbitron: ["var(--font-orbitron)", "sans-serif"],
+        righteous: ["var(--font-righteous)", "sans-serif"],
+      },
+      dropShadow: {
+        "pink-200": "0 0px 9px rgba(252,122,213, 1)",
       },
     },
   },

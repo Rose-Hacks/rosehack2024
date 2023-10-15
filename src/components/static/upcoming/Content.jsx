@@ -1,33 +1,33 @@
-import Link from "next/link";
+import Link from "../Link";
 import Countdown from "../Countdown";
 
 const Content = () => {
   return (
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">
-      <p className="w-full text-center font-nasalization text-3xl md:text-5xl ">
+      <p className="w-full text-center font-righteous text-4xl md:text-5xl drop-shadow-pink-200">
         ROSEHACK 2024
       </p>
-      <p className="w-full text-center font-nasalization text-2xl md:text-4xl">
+      <p className="w-full text-center font-righteous text-3xl md:text-4xl drop-shadow-pink-200">
         COMING SOON
       </p>
-      <p className="w-full text-center font-nasalization text-2xl md:text-4xl">
-        January 13-14
-      </p>
-      <Countdown />
-      <Link
-        href="https://forms.gle/Pr8HMgaLWunGjWVv6"
-        target="_blank"
-        className="relative text-base md:text-xl bg-black/80 m-[0.5px] hover:bg-gradient-to-r from-hackathon-pink-200 to-hackathon-blue rounded-full py-1 text-center w-full px-4 "
-      >
-        interest form
-      </Link>
-      <Link
-        target="_blank"
-        href="https://crowdfunding.ucr.edu/o/university-of-california-riverside/i/ucrcrowdfunding/s/winc-fy24"
-        className="relative text-base md:text-lg bg-black/80 m-[0.5px]  hover:bg-gradient-to-r from-hackathon-pink-200 to-hackathon-blue rounded-full py-1 text-center w-full px-4 "
-      >
-        donate now
-      </Link>
+      <div className="backdrop-blur-md rounded-3xl my-4">
+        <p className="font-orbitron text-center mb-0 p-2 border-[1px] rounded-t-3xl border-white/20 w-full text-lg md:text-2xl text-white bg-gradient-to-r from-white/20 to-white/0">
+          January 13 - 14
+        </p>
+        <div className="p-3 border-t-0 border-[1px] rounded-b-3xl border-white/20 w-full text-white bg-gradient-to-b from-black/50 to-black/0 font-orbitron flex flex-col items-center">
+          <Countdown />
+          <div className="my-3 flex w-full gap-3">
+            <Link
+              link="https://forms.gle/Pr8HMgaLWunGjWVv6"
+              text="interest form"
+            />
+            <Link
+              link="https://crowdfunding.ucr.edu/o/university-of-california-riverside/i/ucrcrowdfunding/s/winc-fy24"
+              text="donate"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
