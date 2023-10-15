@@ -11,7 +11,7 @@
     "check": "npx prettier --check .",
     "eslint": "npx eslint . --ext js --ext jsx",
     "cypress": "cypress open",
-    "test": "start-server-and-test dev 3000 cypress",
+    "test": "start-server-and-test dev 3020 cypress",
     "prepare": "husky install",
     "create-env": "printenv > .env"
   },
