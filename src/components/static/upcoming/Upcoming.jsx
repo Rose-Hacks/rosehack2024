@@ -1,5 +1,11 @@
+import Landing from "./Landing.jsx";
+
 const Upcoming = () => {
-  return <div>Upcoming</div>;
+  return (
+    <div className="w-full h-screen bg-black">
+      <Landing />
+    </div>
+  );
 };
 
 export default Upcoming;
