@@ -4,12 +4,11 @@ import { CONFIG } from "@/data/Config";
 
 const Digits = ({ value, text }) => {
   return (
-    <div className="flex flex-col items-center mr-3 md:mr-5 gap-2">
-      <div className="flex items-center">
-        <p className="mb-0 text-lg md:text-2xl font-bold w-8 md:w-14 flex items-center justify-center mr-1 md:mr-2 font-orbitron">
-          {value}
-        </p>
-      </div>
+    <div className="flex flex-col items-center gap-2">
+      <p className="mb-0 text-lg md:text-2xl font-bold w-8 md:w-14 flex items-center justify-center mr-1 md:mr-2 font-orbitron">
+        {parseInt(value / 10)}
+        {value % 10}
+      </p>
       <p className="text-xs md:text-sm font-montserrat">{text}</p>
     </div>
   );
@@ -39,7 +38,7 @@ const Countdown = () => {
   }, []);
 
   return (
-    <div className="flex">
+    <div className="grid grid-cols-4 gap-2">
       {Object.entries(time).map(([text, value], index) => (
         <Digits key={index} text={text} value={value} />
       ))}

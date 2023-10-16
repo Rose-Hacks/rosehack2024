@@ -7,7 +7,7 @@ const Content = () => {
       <p className="w-full text-center font-righteous text-4xl md:text-5xl drop-shadow-pink-200">
         ROSEHACK 2024
       </p>
-      <p className="w-full text-center font-righteous text-3xl md:text-4xl drop-shadow-pink-200">
+      <p className="w-full text-center font-righteous text-3xl md:text-4xl drop-shadow-blue">
         COMING SOON
       </p>
       <div className="backdrop-blur-md rounded-3xl my-5">

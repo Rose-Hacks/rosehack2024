@@ -21,7 +21,8 @@ module.exports = {
         righteous: ["var(--font-righteous)", "sans-serif"],
       },
       dropShadow: {
-        "pink-200": "0 0px 9px rgba(252,122,213, 1)",
+        "pink-200": "0 0px 9px rgb(252,122,213)",
+        blue: "0 0px 9px rgb(104, 201, 255)",
       },
     },
   },
