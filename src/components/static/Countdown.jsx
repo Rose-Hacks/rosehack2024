@@ -4,16 +4,12 @@ import { CONFIG } from "@/data/Config";
 
 const Digits = ({ value, text }) => {
   return (
-    <div className="flex flex-col items-center mr-3 md:mr-5 gap-2">
-      <div className="flex items-center">
-        <p className="bg-cutie-blue-200/75 mb-0 h-10 md:h-16 text-lg md:text-3xl font-bold w-8 md:w-14 flex items-center justify-center rounded-lg drop-shadow-md mr-1 md:mr-2">
-          {Math.floor(value / 10)}
-        </p>
-        <p className="bg-cutie-blue-200/75 mb-0 h-10 md:h-16 text-lg md:text-3xl font-bold w-8 md:w-14 flex items-center justify-center rounded-lg drop-shadow-md">
-          {value % 10}
-        </p>
-      </div>
-      <p className="text-xs md:text-base">{text}</p>
+    <div className="flex flex-col items-center gap-2">
+      <p className="mb-0 text-lg md:text-2xl font-bold w-8 md:w-14 flex items-center justify-center mr-1 md:mr-2 font-orbitron">
+        {parseInt(value / 10)}
+        {value % 10}
+      </p>
+      <p className="text-xs md:text-sm font-montserrat">{text}</p>
     </div>
   );
 };
@@ -31,10 +27,10 @@ const Countdown = () => {
       const diff = CONFIG.date - new Date();
 
       setTime({
-        days: Math.ceil(diff / (1000 * 60 * 60 * 24)),
-        hours: Math.ceil((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-        minutes: Math.ceil((diff % (1000 * 60 * 60)) / (1000 * 60)),
-        seconds: Math.ceil((diff % (1000 * 60 * 60)) / 1000) % 60,
+        DAYS: Math.ceil(diff / (1000 * 60 * 60 * 24)),
+        HOURS: Math.ceil((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        MINUTES: Math.ceil((diff % (1000 * 60 * 60)) / (1000 * 60)),
+        SECONDS: Math.ceil((diff % (1000 * 60 * 60)) / 1000) % 60,
       });
     }, 1000);
 
@@ -42,7 +38,7 @@ const Countdown = () => {
   }, []);
 
   return (
-    <div className="flex">
+    <div className="grid grid-cols-4 gap-2">
       {Object.entries(time).map(([text, value], index) => (
         <Digits key={index} text={text} value={value} />
       ))}
