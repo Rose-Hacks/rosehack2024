@@ -53,15 +53,15 @@ const PRODUCTION = {
       END: new Date("10/10/2024"),
     },
     PRELIVE: {
-      START: new Date("10/01/2023"),
+      START: new Date("10/01/2024"),
       END: new Date("10/10/2024"),
     },
     LIVE: {
-      START: new Date("10/01/2023"),
+      START: new Date("10/01/2024"),
       END: new Date("10/10/2024"),
     },
     POSTLIVE: {
-      START: new Date("10/01/2023"),
+      START: new Date("10/01/2024"),
       END: new Date("10/10/2024"),
     },
   },
