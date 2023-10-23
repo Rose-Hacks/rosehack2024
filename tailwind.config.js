@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/data/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -53,6 +54,7 @@ module.exports = {
         },
       },
       fontFamily: {
+        poppins: ["var(--font-poppins)"],
         montserrat: ["var(--font-montserrat)", "sans-serif"],
         orbitron: ["var(--font-orbitron)", "sans-serif"],
         righteous: ["var(--font-righteous)", "sans-serif"],

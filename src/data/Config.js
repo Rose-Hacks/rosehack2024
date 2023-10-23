@@ -1,6 +1,13 @@
 export const CONFIG = {
   name: "HACKATHON",
-  email: "contact.acmucr@gmail.com",
+  email: "rosehackucr@gmail.com",
   year: "2024",
-  date: new Date("January 13, 2024 12:00:00"),
+  date: new Date("January 21, 2024 12:00:00"),
+};
+
+export const MANIFEST = {
+  name: "Rosehack 2024",
+  short_name: "Rosehack 2024",
+  description: "A women-centric 24 hour hackathon in UC Riverside",
+  start_url: "/",
 };
