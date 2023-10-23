@@ -6,6 +6,7 @@ import DropDown from "./DropDown";
 import Checkbox from "@/components/dynamic/Checkbox";
 import Popup from "../Popup";
 import { FaTrashAlt } from "react-icons/fa";
+import { FaUndoAlt } from "react-icons/fa";
 import { v4 as uuid } from "uuid";
 import axios from "axios";
 import toast from "react-hot-toast";
@@ -18,8 +19,8 @@ const reset = {
   status: 0,
 };
 
-const Toolbar = ({ objects, setObjects, teams, setTeams, tags }) => {
-  const [team, setTeam] = useState({ name: "No Team Selected", id: "" });
+const Toolbar = ({ objects, setObjects, teams, setTeams, tags, empty }) => {
+  const [team, setTeam] = useState({ name: empty, id: "" });
   const [backup, setBackup] = useState({ id: "" });
   const [toggle, setToggle] = useState(false);
   const [prize, setPrize] = useState(reset);
@@ -198,6 +199,11 @@ const Toolbar = ({ objects, setObjects, teams, setTeams, tags }) => {
           placeholder="search"
           showLabel={false}
         />
+        <FaUndoAlt
+          size={22.5}
+          onClick={load}
+          className="ml-5 text-hackathon-gray-300 hover:opacity-70 duration-150 hover:cursor-pointer"
+        />
         <FaTrashAlt
           onClick={() =>
             setPopup({
@@ -235,6 +241,7 @@ const Toolbar = ({ objects, setObjects, teams, setTeams, tags }) => {
           setOption={setTeam}
           options={teams}
           setOptions={setTeams}
+          empty="no teams"
         />
         <Button color="green" text="add" onClick={handleAdd} disabled={edit} />
         {!edit && <Button color="green" text="edit" onClick={handleEdit} />}

@@ -3,14 +3,12 @@ import { useEffect, useState } from "react";
 import Title from "../../Title";
 import Scanner from "./Scanner";
 import DropDown from "../DropDown";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 import Button from "../../Button";
 import toast from "react-hot-toast";
 import axios from "axios";
 
 const CheckIn = () => {
-  const [event, setEvent] = useState({ name: "No Event Selected" });
+  const [event, setEvent] = useState({ name: "No events" });
   const [events, setEvents] = useState(null);
   const [code, setCode] = useState(null);
 
@@ -68,14 +66,15 @@ const CheckIn = () => {
   return (
     <div className="h-full font-poppins flex flex-col py-4 gap-3">
       <Title title="Check In" />
-      <Row className="p-0 m-0">
-        <Col xs={12} md={6} className="p-3 m-0 flex flex-col justify-around">
+      <div className="grid grid-cols-1">
+        <div className="p-3 flex flex-col items-center">
           {events && (
             <DropDown
               option={event}
               setOption={setEvent}
               options={events}
               setOptions={setEvents}
+              empty="no events"
             />
           )}
           <Scanner setResult={setResult} />
@@ -85,8 +84,8 @@ const CheckIn = () => {
             onClick={handleCheckIn}
             size="text-xl"
           />
-        </Col>
-      </Row>
+        </div>
+      </div>
     </div>
   );
 };
