@@ -13,7 +13,9 @@ const ProtectedPage = ({ title, children, restrictions }) => {
   const [confirmed, setConfirmed] = useState(false);
 
   const pathName = usePathname();
-  const navigation = RegExp(/user|admin/).test(pathName);
+  const navigation = RegExp(/user\/|admin\//).test(pathName);
+
+  console.log(navigation);
 
   useEffect(() => {
     if (RELEASES.DYNAMIC[pathName] > new Date()) {
