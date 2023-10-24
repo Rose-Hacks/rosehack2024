@@ -22,7 +22,7 @@ const Header = ({ horizontal = true }) => {
 
   return (
     <div
-      className={`flex ${
+      className={`flex font-montserrat font-light text-white ${
         horizontal ? "flex-row" : "flex-col"
       } items-center justify-center w-fit`}
     >
@@ -34,7 +34,7 @@ const Header = ({ horizontal = true }) => {
         className="mr-4 rounded-full overflow-hidden"
       />
       <div className="align-left">
-        <p className="text-2xl font-bold mb-0">{session.user.name}</p>
+        <p className="text-2xl font-thin mb-0">{session.user.name}</p>
         <p className="text-base mb-1">{session.user.email}</p>
         <Tag color={COLORS[color]} text={text} />
       </div>

@@ -1,0 +1,81 @@
+<svg width="1512" height="8494" viewBox="0 0 1512 8494" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.5" filter="url(#filter0)">
+<rect x="-172" y="3353" width="1671" height="1085" fill="#3705AA"/>
+</g>
+<g opacity="0.5" filter="url(#filter0)">
+<rect x="-398" y="-500" width="1671" height="1085" fill="#3705AA"/>
+</g>
+<g filter="url(#filter0)">
+<rect x="-519" y="4189" width="678" height="639" fill="#FF92C5"/>
+</g>
+<g filter="url(#filter0)">
+<rect x="1250" y="4342" width="495" height="1035" fill="#6E3FE7"/>
+</g>
+<g filter="url(#filter0)">
+<rect x="986" y="4019" width="807" height="468" fill="#68C9FF"/>
+</g>
+<g opacity="0.3" filter="url(#filter0)">
+<ellipse cx="227.628" cy="265.557" rx="227.628" ry="265.557" transform="matrix(0.0914354 -0.995811 0.99955 0.030004 1105 3623.32)" fill="#FF92C5"/>
+</g>
+<g opacity="0.3" filter="url(#filter0)">
+<ellipse cx="227.628" cy="265.557" rx="227.628" ry="265.557" transform="matrix(0.0914354 -0.995811 0.99955 0.030004 438 3500.39)" fill="#BE71FF"/>
+</g>
+<g opacity="0.3" filter="url(#filter0)">
+<ellipse cx="308.299" cy="359.671" rx="308.299" ry="359.671" transform="matrix(0.0914354 -0.995811 0.99955 0.030004 -269 3745.68)" fill="#3705AA"/>
+</g>
+<g opacity="0.25" filter="url(#filter0)">
+<ellipse cx="-153" cy="743.397" rx="466" ry="266.443" fill="#68C9FF"/>
+</g>
+<g opacity="0.7" filter="url(#filter0)">
+<rect x="1247" y="6266" width="897" height="1228" fill="#6E3FE7"/>
+</g>
+<g opacity="0.7" filter="url(#filter0)">
+<rect x="-500" y="6169" width="752" height="1028" fill="#6E3FE7"/>
+</g>
+<g filter="url(#filter0)">
+<rect x="-365" y="6714" width="481" height="440" fill="#FF92C5"/>
+</g>
+<g opacity="0.2" filter="url(#filter0)">
+<ellipse cx="1498.5" cy="896.5" rx="627.5" ry="355.5" fill="#66FFF6"/>
+</g>
+<g opacity="0.2" filter="url(#filter0)">
+<ellipse cx="-40" cy="396.5" rx="449" ry="254.5" fill="#ED4F8C"/>
+</g>
+<g opacity="0.4" filter="url(#filter0)">
+<ellipse cx="1516.5" cy="7197.5" rx="627.5" ry="355.5" fill="#66FFF6"/>
+</g>
+<g opacity="0.6" filter="url(#filter0)">
+<ellipse cx="1505.5" cy="6165" rx="287.5" ry="163" fill="#FF92C5"/>
+</g>
+<g opacity="0.3" filter="url(#filter0)">
+<ellipse cx="1512" cy="1566.5" rx="449" ry="254.5" fill="#6E3FE7"/>
+</g>
+<g filter="url(#filter0)">
+<rect x="1272" y="1612" width="381" height="315" fill="#66FFF6"/>
+</g>
+<g filter="url(#filter0)">
+<rect x="1326" y="2031" width="292" height="324" fill="#68C9FF"/>
+</g>
+<g filter="url(#filter0)">
+<rect x="-583" y="1676" width="941" height="1034" fill="#3705AA"/>
+</g>
+<g filter="url(#filter0)">
+<rect x="88" y="2761" width="395" height="433" fill="#68C9FF"/>
+</g>
+<g opacity="0.5" filter="url(#filter0)">
+<rect x="-1090" y="5463" width="2094" height="740" fill="#3705AA"/>
+</g>
+<g opacity="0.5" filter="url(#filter0)">
+<rect x="-667" y="6266" width="1671" height="1085" fill="#3705AA"/>
+</g>
+<g opacity="0.2" filter="url(#filter0)">
+<ellipse cx="-40" cy="5" rx="955" ry="546" fill="#68C9FF"/>
+</g>
+<defs>
+<filter id="filter0" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="500" result="effect1_foregroundBlur_647_1653"/>
+</filter>
+</defs>
+</svg>

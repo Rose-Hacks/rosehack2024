@@ -1,16 +1,17 @@
+/* eslint-disable camelcase */
 /* eslint-disable new-cap */
 "use client";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { SessionProvider } from "next-auth/react";
 import { Toaster } from "react-hot-toast";
-import { Orbitron, Montserrat, Righteous, Poppins } from "next/font/google";
+import { Orbitron, Montserrat, Advent_Pro, Poppins } from "next/font/google";
 
 const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron" });
-const righteous = Righteous({
+const advent = Advent_Pro({
   subsets: ["latin"],
-  variable: "--font-righteous",
-  weight: ["400"],
+  variable: "--font-advent",
+  weight: ["600"],
 });
 
 const montserrat = Montserrat({
@@ -35,7 +36,7 @@ export default function RootLayout({ children, session }) {
         className="h-full"
       >
         <body
-          className={`${orbitron.variable} ${montserrat.variable} ${righteous.variable} ${poppins.variable} bg-black flex flex-col lg:flex-row h-full`}
+          className={`${orbitron.variable} ${montserrat.variable} ${advent.variable} ${poppins.variable} bg-black flex flex-col lg:flex-row h-full pt-0`}
         >
           <Toaster />
           {children}
