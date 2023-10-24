@@ -17,6 +17,12 @@ const nextConfig = {
         destination: "/form/participant",
         permanent: true,
       },
+      {
+        source: "/donate",
+        destination:
+          "https://crowdfunding.ucr.edu/o/university-of-california-riverside/i/ucrcrowdfunding/s/winc-fy24",
+        permanent: true,
+      },
     ];
   },
   images: {
