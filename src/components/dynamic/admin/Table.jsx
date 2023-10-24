@@ -23,7 +23,7 @@ const Toggle = ({ eventKey }) => {
     <div className="w-fit">
       <IoIosArrowDown
         onClick={decoratedOnClick}
-        className={`hover:text-hackathon-blue-100 transition text-xl cursor-pointer duration-300 ease-in-out ${
+        className={`hover:text-rosehack-blue transition text-xl cursor-pointer duration-300 ease-in-out ${
           activeEventKey === eventKey && "rotate-180"
         }`}
       />
@@ -57,7 +57,7 @@ const Table = ({
   ) : (
     <div className="w-full rounded-xl overflow-hidden flex flex-col">
       {modal && <Modal data={modal} setModal={setModal} />}
-      <div className="w-full py-2 text-sm flex text-white bg-hackathon-blue-200 justify-evenly px-0 m-0">
+      <div className="w-full py-2 text-sm flex text-white bg-gradient-to-r from-rosehack-pink-200/50 to-rosehack-blue/50 font-montserrat justify-evenly px-0 m-0">
         <div className="w-1/12" />
         {headers.map((header, index) => (
           <div
@@ -82,7 +82,7 @@ const Table = ({
       </div>
       <Accordion
         data-cy="table"
-        className="h-full overflow-y-scroll w-full bg-white"
+        className="h-full overflow-y-scroll w-full bg-white/10 text-white"
       >
         {objects.map(
           (object, index) =>
@@ -91,10 +91,10 @@ const Table = ({
                 data-cy={object.uid}
                 key={index}
                 className={`first:border-0 border-t border-hackathon-gray-100 w-full grid grid-cols-1 py-2 ${
-                  object.selected ? "bg-green-100" : "bg-white"
+                  object.selected ? "bg-rosehack-teal/30" : "bg-white/10"
                 }`}
               >
-                <div className="flex justify-start items-center">
+                <div className="flex justify-start items-center font-light">
                   <div
                     className="flex justify-center items-center w-1/12"
                     data-cy="select"
@@ -111,7 +111,7 @@ const Table = ({
                           data-cy="element"
                           key={index}
                           className={`p-0 text-sm ${header.size} ${
-                            header.text === "name" && "font-bold flex"
+                            header.text === "name" && "font-normal flex"
                           }`}
                         >
                           {header.hasTag && object[header.text] !== "" && (

@@ -1,6 +1,6 @@
 import { BsCheckLg } from "react-icons/bs";
 
-const Checkbox = ({ toggle, onClick = () => {}, text = "", color }) => {
+const Checkbox = ({ toggle, onClick = () => {}, text = "" }) => {
   return (
     <div
       className="flex items-center hover:cursor-pointer w-fit"
@@ -9,17 +9,13 @@ const Checkbox = ({ toggle, onClick = () => {}, text = "", color }) => {
     >
       <div
         data-cy="checkbox-bg"
-        className={`w-4 h-4 rounded-sm ${
-          toggle
-            ? `${color ? color : "bg-hackathon-blue-100"}`
-            : "bg-hackathon-gray-100"
-        } flex items-center justify-center`}
+        className="w-4 h-4 rounded-0 bg-transparent flex items-center justify-center border-[1px] border-white"
       >
         <BsCheckLg
           data-cy="checkmark"
           className={`${
-            toggle ? "text-white" : "text-hackathon-gray-100"
-          } text-lg`}
+            toggle ? "text-white" : "text-transparent"
+          } text-lg duration-100`}
         />
       </div>
       {text && <p className="pl-3 my-0 pt-0">{text}</p>}
