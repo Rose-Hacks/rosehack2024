@@ -44,7 +44,7 @@ const Navigation = () => {
               className="w-10 h-10 mx-2"
               alt={`${CONFIG.name} Logo`}
             />
-            <p className="text-white font-righteous font-bold text-lg pr-2 m-0">
+            <p className="text-white font-advent font-bold text-lg pr-2 m-0">
               {CONFIG.name.toUpperCase()}
             </p>
           </div>

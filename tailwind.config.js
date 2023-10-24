@@ -8,6 +8,25 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        "bounce-2s": "bounce 2s infinite",
+      },
+      keyframes: {
+        bounce: {
+          "0%": {
+            transform: "translate(0px,-15px)",
+            "animation-timing-function": "cubic-bezier(0.8, 0, 1, 1)",
+          },
+          "50%": {
+            transform: "translate(0px, 0px)",
+            "animation-timing-function": "cubic-bezier(0, 0, 0.2, 1)",
+          },
+          "100%": {
+            transform: "translate(0px,-15px)",
+            "animation-timing-function": "cubic-bezier(0.8, 0, 1, 1)",
+          },
+        },
+      },
       backgroundImage: {
         blur: "url('/svg/background.svg')",
         "blur-h": "url('/svg/background-h.svg')",
@@ -61,7 +80,7 @@ module.exports = {
         poppins: ["var(--font-poppins)"],
         montserrat: ["var(--font-montserrat)", "sans-serif"],
         orbitron: ["var(--font-orbitron)", "sans-serif"],
-        righteous: ["var(--font-righteous)", "sans-serif"],
+        advent: ["var(--font-advent)", "sans-serif"],
       },
       dropShadow: {
         "pink-200": "0 0px 9px rgb(237,79,140)",
