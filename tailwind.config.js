@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        blur: "url('/svg/background.svg')",
+        "blur-h": "url('/svg/background-h.svg')",
+      },
       colors: {
         hackathon: {
           "blue-100": "#38A3A5",

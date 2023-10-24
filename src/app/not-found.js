@@ -1,6 +1,6 @@
 const error = () => {
   return (
-    <div className="w-screen h-screen flex flex-col items-center justify-center fixed">
+    <div className="w-screen h-screen flex flex-col items-center justify-center fixed bg-blur-h">
       <p className="text-center text-6xl font-bold text-rosehack-blue">404</p>
       <p className="text-center text-lg md:text-2xl font-bold text-white">
         Page Not Found

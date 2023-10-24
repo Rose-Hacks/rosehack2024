@@ -35,7 +35,7 @@ export default function RootLayout({ children, session }) {
         className="h-full"
       >
         <body
-          className={`${orbitron.variable} ${montserrat.variable} ${righteous.variable} ${poppins.variable} bg-black flex flex-col lg:flex-row h-full`}
+          className={`${orbitron.variable} ${montserrat.variable} ${righteous.variable} ${poppins.variable} bg-black flex flex-col lg:flex-row h-full pt-0`}
         >
           <Toaster />
           {children}
