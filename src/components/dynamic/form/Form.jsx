@@ -45,12 +45,12 @@ const Form = ({ object, setObject, header, fields, onSubmit }) => {
     onSubmit(setLoading);
   };
   return (
-    <div className="w-full h-full overflow-scroll flex flex-col items-center font-poppins">
+    <div className="w-full h-full overflow-scroll flex flex-col items-center font-montserrat text-white">
       <div className="w-10/12 md:w-1/2 xl:w-1/3 my-5">
-        <p className="text-xl bg-hackathon-green-300 font-semibold px-4 py-2 rounded-t-xl m-0">
+        <p className="text-xl bg-gradient-to-r from-rosehack-pink-200/40 to-rosehack-blue/40 font-montserrat px-4 py-2 rounded-t-xl m-0">
           {header}
         </p>
-        <div className="rounded-b-xl bg-white p-3">
+        <div className="rounded-b-xl bg-white/10 p-3">
           <div className="grid grid-cols-1 gap-3">
             {Object.values(fields).map((field, index) => (
               <div key={index}>
@@ -61,7 +61,7 @@ const Form = ({ object, setObject, header, fields, onSubmit }) => {
                       {index === field.texts.length - 1 && (
                         <p>
                           Fields with
-                          <span className="text-hackathon-green-300"> * </span>
+                          <span className="text-rosehack-pink-200"> * </span>
                           are required.
                         </p>
                       )}
@@ -98,7 +98,7 @@ const Form = ({ object, setObject, header, fields, onSubmit }) => {
                     <p className="mb-1 font-semibold">
                       {field.text}
                       {field.required && (
-                        <span className="text-hackathon-green-300">*</span>
+                        <span className="text-rosehack-pink-200">*</span>
                       )}
                     </p>
                     {field.options.map((option, i) => (
@@ -117,7 +117,7 @@ const Form = ({ object, setObject, header, fields, onSubmit }) => {
                               : [...object[field.field], option],
                           })
                         }
-                        color="bg-hackathon-green-300"
+                        color="bg-rosehack-pink-100"
                       />
                     ))}
                   </>
@@ -161,7 +161,7 @@ const Form = ({ object, setObject, header, fields, onSubmit }) => {
             <Link
               href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
               target="_blank"
-              className="no-underline flex items-center"
+              className="no-underline flex items-center text-rosehack-teal"
             >
               MLH Code of Conduct
               <FaLink className="mx-2" />
