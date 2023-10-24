@@ -4,10 +4,10 @@ import Countdown from "../Countdown";
 const Content = () => {
   return (
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">
-      <p className="w-full text-center font-righteous text-4xl md:text-5xl drop-shadow-pink-200">
+      <p className="w-full text-center font-advent text-4xl md:text-5xl drop-shadow-pink-200">
         ROSEHACK 2024
       </p>
-      <p className="w-full text-center font-righteous text-3xl md:text-4xl drop-shadow-blue">
+      <p className="w-full text-center font-advent text-3xl md:text-4xl drop-shadow-blue">
         COMING SOON
       </p>
       <div className="backdrop-blur-md rounded-3xl my-5">
