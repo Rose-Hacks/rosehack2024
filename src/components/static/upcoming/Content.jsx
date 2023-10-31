@@ -20,10 +20,14 @@ const Content = () => {
             <Link
               link="https://forms.gle/Pr8HMgaLWunGjWVv6"
               text="interest form"
+              fromColor="from-rosehack-pink-200"
+              toColor="to-rosehack-blue"
             />
             <Link
               link="https://crowdfunding.ucr.edu/o/university-of-california-riverside/i/ucrcrowdfunding/s/winc-fy24"
               text="donate"
+              fromColor="from-rosehack-pink-200"
+              toColor="to-rosehack-blue"
             />
           </div>
         </div>
