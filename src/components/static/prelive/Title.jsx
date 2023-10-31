@@ -8,7 +8,7 @@ const Title = ({ label }) => {
       <Image
         src={doubleTriangle}
         alt="trangle arrow"
-        width="70"
+        width={"70"}
         className="mt-2"
       />
       <Image src={triangle} />
