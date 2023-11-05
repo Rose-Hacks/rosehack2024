@@ -32,7 +32,8 @@ describe("Admin Select", () => {
           "have.class",
           "bg-rosehack-teal/30"
         );
-      else cy.get(`[data-cy="${admin.uid}"]`).should("have.class", "bg-white");
+      else
+        cy.get(`[data-cy="${admin.uid}"]`).should("have.class", "bg-white/10");
     });
   });
 });

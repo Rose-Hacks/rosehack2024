@@ -33,7 +33,10 @@ describe("Volunteers Select", () => {
           "bg-rosehack-teal/30"
         );
       else
-        cy.get(`[data-cy="${volunteer.uid}"]`).should("have.class", "bg-white");
+        cy.get(`[data-cy="${volunteer.uid}"]`).should(
+          "have.class",
+          "bg-white/10"
+        );
     });
   });
 });
