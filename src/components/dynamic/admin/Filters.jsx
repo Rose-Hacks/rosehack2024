@@ -28,7 +28,7 @@ const Filters = ({ filters, setFilters, setObjects, objects, input }) => {
   };
 
   return (
-    <div className="w-fit grid grid-cols-3 gap-2">
+    <div className="w-fit grid grid-cols-6 gap-2">
       {Object.entries(filters).map(([filter, { state }], index) => (
         <div
           className="flex justify-center"
@@ -39,11 +39,11 @@ const Filters = ({ filters, setFilters, setObjects, objects, input }) => {
           <div
             className={`rounded hover:opacity-70 duration-300 ${
               state
-                ? "bg-white border-rosehack-blue/0 border-[1px] text-black"
-                : "bg-transparent border-white border-[1px] text-white"
+                ? "text-white bg-hackathon-blue-100"
+                : "text-hackathon-blue-100 bg-white"
             } cursor-pointer flex items-center justify-between w-full`}
           >
-            <p className="my-0 mx-1 px-2 py-[2px] whitespace-nowrap">
+            <p className="my-0 mx-1 px-1 py-[2px] whitespace-nowrap">
               {filter}
             </p>
             <TiPlus

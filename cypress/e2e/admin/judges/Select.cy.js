@@ -15,7 +15,10 @@ describe("Mentor Select", () => {
   it("Select All", () => {
     cy.get('[data-cy="select-all"]').click();
     judges.forEach((judge) => {
-      cy.get(`[data-cy="${judge.uid}"]`).should("have.class", "bg-green-100");
+      cy.get(`[data-cy="${judge.uid}"]`).should(
+        "have.class",
+        "bg-rosehack-teal/30"
+      );
     });
   });
 
@@ -25,8 +28,12 @@ describe("Mentor Select", () => {
     );
     judges.forEach((judge, index) => {
       if (index < 5)
-        cy.get(`[data-cy="${judge.uid}"]`).should("have.class", "bg-green-100");
-      else cy.get(`[data-cy="${judge.uid}"]`).should("have.class", "bg-white");
+        cy.get(`[data-cy="${judge.uid}"]`).should(
+          "have.class",
+          "bg-rosehack-teal/30"
+        );
+      else
+        cy.get(`[data-cy="${judge.uid}"]`).should("have.class", "bg-white/10");
     });
   });
 });

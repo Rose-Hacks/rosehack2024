@@ -14,7 +14,9 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
     setUploading(true);
     if (e.target.files[0].size > getSize(maxSize)) {
       toast(`❌ File too big, exceeds ${maxSize[0]} ${maxSize[1]}!`);
-    } else setFile(e.target.files[0]);
+      return;
+    }
+    setFile(e.target.files[0]);
     const base64 = await readFileAsBase64(e.target.files[0]);
     setUser({ ...user, [field]: base64 });
     setUploading(false);
@@ -33,17 +35,17 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
     <div className="flex flex-col">
       <p className="mb-0 font-semibold">
         {text}
-        {required && <span className="text-red-500">*</span>}
+        {required && <span className="text-hackathon-green-300">*</span>}
       </p>
       <div className="flex items-center w-full flex-col" data-cy="upload">
         {!file && (
           <label
             htmlFor="dropzone-file"
-            className="mt-3 flex flex-col items-center justify-center w-full h-fit rounded-lg cursor-pointer bg-gray-200/20 hover:bg-gray-200/30 duration-100"
+            className="flex flex-col items-center justify-center w-full h-fit border-2 border-gray-300 rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100"
           >
             <div className="flex flex-col items-center justify-center pt-4">
-              <BsUpload className=" text-3xl mb-2 text-white" />
-              <p className="text-sm text-white font-semibold">
+              <BsUpload className=" text-3xl mb-2 text-hackathon-green-300" />
+              <p className="text-sm text-gray-500 font-semibold">
                 Upload from my computer
               </p>
             </div>
@@ -60,7 +62,7 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
         )}
         {file && (
           <div
-            className="flex items-center justify-between w-full my-2 bg-gray-200/20 px-2 py-2 rounded-md"
+            className="flex items-center justify-between w-full my-2 bg-gray-200 px-2 py-2"
             data-cy="upload-success"
           >
             <div className="flex items-center">
@@ -72,7 +74,7 @@ const Upload = ({ field, user, setUser, text, maxSize, types, required }) => {
               {file.name}
             </div>
             <FaTimes
-              className="text-white hover:cursor-pointer hover:!text-red-500"
+              className="text-gray-500 hover:cursor-pointer hover:text-red-600"
               onClick={() => setFile(null)}
               data-cy="upload-cancel"
             />
