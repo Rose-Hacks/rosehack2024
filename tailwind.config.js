@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/data/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -85,6 +84,7 @@ module.exports = {
       dropShadow: {
         "pink-200": "0 0px 9px rgb(237,79,140)",
         blue: "0 0px 9px rgb(104,201,255)",
+        ev,
       },
     },
   },

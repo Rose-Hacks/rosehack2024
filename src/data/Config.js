@@ -11,3 +11,7 @@ export const MANIFEST = {
   description: "A women-centric 24 hour hackathon in UC Riverside",
   start_url: "/",
 };
+
+export const SITEMAP = {
+  domain: "https://www.placeholder.com",
+};

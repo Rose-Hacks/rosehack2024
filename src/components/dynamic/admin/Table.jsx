@@ -13,6 +13,7 @@ import { COLORS } from "@/data/dynamic/Tags";
 import Modal from "./dashboards/Modal";
 import { ICONS } from "@/data/dynamic/admin/Icons";
 import Loading from "../Loading";
+import { FaStar } from "react-icons/fa";
 
 const Toggle = ({ eventKey }) => {
   const { activeEventKey } = useContext(AccordionContext);
@@ -105,11 +106,11 @@ const Table = ({
                     />
                   </div>
                   {headers.map(
-                    (header, index) =>
+                    (header, i) =>
                       header.text !== "" && (
                         <div
                           data-cy="element"
-                          key={index}
+                          key={i}
                           className={`p-0 text-sm ${header.size} ${
                             header.text === "name" && "font-normal flex"
                           }`}
@@ -138,7 +139,7 @@ const Table = ({
                           )}
 
                           {Array.isArray(object[header.text]) &&
-                            object[header.text].map((element, index) => (
+                            object[header.text].map((element, key) => (
                               <p
                                 className={`mb-0 text-sm ${
                                   header.text === "members"
@@ -147,7 +148,7 @@ const Table = ({
                                     ? "text-hackathon-gray-200"
                                     : ""
                                 }`}
-                                key={index}
+                                key={key}
                               >
                                 {header.text === "links"
                                   ? element.link !== "No Link" && (
@@ -171,6 +172,9 @@ const Table = ({
                                 data-cy={`${header.text}`}
                                 className="break-words"
                               >
+                                {index < header.limit && (
+                                  <FaStar className="mr-2 text-yellow-400" />
+                                )}
                                 {object[header.text]}
                               </div>
                             )}
