@@ -38,7 +38,7 @@ describe("Participant Select", () => {
       else
         cy.get(`[data-cy="${participant.uid}"]`).should(
           "have.class",
-          "bg-white"
+          "bg-white/10"
         );
     });
   });
