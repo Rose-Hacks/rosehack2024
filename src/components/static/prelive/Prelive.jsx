@@ -1,5 +1,11 @@
+import Welcome from "../Welcome";
+
 const Prelive = () => {
-  return <div>Prelive</div>;
+  return (
+    <div>
+      <Welcome />
+    </div>
+  );
 };
 
 export default Prelive;
