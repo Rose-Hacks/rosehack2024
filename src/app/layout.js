@@ -6,6 +6,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { SessionProvider } from "next-auth/react";
 import { Toaster } from "react-hot-toast";
 import { Orbitron, Montserrat, Advent_Pro, Poppins } from "next/font/google";
+import ProtectedPage from "@/components/dynamic/ProtectedPage";
+import Navigation from "@/components/dynamic/Navigation";
+import { usePathname } from "next/navigation";
 
 const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron" });
 const advent = Advent_Pro({
@@ -28,20 +31,29 @@ const poppins = Poppins({
 });
 
 export default function RootLayout({ children, session }) {
+  const pathName = usePathname();
+
+  const navigation = RegExp(/user\/|admin\//).test(pathName);
+
   return (
     <html lang="en" className="h-full">
-      <SessionProvider
-        session={session}
-        refetchInterval={5 * 60}
-        className="h-full"
+      <body
+        className={`${orbitron.variable} ${montserrat.variable} ${advent.variable} ${poppins.variable} bg-black flex flex-col lg:flex-row h-full pt-0`}
       >
-        <body
-          className={`${orbitron.variable} ${montserrat.variable} ${advent.variable} ${poppins.variable} bg-black flex flex-col lg:flex-row h-full pt-0`}
+        <SessionProvider
+          session={session}
+          refetchInterval={5 * 60}
+          className="h-full"
         >
-          <Toaster />
-          {children}
-        </body>
-      </SessionProvider>
+          <div className="flex w-full">
+            {navigation && <Navigation />}
+            <ProtectedPage>
+              <Toaster />
+              {children}
+            </ProtectedPage>
+          </div>
+        </SessionProvider>
+      </body>
     </html>
   );
 }

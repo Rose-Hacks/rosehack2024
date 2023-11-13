@@ -167,13 +167,41 @@ const Table = ({
                               </p>
                             ))}
 
+                          {Array.isArray(object[header.text]) &&
+                            object[header.text].map((element, i) => (
+                              <p
+                                className={`mb-0 text-sm ${
+                                  header.text === "members"
+                                    ? "font-bold text-hackathon-blue-100"
+                                    : header.text === "emails"
+                                    ? "text-hackathon-gray-200"
+                                    : ""
+                                }`}
+                                key={i}
+                              >
+                                {header.text === "links"
+                                  ? element.link !== "No Link" && (
+                                      <Link
+                                        href={element.link}
+                                        className="w-11/12 flex items-center m-0 p-0 text-black no-underline hover:!text-hackathon-blue-100 text-sm"
+                                      >
+                                        {ICONS[element.name]}
+                                        <p className="truncate w-11/12 ml-1 mb-0">
+                                          {element.link.replace("https://", "")}
+                                        </p>
+                                      </Link>
+                                    )
+                                  : element}
+                              </p>
+                            ))}
+
                           {!header.hasTag &&
                             !Array.isArray(object[header.text]) && (
                               <div
                                 data-cy={`${header.text}`}
-                                className="break-words"
+                                className="break-words flex items-center"
                               >
-                                {index < header.limit && (
+                                {objects.length - header.limit <= index && (
                                   <FaStar className="mr-2 text-yellow-400" />
                                 )}
                                 {object[header.text]}

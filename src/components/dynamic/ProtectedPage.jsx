@@ -2,27 +2,31 @@
 import { useEffect, useState } from "react";
 import { signIn, useSession } from "next-auth/react";
 import Loading from "@/components/dynamic/Loading";
-import Error from "./Error";
-import Navigation from "./Navigation";
 import { usePathname } from "next/navigation";
 import RELEASES from "@/data/Releases";
+import { ROUTES } from "@/data/ProtectedRoutes";
+import Fault from "@/utils/error";
 
-const ProtectedPage = ({ title, children, restrictions }) => {
+const ProtectedPage = ({ children }) => {
   const { data: session, status } = useSession();
-  const [error, setError] = useState(null);
   const [confirmed, setConfirmed] = useState(false);
 
   const pathName = usePathname();
-  const navigation = RegExp(/user\/|admin\//).test(pathName);
+  const restrictions = ROUTES[pathName].restrictions;
+  const title = ROUTES[pathName].title;
+  const bypass = ROUTES[pathName].bypass;
 
   useEffect(() => {
-    if (RELEASES.DYNAMIC[pathName] > new Date()) {
-      setError({
-        code: 423,
-        error: "Locked Resource",
-        message: "This resource has not been released",
-      });
+    if (bypass) {
+      setConfirmed(true);
       return;
+    }
+    if (RELEASES.DYNAMIC[pathName] > new Date()) {
+      throw new Fault(
+        423,
+        "Locked Resource",
+        "This resource has not been released"
+      );
     }
 
     if (status === "loading") return;
@@ -32,12 +36,11 @@ const ProtectedPage = ({ title, children, restrictions }) => {
     }
 
     if (!session.user.roles && Object.keys(restrictions).length > 0) {
-      setError({
-        code: 403,
-        error: "Unauthorized",
-        message: "You do not have any assigned roles",
-      });
-      return;
+      throw new Fault(
+        403,
+        "Unauthorized",
+        "You do not have any assigned roles"
+      );
     }
 
     const authorized = Object.entries(restrictions).some(([key, values]) =>
@@ -47,36 +50,19 @@ const ProtectedPage = ({ title, children, restrictions }) => {
     );
 
     if (!authorized && Object.keys(restrictions).length > 0) {
-      setError({
-        code: 403,
-        error: "Unauthorized",
-        message: "You do not have access this page",
-      });
-      return;
+      throw new Fault(403, "Unauthorized", "You do not have access this page");
     }
     setConfirmed(true);
   }, [status]);
 
   return (
     <>
-      {status === "loading" && <Loading />}
-      {error && (
-        <Error code={error.code} error={error.error} message={error.message} />
-      )}
-      {status === "authenticated" && confirmed && (
+      {status === "loading" && pathName !== "/" && <Loading />}
+      {confirmed && (
         <>
-          <div className={`w-full flex ${navigation && "bg-blur-h"}`}>
-            {navigation && <Navigation />}
-            <title>{title}</title>
-            <div
-              className={`flex justify-center items-start w-full z-0 h-screen ${
-                navigation && "pt-12 lg:pt-0"
-              }`}
-            >
-              <div className={`${navigation ? "w-11/12" : "w-full"} h-full`}>
-                {children}
-              </div>
-            </div>
+          <title>{title}</title>
+          <div className="flex justify-center items-start w-full h-screen pt-12 lg:pt-0 z-0">
+            <div className={`w-[96%] h-full`}>{children}</div>
           </div>
         </>
       )}
