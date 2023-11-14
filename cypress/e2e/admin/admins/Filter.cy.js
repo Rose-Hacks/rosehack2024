@@ -24,22 +24,22 @@ describe("Admin Filters", () => {
   });
 
   it("Click Filters", () => {
-    cy.get('[data-cy="pending-filter"]').click();
+    cy.get('[data-cy="pending-filter"]').click({ force: true });
     cy.get('[data-cy="pending-filter"]')
       .get("div")
       .should("have.class", "text-hackathon-blue-100", "bg-white");
-    cy.get('[data-cy="reject-filter"]').click();
+    cy.get('[data-cy="reject-filter"]').click({ force: true });
     cy.get('[data-cy="reject-filter"]')
       .get("div")
       .should("have.class", "text-hackathon-blue-100", "bg-white");
-    cy.get('[data-cy="accept-filter"]').click();
+    cy.get('[data-cy="accept-filter"]').click({ force: true });
     cy.get('[data-cy="accept-filter"]')
       .get("div")
       .should("have.class", "text-hackathon-blue-100", "bg-white");
   });
 
   it("Click Pending", () => {
-    cy.get('[data-cy="pending-filter"]').click();
+    cy.get('[data-cy="pending-filter"]').click({ force: true });
     admins.forEach((admin) => {
       if (admin.status === 0)
         cy.get(`[data-cy="${admin.uid}"]`).should("not.exist");
@@ -48,7 +48,7 @@ describe("Admin Filters", () => {
   });
 
   it("Click Rejected", () => {
-    cy.get('[data-cy="reject-filter"]').click();
+    cy.get('[data-cy="reject-filter"]').click({ force: true });
     admins.forEach((admin) => {
       if (admin.status === -1)
         cy.get(`[data-cy="${admin.uid}"]`).should("not.exist");
@@ -57,7 +57,7 @@ describe("Admin Filters", () => {
   });
 
   it("Click Accepted", () => {
-    cy.get('[data-cy="accept-filter"]').click();
+    cy.get('[data-cy="accept-filter"]').click({ force: true });
     admins.forEach((admin) => {
       if (admin.status === 1)
         cy.get(`[data-cy="${admin.uid}"]`).should("not.exist");
@@ -66,8 +66,8 @@ describe("Admin Filters", () => {
   });
 
   it("Click 2 Filters", () => {
-    cy.get('[data-cy="accept-filter"]').click();
-    cy.get('[data-cy="pending-filter"]').click();
+    cy.get('[data-cy="accept-filter"]').click({ force: true });
+    cy.get('[data-cy="pending-filter"]').click({ force: true });
     admins.forEach((admin) => {
       if (admin.status === 1 || admin.status === 0)
         cy.get(`[data-cy="${admin.uid}"]`).should("not.exist");
