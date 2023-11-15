@@ -56,9 +56,15 @@ const ProtectedPage = ({ children, restrictions, title }) => {
       {confirmed && (
         <>
           <title>{title}</title>
-          <div className="flex justify-center items-start w-full h-screen pt-12 lg:pt-0 z-0">
-            {navigation && <Navigation />}
-            <div className={`w-[96%] h-full`}>{children}</div>
+          {navigation && <Navigation />}
+          <div
+            className={`flex justify-center items-start w-full z-0 h-screen ${
+              navigation && "pt-12 lg:pt-0"
+            }`}
+          >
+            <div className={`${navigation ? "w-11/12" : "w-full"} h-full`}>
+              {children}
+            </div>
           </div>
         </>
       )}
