@@ -30,18 +30,20 @@ const poppins = Poppins({
 export default function RootLayout({ children, session }) {
   return (
     <html lang="en" className="h-full">
-      <SessionProvider
-        session={session}
-        refetchInterval={5 * 60}
-        className="h-full"
+      <body
+        className={`${orbitron.variable} ${montserrat.variable} ${advent.variable} ${poppins.variable} bg-black flex flex-col lg:flex-row h-full pt-0`}
       >
-        <body
-          className={`${orbitron.variable} ${montserrat.variable} ${advent.variable} ${poppins.variable} bg-black flex flex-col lg:flex-row h-full pt-0`}
+        <SessionProvider
+          session={session}
+          refetchInterval={5 * 60}
+          className="h-full"
         >
-          <Toaster />
-          {children}
-        </body>
-      </SessionProvider>
+          <div className="flex w-full">
+            <Toaster />
+            {children}
+          </div>
+        </SessionProvider>
+      </body>
     </html>
   );
 }
