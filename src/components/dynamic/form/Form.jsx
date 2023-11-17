@@ -22,7 +22,7 @@ const Form = ({
   );
 
   return (
-    <div className="w-full h-full overflow-scroll flex flex-col items-center font-montserrat text-white">
+    <div className="w-full h-full overflow-y-scroll overflow-x-hidden flex flex-col items-center font-montserrat text-white">
       <Image src={LOGO} className="w-1/12 mt-12 mb-2" alt={`Logo`} />
       <div className="text-4xl font-thin font-advent">ROSEHACK 2024</div>
       <div className="w-10/12 md:w-1/2 xl:w-1/3 my-5">
