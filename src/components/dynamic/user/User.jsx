@@ -34,7 +34,7 @@ const User = ({ user, setUser, edit, setEdit }) => {
   };
   return (
     <div className="bg-white/20 rounded-lg gap-3 flex flex-col m-2 max-h-[70vh] pb-4 text-white">
-      <div className="gap-3 flex flex-col m-2 overflow-scroll h-[90%] p-4 bg-transparent">
+      <div className="gap-3 flex flex-col m-2 overflow-y-scroll overflow-x-hidden h-[90%] p-4 bg-transparent">
         <Select
           title="School"
           items={SCHOOLS}
