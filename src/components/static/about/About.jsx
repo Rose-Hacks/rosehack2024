@@ -5,8 +5,8 @@ import Circle from "./Circle";
 
 const About = () => {
   return (
-    <>
-      <div className="relative w-9/12 sm:w-3/5 md:w-2/5">
+    <div className="bg-gradient-to-b from-black w-full flex flex-col items-center pt-10">
+      <div className="relative w-9/12 md:w-3/5 lg:w-2/5">
         <div className="absolute inset-0 -translate-x-1/2 -translate-y-1/2 w-fit h-fit">
           <Circle />
         </div>
@@ -17,7 +17,7 @@ const About = () => {
               <div className="h-[1px] bg-white w-1/4" />
               <LiaSquareFullSolid className="rotate-45 text-xs -ml-2" />
             </div>
-            <div className="text-sm md:text-base font-montserrat my-3">
+            <div className="text-xs md:text-base font-montserrat my-3">
               Rose Hack is UC Riverside&apos;s 24-hour hackathon, one of the few
               women-centric hackathons in California! Founded by the female
               leaders of the Association for Computing Machinery (ACM-W) and the
@@ -27,7 +27,7 @@ const About = () => {
               <div className="h-[1px] bg-white w-3/5" />
               <LiaSquareFullSolid className="rotate-45 text-xs -ml-2" />
             </div>
-            <div className="text-sm md:text-base font-montserrat my-3">
+            <div className="text-xs md:text-base font-montserrat my-3">
               Rose Hack&apos;s mission is to encourage individuals from
               underrepresented groups in STEM to gain experience, create strong
               networks, and build amazing projects through their shared passions
@@ -37,7 +37,7 @@ const About = () => {
         </div>
       </div>
       <Image src={flow} className="w-full" />
-    </>
+    </div>
   );
 };
 

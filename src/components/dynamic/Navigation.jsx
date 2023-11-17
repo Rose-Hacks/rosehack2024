@@ -16,7 +16,7 @@ const Navigation = () => {
 
   return (
     <>
-      <div className="flex lg:hidden w-full bg-white/10 h-12 items-center fixed z-20 font-montserrat">
+      <div className="flex lg:hidden w-full bg-rosehack-gray h-12 items-center fixed z-20 font-montserrat">
         <div
           className="flex items-center hover:cursor-pointer"
           onClick={() => setExpand(!expand)}
@@ -36,7 +36,7 @@ const Navigation = () => {
           expand ? "left-0 h-screen w-1/2 fixed pt-5" : `hidden`
         }`}
       >
-        <div className="bg-white/10 h-full flex flex-col justify-between items-center w-full">
+        <div className="bg-rosehack-gray h-full flex flex-col justify-between items-center w-full">
           <div className="hidden lg:flex items-center my-3">
             <Image
               src={LOGO}
@@ -87,7 +87,7 @@ const Navigation = () => {
                           <div
                             className={`absolute w-full flex h-full ${
                               pathName.endsWith(tab.link) &&
-                              "bg-gradient-to-l  from-white/30 border-r-8 border-white blur-md  -ml-[10%]"
+                              "bg-gradient-to-l  from-white/30 -ml-[10%]"
                             }`}
                           ></div>
                           {tab.icon}
