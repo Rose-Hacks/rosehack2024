@@ -74,7 +74,6 @@ module.exports = {
           "purple-200": "#6E3FE7",
           "purple-300": "#3705AA",
           teal: "#66FFF6",
-          gray: "#333333",
         },
       },
       fontFamily: {
