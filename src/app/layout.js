@@ -6,9 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { SessionProvider } from "next-auth/react";
 import { Toaster } from "react-hot-toast";
 import { Orbitron, Montserrat, Advent_Pro, Poppins } from "next/font/google";
-import ProtectedPage from "@/components/dynamic/ProtectedPage";
-import Navigation from "@/components/dynamic/Navigation";
-import { usePathname } from "next/navigation";
 
 const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron" });
 const advent = Advent_Pro({
@@ -31,10 +28,6 @@ const poppins = Poppins({
 });
 
 export default function RootLayout({ children, session }) {
-  const pathName = usePathname();
-
-  const navigation = RegExp(/user\/|admin\//).test(pathName);
-
   return (
     <html lang="en" className="h-full">
       <body
@@ -46,11 +39,8 @@ export default function RootLayout({ children, session }) {
           className="h-full"
         >
           <div className="flex w-full">
-            {navigation && <Navigation />}
-            <ProtectedPage>
-              <Toaster />
-              {children}
-            </ProtectedPage>
+            <Toaster />
+            {children}
           </div>
         </SessionProvider>
       </body>
