@@ -23,6 +23,7 @@ const iconStyle = "mr-2";
 
 export const TABS = {
   admin: {
+    dropdown: true,
     Dashboards: {
       expand: true,
       mt: "mt-0",
@@ -64,7 +65,7 @@ export const TABS = {
         },
         {
           name: "interests",
-          link: "/admin/interest",
+          link: "/admin/interests",
           icon: <FaExclamation className={iconStyle} />,
         },
         {

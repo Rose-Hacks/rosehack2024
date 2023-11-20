@@ -7,46 +7,29 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="w-screen h-full bg-blur font-advent text-white">
-      <div className="relative">
-        <Image
-          src={building}
-          alt="building"
-          className=" w-full opacity-25 -scale-x-100 md:mt-0 mt-[35%]"
-        />
-        <Image
-          src={building}
-          alt="building"
-          className="w-full relative -mt-[35%] md:-mt-[75%]"
-        />
-        <div className="absolute bg-gradient-to-t via-black from-black w-screen z-1 h-1/4 -bottom-20" />
+    <div className="relative w-full h-full font-advent text-white">
+      <div className="relative flex">
+        <Image src={building} alt="building" className="w-full" />
+        <div className="absolute bg-gradient-to-t from-black via-black/100 via-10% w-full h-full" />
       </div>
-
-      <div className="flex w-screen h-2/3 bg-black items-center">
-        <div className="flex items-center w-3/4 justify-start ml-[5%] mt-[10%]">
-          <Image src={LOGO} alt="logo" className="w-1/12 mr-10" />
-          <div>
-            <p className="text-5xl">ROSEHACK 2024</p>
-            <p className="text-2xl">
-              Made with <AiFillHeart className="inline" /> by the Rose Hack team
-              at UCR
-            </p>
-          </div>
+      <div className="bottom-0 absolute flex flex-col items-center justify-center z-10 w-full gap-2">
+        <Image src={LOGO} alt="logo" className="w-1/12" />
+        <div className="text-lg md:text-4xl">ROSEHACK 2024</div>
+        <div className="text-xs md:text-xl">
+          Made with <AiFillHeart className="inline" /> by the Rose Hack team at
+          UCR
         </div>
-        <div className="flex-col h-fit border-r-2 px-5 mr-5 border-white text-5xl">
-          CONTACTS
+        <div className="flex mb-8">
           {CONTACTS.map((contact, index) => (
-            <div key={index} className="flex flex-row-reverse my-3">
-              <Link
-                href={contact.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white no-underline "
-              >
-                {contact.icon}
-              </Link>
-              <div className="text-2xl align-center mr-5">{contact.text}</div>
-            </div>
+            <Link
+              key={index}
+              href={contact.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white no-underline text-2xl hover:cursor-pointer hover:!text-rosehack-teal hover:-translate-y-1 duration-200"
+            >
+              {contact.icon}
+            </Link>
           ))}
         </div>
       </div>
