@@ -2,6 +2,7 @@ import flow from "../../../../public/svg/about/flow.svg";
 import Image from "next/image";
 import { LiaSquareFullSolid } from "react-icons/lia";
 import Circle from "./Circle";
+import { Parallax } from "react-scroll-parallax";
 
 const About = () => {
   return (
@@ -36,7 +37,9 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Image src={flow} className="w-full" />
+      <Parallax speed={10}>
+        <Image src={flow} className="w-full" />
+      </Parallax>
     </div>
   );
 };
