@@ -39,7 +39,7 @@ const About = () => {
           </div>
         </Parallax>
       </div>
-      <Parallax speed={10}>
+      <Parallax speed={10} className="w-full">
         <Image src={flow} className="w-full" />
       </Parallax>
     </div>
