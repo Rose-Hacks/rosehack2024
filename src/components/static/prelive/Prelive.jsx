@@ -14,7 +14,6 @@ const Prelive = () => {
         <Landing />
         <About />
         <Welcome />
-        {/* <Title label={"Get Involved"}/> */}
         <GetInvolved />
         <FAQ />
         <Footer />
