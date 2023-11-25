@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "src/components/static/Link.jsx";
 import Image from "next/image";
 import PinkRobot from "public/svg/blue-robot.svg";
 const Volunteer = () => {
