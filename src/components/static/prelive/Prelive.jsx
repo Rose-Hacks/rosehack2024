@@ -4,6 +4,7 @@ import About from "../about/About";
 import Landing from "./Landing";
 import Footer from "./Footer";
 import { ParallaxProvider } from "react-scroll-parallax";
+import FAQ from "./FAQ";
 
 const Prelive = () => {
   return (
@@ -12,6 +13,7 @@ const Prelive = () => {
         <Landing />
         <About />
         <Welcome />
+        <FAQ />
         <Footer />
       </ParallaxProvider>
     </div>
