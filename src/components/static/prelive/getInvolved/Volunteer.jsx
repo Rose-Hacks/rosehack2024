@@ -1,10 +1,10 @@
 import Link from "src/components/static/Link.jsx";
 import Image from "next/image";
-import PinkRobot from "public/svg/blue-robot.svg";
+import PinkRobot from "public/svg/pink-robot.svg";
 const Volunteer = () => {
   return (
     <div className="font-montserrat flex">
-      <div className="mt-16 flex-col text-hackathon-tags-white text-right">
+      <div className="flex-col text-hackathon-tags-white text-right">
         <div className="text-5xl">Become a Volunteer</div>
         <div className="pt-3 pl-10">
           <div className="flex">
