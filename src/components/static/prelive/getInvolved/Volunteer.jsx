@@ -1,3 +1,6 @@
+import Link from "next/link";
+import Image from "next/image";
+import PinkRobot from "public/svg/blue-robot.svg";
 const Volunteer = () => {
   return (
     <div className="font-montserrat flex">
