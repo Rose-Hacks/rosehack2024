@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import Volunteer from "./getInvolved/Volunteer";
 import Mentor from "./getInvolved/Mentor";
 import { ParallaxProvider } from "react-scroll-parallax";
+import FAQ from "./FAQ";
 
 const Prelive = () => {
   return (
@@ -16,6 +17,7 @@ const Prelive = () => {
         <Welcome />
         <Mentor />
         <Volunteer />
+        <FAQ />
         <Footer />
       </ParallaxProvider>
     </div>
