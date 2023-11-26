@@ -9,7 +9,7 @@ import FAQ from "./FAQ";
 
 const Prelive = () => {
   return (
-    <div className="w-full bg-blur bg-cover">
+    <div className="w-full bg-blur bg-cover flex justify-center items-center flex-col">
       <ParallaxProvider>
         <Landing />
         <About />

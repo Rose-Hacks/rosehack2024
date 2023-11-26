@@ -8,20 +8,20 @@ const Item = ({ question, answer, index }) => {
   return (
     <Accordion.Item
       eventKey={index}
-      className="font-montserrat !text-white bg-transparent !border-none"
+      className="font-montserrat !text-white bg-transparent !border-x-0 !border-t-0"
     >
       <Accordion.Button
-        className="after:!bg-none  !text-white !bg-transparent"
+        className="after:!bg-none font-orbitron !text-white !bg-transparent !shadow-none"
         onClick={() => setState(!state)}
       >
         <div className="flex justify-between items-center w-full">
-          <div>{question}</div>
+          {question}
           <MdKeyboardDoubleArrowUp
             className={`${!state && "rotate-180"} duration-200 ml-2 text-2xl`}
           />
         </div>
       </Accordion.Button>
-      <Accordion.Body>{answer}</Accordion.Body>
+      <Accordion.Body className="!border-none">{answer}</Accordion.Body>
     </Accordion.Item>
   );
 };
