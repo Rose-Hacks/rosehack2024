@@ -42,13 +42,11 @@ const Landing = () => {
             className="w-full relative -mt-[35%] md:-mt-[75%]"
           />
         </Parallax>
-        <Parallax speed={0} translateX={[-2, 2]}>
-          <Image
-            src={blackBuilding}
-            alt="building"
-            className="w-full relative md:-mt-[50%] -mt-[35%] scale-105"
-          />
-        </Parallax>
+        <Image
+          src={blackBuilding}
+          alt="building"
+          className="w-full relative md:-mt-[55%] -mt-[35%] scale-105"
+        />
       </div>
       <Content />
     </div>
