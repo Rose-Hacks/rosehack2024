@@ -8,7 +8,7 @@ import FAQ from "./FAQ";
 
 const Prelive = () => {
   return (
-    <div className="w-full bg-blur">
+    <div className="w-full bg-blur bg-cover">
       <ParallaxProvider>
         <Landing />
         <About />
