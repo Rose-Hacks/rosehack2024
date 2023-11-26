@@ -5,9 +5,9 @@ import landingCircle from "../../../../public/svg/landing/landing-circle.svg";
 
 const LandingCircle = () => {
   return (
-    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full md:w-fit">
-      <div className="relative w-fit h-fit">
-        <Image alt="landing circle" src={landingCircle} />
+    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full items-center justify-center flex">
+      <div className="relative lg:w-1/2 h-fit">
+        <Image alt="landing circle" src={landingCircle} className="w-full" />
         <div className="w-full absolute right-1/2 translate-x-1/2 top-1/2 -translate-y-1/2">
           <Image
             alt="landing circle"
