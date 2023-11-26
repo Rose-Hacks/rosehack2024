@@ -7,7 +7,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 
 const Prelive = () => {
   return (
-    <div className="w-full bg-blur">
+    <div className="w-full bg-blur bg-cover">
       <ParallaxProvider>
         <Landing />
         <About />
