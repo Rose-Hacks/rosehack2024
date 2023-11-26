@@ -4,7 +4,7 @@ import triangle from "../../../../public/svg/triangle.svg";
 
 const Title = ({ label }) => {
   return (
-    <div className="flex flex-row w-full justify-center">
+    <div className="flex w-full justify-center items-center">
       <Image
         src={doubleTriangle}
         alt="trangle arrow"
@@ -12,11 +12,9 @@ const Title = ({ label }) => {
         className="mt-2"
       />
       <Image src={triangle} />
-
-      <div className="text-white text-center border-2 border-[#3C5567] rounded-sm backdrop-blur-sm my-auto mx-4">
-        <p className="m-2 text-6xl font-montserrat">{label}</p>
+      <div className="m-0 text-4xl font-montserrat text-white text-center mx-4">
+        {label}
       </div>
-
       <Image src={triangle} className="-scale-x-100" />
       <Image
         src={doubleTriangle}
