@@ -5,7 +5,6 @@ import { useSession } from "next-auth/react";
 
 const Content = () => {
   const { data: session } = useSession();
-  console.log(session);
   return (
     <div className="absolute top-1/2 -translate-y-1/2 text-white w-full flex flex-col items-center">
       <p className="w-full text-center font-advent text-4xl md:text-5xl drop-shadow-pink-200">
