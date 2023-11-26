@@ -27,7 +27,6 @@ module.exports = {
         },
       },
       backgroundImage: {
-        blur: "url('/svg/background.svg')",
         "blur-h": "url('/svg/background-h.svg')",
         about: "url('/svg/about/borderbg.png')",
       },
