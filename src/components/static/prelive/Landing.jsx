@@ -34,7 +34,7 @@ const Landing = () => {
             className="w-full opacity-25 -scale-x-100 md:mt-0 mt-[35%]"
           />
         </Parallax>
-        <Parallax speed={-50} translateX={[2, -2]}>
+        <Parallax speed={-50} translateX={[2, -2]} className="mt-32">
           <LandingCircle />
           <Image
             src={building}
