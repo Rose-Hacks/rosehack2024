@@ -4,20 +4,17 @@ import About from "../about/About";
 import Landing from "./Landing";
 import Footer from "./Footer";
 import GetInvolved from "./getInvolved/GetInvolved";
-import { ParallaxProvider } from "react-scroll-parallax";
 import FAQ from "./FAQ";
 
 const Prelive = () => {
   return (
-    <div className="w-full bg-blur bg-cover flex justify-center items-center flex-col">
-      <ParallaxProvider>
-        <Landing />
-        <About />
-        <Welcome />
-        <GetInvolved />
-        <FAQ />
-        <Footer />
-      </ParallaxProvider>
+    <div className="w-full flex justify-center items-center flex-col">
+      <Landing />
+      <About />
+      <Welcome />
+      <GetInvolved />
+      <FAQ />
+      <Footer />
     </div>
   );
 };
