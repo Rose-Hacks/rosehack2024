@@ -5,7 +5,7 @@ sg.setApiKey(process.env.SENDGRID_API_KEY);
 
 const send = async ({ to, template_id, dynamic_template_data }) => {
   const msg = {
-    from: "citrushack@gmail.com",
+    from: "rosehackucr@gmail.com",
     to,
     template_id,
     dynamic_template_data,
