@@ -31,7 +31,6 @@
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.11.0",
-    "react-scroll-parallax": "^3.4.4",
     "react-zxing": "^2.0.0",
     "sharp": "^0.32.6",
     "unique-names-generator": "^4.7.1",
