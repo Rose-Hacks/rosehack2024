@@ -56,12 +56,12 @@ const Select = ({
             onClick={() => setShow(!show)}
             className={`${
               user[field] ? "text-black" : "text-hackathon-gray-200"
-            } bg-white flex items-center justify-between w-full border-b-2 border-black`}
+            } bg-transparent flex items-center justify-between w-full border-b-[1px] border-white pb-1`}
             data-cy="select-toggle"
           >
             {user[field] || placeholder}
             <RiArrowDownSLine
-              className={`${show && "rotate-180"} duration-300 text-black`}
+              className={`${show && "rotate-180"} duration-300 text-white`}
               data-cy="select-arrow"
             />
           </button>
