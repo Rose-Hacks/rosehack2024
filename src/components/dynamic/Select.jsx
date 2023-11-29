@@ -78,7 +78,7 @@ const Select = ({
         )}
         {editable && show && (
           <div
-            className="w-full absolute z-10 !bg-gray-600 !border-none !rounded-none !p-0 overflow-y-auto max-h-[35vh]"
+            className="w-full absolute z-10 !bg-gray-600 !border-none !rounded-none overflow-y-auto max-h-[35vh] pl-2"
             data-cy="select-menu"
           >
             {searchable && (
