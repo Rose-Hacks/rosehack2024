@@ -2,7 +2,7 @@ import Image from "next/image";
 import building from "../../../../public/svg/building.svg";
 import blackBuilding from "../../../../public/svg/blackbuilding.svg";
 import Content from "./Content.jsx";
-import landingCircle from "../../../../public/svg/landing/landing-circle.svg";
+import LandingCircle from "../upcoming/LandingCircle";
 
 const Landing = () => {
   return (
@@ -12,11 +12,7 @@ const Landing = () => {
         alt="building"
         className="absolute w-full opacity-25 bottom-0 h-3/4 md:h-full object-cover"
       />
-      <Image
-        alt="landing circle"
-        src={landingCircle}
-        className="hidden sm:block w-full lg:w-1/2 2xl:w-1/3 absolute"
-      />
+      <LandingCircle />
       <Image
         src={blackBuilding}
         alt="building"
