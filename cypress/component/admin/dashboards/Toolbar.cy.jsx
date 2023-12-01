@@ -65,7 +65,7 @@ describe("Toolbar", () => {
 
     cy.get('[data-cy="checkbox-bg"]').should(
       "have.class",
-      "bg-hackathon-gray-100",
+      "bg-transparent",
       expect(admins.every((admin) => admin.selected === false)).to.be.true
     );
   });
@@ -113,7 +113,7 @@ describe("Toolbar", () => {
       );
     cy.get('[data-cy="checkbox-bg"]')
       .click()
-      .should("have.class", "bg-hackathon-blue-100");
+      .should("have.class", "bg-transparent");
     cy.get('[data-cy="delete"]').click();
     cy.get('[data-cy="confirm-button"]')
       .click()
@@ -156,7 +156,7 @@ describe("Toolbar", () => {
     );
     cy.get('[data-cy="checkbox-bg"]')
       .click()
-      .should("have.class", "bg-hackathon-blue-100");
+      .should("have.class", "bg-transparent");
 
     cy.get('[data-cy="reject-tag"]')
       .click()
@@ -201,7 +201,7 @@ describe("Toolbar", () => {
     );
     cy.get('[data-cy="checkbox-bg"]')
       .click()
-      .should("have.class", "bg-hackathon-blue-100");
+      .should("have.class", "bg-transparent");
 
     cy.get('[data-cy="accept-tag"]')
       .click()
