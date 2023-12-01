@@ -1,24 +1,5 @@
 import Dropdown from "react-bootstrap/Dropdown";
-import { RiArrowDownSLine } from "react-icons/ri";
-import { useEffect, useState } from "react";
-
-const Toggle = ({ onClick, option, show, placeholder }) => {
-  return (
-    <button
-      onClick={onClick}
-      className={`${
-        option ? "text-white" : "text-hackathon-gray-200"
-      } flex items-center justify-between w-full border-b-2 border-white`}
-      data-cy="select-toggle"
-    >
-      {option || placeholder}
-      <RiArrowDownSLine
-        className={`${show && "rotate-180"} duration-300 text-white`}
-        data-cy="select-arrow"
-      />
-    </button>
-  );
-};
+import { useState, useEffect } from "react";
 
 const Select = ({
   items,
@@ -83,9 +64,9 @@ const Select = ({
             {user[field] || placeholder}
           </div>
         )}
-        {editable && (
-          <Dropdown.Menu
-            className="w-full !bg-gray-600 !border-none !rounded-none !p-0 overflow-y-auto max-h-[35vh]"
+        {editable && show && (
+          <div
+            className="w-full absolute z-10 !bg-gray-600 !border-none !rounded-none !p-0 overflow-y-auto max-h-[35vh]"
             data-cy="select-menu"
           >
             {searchable && (
@@ -100,15 +81,15 @@ const Select = ({
             {options
               .filter((opt) => !opt.hidden)
               .map((option, index) => (
-                <Dropdown.Item
-                  className="hover:!bg-rosehack-blue/30 overflow-hidden !text-white"
+                <div
+                  className="hover:!bg-rosehack-blue/30 overflow-hidden"
                   key={index}
                   onClick={() => setUser({ ...user, [field]: option.name })}
                 >
                   {option.name}
-                </Dropdown.Item>
+                </div>
               ))}
-          </Dropdown.Menu>
+          </div>
         )}
       </Dropdown>
     </div>
