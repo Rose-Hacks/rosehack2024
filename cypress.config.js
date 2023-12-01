@@ -4,7 +4,7 @@ module.exports = defineConfig({
   video: false,
   screenshotOnRunFailure: false,
   e2e: {
-    baseUrl: "http://localhost:3020",
+    baseUrl: "http://localhost:3000",
     chromeWebSecurity: false,
     setupNodeEvents(on, config) {},
   },
