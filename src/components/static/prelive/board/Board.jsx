@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Col from "react-bootstrap/Col";
 
-const Board = ({ position, name, image, start, sm }) => {
+const Board = ({ position, name, image, sm }) => {
   return (
     <Col
       xs={6}
