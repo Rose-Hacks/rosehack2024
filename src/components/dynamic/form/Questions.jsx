@@ -56,16 +56,16 @@ const Questions = ({
         <div key={index}>
           {field.input === "description" &&
             field.texts.map((description, index) => (
-              <>
-                <p key={index}>{description}</p>
+              <div key={index}>
+                <p>{description}</p>
                 {index === field.texts.length - 1 && (
                   <p>
                     Fields with
-                    <span className="text-hackathon-green-300"> * </span>
+                    <span className="text-red-500"> * </span>
                     are required.
                   </p>
                 )}
-              </>
+              </div>
             ))}
           {field.input === "input" && (
             <Input
@@ -97,9 +97,7 @@ const Questions = ({
             <>
               <p className="mb-1 font-semibold">
                 {field.text}
-                {field.required && (
-                  <span className="text-hackathon-green-300">*</span>
-                )}
+                {field.required && <span className="text-red-500">*</span>}
               </p>
               {field.options.map((option, i) => (
                 <Checkbox
