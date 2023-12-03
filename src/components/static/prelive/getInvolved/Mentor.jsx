@@ -6,7 +6,7 @@ const Volunteer = () => {
     <div className="font-montserrat flex w-10/12">
       <Image className="w-1/3 animate-bounce-2s" src={BlueRobot} />
       <div className="pt-1 self-start flex-col text-hackathon-tags-white text-left">
-        <div className="text-2xl">Become a Mentor</div>
+        <div className="text-2xl">Become Mentor</div>
         <div className="pt-3 pl-10 pr-20">
           <p className="text-lg w-10/12 m-0 px-0 pt-0 pb-3">
             Are you passionate about engineering, a seasoned coder, or an
