@@ -15,7 +15,7 @@ const Volunteer = () => {
             especially women in STEM and underrepresented groups, looking to be
             just like you! We at Rose Hack are on the lookout for passionate
             mentors to guide and support participants! If you are interested in
-            helping us, please fill out the form below!
+            helping us, please fill out the form below!.
           </p>
           <div className="flex justify-start">
             <Link
