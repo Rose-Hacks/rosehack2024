@@ -11,7 +11,7 @@ const Volunteer = () => {
           <p className="text-lg w-10/12 m-0 px-0 pt-0 pb-3">
             Are you passionate about engineering, a seasoned coder, or an
             aspiring industry professional eager to share your knowledge?
-            Here&apos;s your chance to inspire the next generation of people,
+            Here&apos;s your chance to nspire the next generation of people,
             especially women in STEM and underrepresented groups, looking to be
             just like you! We at Rose Hack are on the lookout for passionate
             mentors to guide and support participants! If you are interested in
