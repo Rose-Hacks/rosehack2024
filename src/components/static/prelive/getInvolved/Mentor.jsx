@@ -19,7 +19,7 @@ const Volunteer = () => {
             mentors to guide and support participants! If you are interested in
             helping us, please fill out the form below!
           </p>
-          {/* mobile view-> text-center/text-left w breakpoints doesn't work*/}
+          {/* mobile view->  text-center/text-left w breakpoints doesn't work*/}
           <p className="md:hidden text-center text-lg md:w-10/12 m-0 px-0 pt-0">
             Are you passionate about engineering, a seasoned coder, or an
             aspiring industry professional eager to share your knowledge?
