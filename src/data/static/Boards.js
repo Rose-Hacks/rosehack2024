@@ -1,16 +1,30 @@
-import judge from "./judge.png";
+import Angie from "./board/Angie_Bermudez.webp";
+import Annabelle from "./board/Annabelle_Le.webp";
+import David from "./board/David_Ryan.webp";
+import Divyank from "./board/Divyank_Shah.webp";
+import Eliot from "./board/Eliot_Lee.webp";
+import Hriyai from "./board/Hriyai_Srinath.webp";
+import Laura from "./board/Laura_Canon.webp";
+import Menthy from "./board/Menthy_Wu.webp";
+import Rama from "./board/Rama_Chunduri.webp";
+import Sachin from "./board/Sachin_Chopra.webp";
+import Samarth from "./board/Samarth_Srinivasa.webp";
+import Sneha from "./board/Sneha_Panda.webp";
+import Surabhi from "./board/Surabhi_Tadvalkar.webp";
+import Yuchen from "./board/Yuchen_Zhu.webp";
+
 export const boardMembers = [
   [
     {
       position: "DIRECTOR",
       name: "Angie Bermudez",
-      image: judge,
+      image: Angie,
       start: 3,
     },
     {
       position: "DIRECTOR",
       name: "Surabhi Tadvalkar",
-      image: judge,
+      image: Surabhi,
       start: 4,
     },
   ],
@@ -18,74 +32,64 @@ export const boardMembers = [
     {
       position: "OPERATIONS",
       name: "Annabelle Le",
-      image: judge,
+      image: Annabelle,
     },
     {
       position: "OPERATIONS",
       name: "Hriyai Srinath",
-      image: judge,
+      image: Hriyai,
     },
     {
       position: "OPERATIONS",
       name: "Sneha Panda",
-      image: judge,
+      image: Sneha,
     },
     {
       position: "OPERATIONS",
       name: "David Ryan",
-      image: judge,
-    },
-    {
-      position: "MARKETING",
-      name: "Katty Ramos",
-      image: judge,
-    },
-    {
-      position: "MARKETING",
-      name: "Tianna Huang",
-      image: judge,
+      image: David,
     },
     {
       position: "MARKETING",
       name: "Eliot Lee",
-      image: judge,
+      image: Eliot,
     },
     {
       position: "SPONSORSHIP",
       name: "Laura Canon",
-      image: judge,
+      image: Laura,
     },
     {
       position: "SPONSORSHIP",
       name: "Rama Chunduri",
-      image: judge,
+      image: Rama,
     },
     {
       position: "SPONSORSHIP",
       name: "Samarth Srinivasa",
-      image: judge,
+      image: Samarth,
     },
     {
       position: "SPONSORSHIP",
       name: "Yuchen Zhu",
-      image: judge,
+      image: Yuchen,
     },
     {
       position: "SOFTWARE ENGINEERING",
       name: "Menthy Wu",
-      image: judge,
+      image: Menthy,
       sm: "SWE",
     },
     {
       position: "SOFTWARE ENGINEERING",
       name: "Divyank Shah",
-      image: judge,
+      image: Divyank,
       sm: "SWE",
     },
     {
       position: "SOFTWARE ENGINEERING",
       name: "Sachin Chopra",
-      image: judge,
+      image: Sachin,
       sm: "SWE",
     },
   ],
