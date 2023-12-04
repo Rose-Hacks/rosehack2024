@@ -3,6 +3,7 @@ import building from "../../../../public/svg/building.svg";
 import blackBuilding from "../../../../public/svg/blackbuilding.svg";
 import Content from "./Content.jsx";
 import landingCircle from "../../../../public/svg/landing/landing-circle.svg";
+import Navigation from "@/components/static/Navigation";
 
 const Landing = () => {
   return (
@@ -22,6 +23,7 @@ const Landing = () => {
         alt="building"
         className="absolute w-full bottom-0 h-3/4 md:h-full object-cover"
       />
+      <Navigation />
       <Content />
     </div>
   );

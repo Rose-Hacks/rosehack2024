@@ -3,7 +3,10 @@ import Countdown from "../Countdown";
 
 const Content = () => {
   return (
-    <div className="relative text-white w-full flex flex-col items-center">
+    <div
+      id="top"
+      className="relative text-white w-full flex flex-col items-center"
+    >
       <p className="w-full text-center font-advent text-4xl md:text-5xl drop-shadow-pink-200">
         ROSEHACK 2024
       </p>

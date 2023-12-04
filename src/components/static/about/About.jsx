@@ -4,7 +4,7 @@ import { LiaSquareFullSolid } from "react-icons/lia";
 
 const About = () => {
   return (
-    <div className="w-full flex flex-col items-center pt-32">
+    <div id="abt" className="w-full flex flex-col items-center pt-32">
       <div className="relative w-9/12 md:w-3/5 lg:w-2/5 z-10">
         <div className="relative w-full text-white overflow-hidden bg-about p-3">
           <div className="bg-black/90 backdrop-blur-md p-4">
