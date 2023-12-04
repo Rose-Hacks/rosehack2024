@@ -104,6 +104,16 @@ describe("Toolbar", () => {
         <Parent />
       </MockNextRouter>
     );
+
+    cy.get('[data-cy="delete"]')
+      .click()
+      .then(
+        () =>
+          expect(admins.every((admin) => admin.selected === false)).to.be.true
+      );
+    cy.get('[data-cy="checkbox-bg"]')
+      .click()
+      .should("have.class", "bg-transparent");
   });
 
   it("Reject all", () => {
