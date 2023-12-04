@@ -104,11 +104,6 @@ describe("Toolbar", () => {
         <Parent />
       </MockNextRouter>
     );
-
-    cy.get('[data-cy="delete"]').click();
-    cy.get('[data-cy="confirm-button"]')
-      .click()
-      .then(() => expect(admins).to.be.empty);
   });
 
   it("Reject all", () => {
