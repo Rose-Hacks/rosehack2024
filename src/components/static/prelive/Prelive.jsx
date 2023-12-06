@@ -5,6 +5,7 @@ import Landing from "./Landing";
 import Footer from "./Footer";
 import GetInvolved from "./getInvolved/GetInvolved";
 import FAQ from "./FAQ";
+import Team from "./Team";
 
 const Prelive = () => {
   return (
@@ -13,6 +14,7 @@ const Prelive = () => {
       <About />
       <Welcome />
       <GetInvolved />
+      <Team />
       <FAQ />
       <Footer />
     </div>
