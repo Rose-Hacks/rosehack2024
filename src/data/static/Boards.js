@@ -16,13 +16,13 @@ import Yuchen from "./board/Yuchen_Zhu.webp";
 export const boardMembers = [
   [
     {
-      position: "DIRECTOR",
+      position: "Director",
       name: "Angie Bermudez",
       image: Angie,
       start: 3,
     },
     {
-      position: "DIRECTOR",
+      position: "Director",
       name: "Surabhi Tadvalkar",
       image: Surabhi,
       start: 4,
@@ -30,67 +30,65 @@ export const boardMembers = [
   ],
   [
     {
-      position: "OPERATIONS",
+      position: "Operations",
       name: "Annabelle Le",
       image: Annabelle,
     },
     {
-      position: "OPERATIONS",
+      position: "Operations",
       name: "Hriyai Srinath",
       image: Hriyai,
     },
     {
-      position: "OPERATIONS",
+      position: "Operations",
       name: "Sneha Panda",
       image: Sneha,
     },
     {
-      position: "OPERATIONS",
+      position: "Operations",
       name: "David Ryan",
       image: David,
     },
     {
-      position: "MARKETING",
+      position: "Marketing",
       name: "Eliot Lee",
       image: Eliot,
     },
     {
-      position: "SPONSORSHIP",
+      position: "Sponsorship",
       name: "Laura Canon",
       image: Laura,
     },
     {
-      position: "SPONSORSHIP",
+      position: "Sponsorship",
       name: "Rama Chunduri",
       image: Rama,
     },
     {
-      position: "SPONSORSHIP",
+      position: "Sponsorship",
       name: "Samarth Srinivasa",
       image: Samarth,
     },
     {
-      position: "SPONSORSHIP",
+      position: "Sponsorship",
       name: "Yuchen Zhu",
       image: Yuchen,
     },
     {
-      position: "SOFTWARE ENGINEERING",
+      position: "Software Engineering",
       name: "Menthy Wu",
       image: Menthy,
       sm: "SWE",
     },
     {
-      position: "SOFTWARE ENGINEERING",
+      position: "Software Engineering",
       name: "Divyank Shah",
       image: Divyank,
-      sm: "SWE",
     },
     {
-      position: "SOFTWARE ENGINEERING",
+      position: "Software Engineering",
       name: "Sachin Chopra",
       image: Sachin,
-      sm: "SWE",
     },
   ],
 ];

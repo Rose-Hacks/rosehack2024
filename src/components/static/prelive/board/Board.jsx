@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Col from "react-bootstrap/Col";
 
-const Board = ({ position, name, image, sm }) => {
+const Board = ({ position, name, image }) => {
   return (
     <Col
       xs={6}
@@ -16,18 +16,9 @@ const Board = ({ position, name, image, sm }) => {
       <div className="text-md md:text-xl font-bold mt-1 whitespace-nowrap">
         {name}
       </div>
-      <div
-        className={`${
-          sm && "hidden lg:block"
-        } text-xs md:text-sm lg:text-base font-semibold text-center`}
-      >
+      <div className="text-xs md:text-sm lg:text-base font-semibold text-center">
         {position}
       </div>
-      {sm && (
-        <div className="block lg:hidden text-xs md:text-sm lg:text-base font-semibold">
-          {sm}
-        </div>
-      )}
     </Col>
   );
 };
