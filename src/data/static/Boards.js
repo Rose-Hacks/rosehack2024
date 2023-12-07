@@ -76,6 +76,11 @@ export const boardMembers = [
     },
     {
       position: "Software Engineering",
+      name: "Sachin Chopra",
+      image: Sachin,
+    },
+    {
+      position: "Software Engineering",
       name: "Menthy Wu",
       image: Menthy,
       sm: "SWE",
@@ -84,11 +89,6 @@ export const boardMembers = [
       position: "Software Engineering",
       name: "Divyank Shah",
       image: Divyank,
-    },
-    {
-      position: "Software Engineering",
-      name: "Sachin Chopra",
-      image: Sachin,
     },
   ],
 ];
