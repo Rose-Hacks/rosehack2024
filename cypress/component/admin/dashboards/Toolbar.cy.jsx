@@ -55,7 +55,7 @@ describe("Toolbar", () => {
       fixture: `admins.json`,
     }).as("GET");
     cy.intercept("PUT", `/api/admins`, { message: "OK", status: 200 }).as(
-      "GET"
+      "PUT"
     );
     cy.mount(
       <MockNextRouter>
@@ -97,7 +97,7 @@ describe("Toolbar", () => {
       fixture: `admins.json`,
     }).as("GET");
     cy.intercept("PUT", `/api/admins`, { message: "OK", status: 200 }).as(
-      "GET"
+      "PUT"
     );
     cy.mount(
       <MockNextRouter>
@@ -147,7 +147,7 @@ describe("Toolbar", () => {
       fixture: `admins.json`,
     }).as("GET");
     cy.intercept("PUT", `/api/admins`, { message: "OK", status: 200 }).as(
-      "GET"
+      "PUT"
     );
     cy.mount(
       <MockNextRouter>
@@ -192,7 +192,7 @@ describe("Toolbar", () => {
       fixture: `admins.json`,
     }).as("GET");
     cy.intercept("PUT", `/api/admins`, { message: "OK", status: 200 }).as(
-      "GET"
+      "PUT"
     );
     cy.mount(
       <MockNextRouter>
@@ -240,7 +240,7 @@ describe("Toolbar", () => {
       fixture: `admins.json`,
     }).as("GET");
     cy.intercept("PUT", `/api/admins`, { message: "OK", status: 200 }).as(
-      "GET"
+      "PUT"
     );
     cy.mount(
       <MockNextRouter>
@@ -290,7 +290,7 @@ describe("Toolbar", () => {
       fixture: `admins.json`,
     }).as("GET");
     cy.intercept("PUT", `/api/admins`, { message: "OK", status: 200 }).as(
-      "GET"
+      "PUT"
     );
     cy.mount(
       <MockNextRouter>
