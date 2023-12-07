@@ -13,5 +13,5 @@ export const MANIFEST = {
 };
 
 export const SITEMAP = {
-  domain: "https://www.placeholder.com",
+  domain: "https://www.rosehack.com",
 };
