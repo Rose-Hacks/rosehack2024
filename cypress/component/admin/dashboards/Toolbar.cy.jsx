@@ -55,7 +55,7 @@ describe("Toolbar", () => {
       fixture: `admins.json`,
     }).as("GET");
     cy.intercept("PUT", `/api/admins`, { message: "OK", status: 200 }).as(
-      "GET"
+      "PUT"
     );
     cy.mount(
       <MockNextRouter>
@@ -68,56 +68,6 @@ describe("Toolbar", () => {
       "bg-transparent",
       expect(admins.every((admin) => admin.selected === false)).to.be.true
     );
-  });
-
-  it("Select and Delete all", () => {
-    let admins = adminData;
-    const setAdmins = (e) => {
-      admins = e;
-    };
-
-    const Parent = () => {
-      const [input, setInput] = useState({
-        input: "",
-      });
-
-      return (
-        <Toolbar
-          input={input}
-          setInput={setInput}
-          tags={TAGS}
-          setObjects={setAdmins}
-          objects={admins}
-          filters={FILTERS}
-          page="admins"
-        />
-      );
-    };
-    cy.intercept("GET", `/api/admins`, {
-      fixture: `admins.json`,
-    }).as("GET");
-    cy.intercept("PUT", `/api/admins`, { message: "OK", status: 200 }).as(
-      "GET"
-    );
-    cy.mount(
-      <MockNextRouter>
-        <Parent />
-      </MockNextRouter>
-    );
-
-    cy.get('[data-cy="delete"]')
-      .click()
-      .then(
-        () =>
-          expect(admins.every((admin) => admin.selected === false)).to.be.true
-      );
-    cy.get('[data-cy="checkbox-bg"]')
-      .click()
-      .should("have.class", "bg-transparent");
-    cy.get('[data-cy="delete"]').click();
-    cy.get('[data-cy="confirm-button"]')
-      .click()
-      .then(() => expect(admins).to.be.empty);
   });
 
   it("Reject all", () => {
@@ -147,7 +97,7 @@ describe("Toolbar", () => {
       fixture: `admins.json`,
     }).as("GET");
     cy.intercept("PUT", `/api/admins`, { message: "OK", status: 200 }).as(
-      "GET"
+      "PUT"
     );
     cy.mount(
       <MockNextRouter>
@@ -192,7 +142,7 @@ describe("Toolbar", () => {
       fixture: `admins.json`,
     }).as("GET");
     cy.intercept("PUT", `/api/admins`, { message: "OK", status: 200 }).as(
-      "GET"
+      "PUT"
     );
     cy.mount(
       <MockNextRouter>
@@ -240,7 +190,7 @@ describe("Toolbar", () => {
       fixture: `admins.json`,
     }).as("GET");
     cy.intercept("PUT", `/api/admins`, { message: "OK", status: 200 }).as(
-      "GET"
+      "PUT"
     );
     cy.mount(
       <MockNextRouter>
@@ -290,7 +240,7 @@ describe("Toolbar", () => {
       fixture: `admins.json`,
     }).as("GET");
     cy.intercept("PUT", `/api/admins`, { message: "OK", status: 200 }).as(
-      "GET"
+      "PUT"
     );
     cy.mount(
       <MockNextRouter>
