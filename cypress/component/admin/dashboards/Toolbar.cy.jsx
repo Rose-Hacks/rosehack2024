@@ -93,9 +93,6 @@ describe("Toolbar", () => {
         />
       );
     };
-    cy.intercept("GET", `/api/admins`, {
-      fixture: `admins.json`,
-    }).as("GET");
 
     cy.mount(
       <MockNextRouter>
