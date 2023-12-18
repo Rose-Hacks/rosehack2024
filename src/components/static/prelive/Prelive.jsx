@@ -5,7 +5,7 @@ import Landing from "./Landing";
 import Footer from "./Footer";
 import GetInvolved from "./getInvolved/GetInvolved";
 import FAQ from "./FAQ";
-
+import Boards from "../prelive/board/Boards";
 const Prelive = () => {
   return (
     <div className="w-full flex justify-center items-center flex-col">
@@ -13,6 +13,7 @@ const Prelive = () => {
       <About />
       <Welcome />
       <GetInvolved />
+      <Boards />
       <FAQ />
       <Footer />
     </div>
