@@ -19,7 +19,7 @@ const Navigation = () => {
   }, [params]);
 
   return (
-    <div className="w-full h-[7%] flex flex-row text-white fixed top-0 z-40 bg-[#403745] backdrop-blur-sm bg-opacity-50">
+    <div className="w-full sm:h-[44.375px] flex flex-row text-white fixed top-0 z-40 bg-[#403745] backdrop-blur-sm bg-opacity-50">
       <Image
         src={LOGO}
         alt="logo"
@@ -27,7 +27,7 @@ const Navigation = () => {
         height={40}
         className="ml-5 my-auto"
       />
-      <div className="w-1/2 h-full m-auto flex flex-row relative place-content-around font-advent font-thin text-2xl scroll-smooth relative items-center">
+      <div className="lg:w-1/2 h-[40] w-full h-full mx-auto flex flex-row relative place-content-around font-advent font-thin text-2xl scroll-smooth relative items-center">
         <Link
           href="#top"
           className={`text-white h-full no-underline flex align-center relative overflow-hidden
