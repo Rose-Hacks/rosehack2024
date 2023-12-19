@@ -3,6 +3,7 @@ export const CONFIG = {
   email: "rosehackucr@gmail.com",
   year: "2024",
   date: new Date("January 21, 2024 12:00:00"),
+  packet: "",
 };
 
 export const MANIFEST = {
