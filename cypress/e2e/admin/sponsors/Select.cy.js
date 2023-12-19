@@ -30,10 +30,13 @@ describe("Sponsors Select", () => {
       if (index < 5)
         cy.get(`[data-cy="${sponsor.uid}"]`).should(
           "have.class",
-          "bg-white/10"
+          "bg-rosehack-teal/30"
         );
       else
-        cy.get(`[data-cy="${sponsor.uid}"]`).should("have.class", "bg-white");
+        cy.get(`[data-cy="${sponsor.uid}"]`).should(
+          "have.class",
+          "bg-white/10"
+        );
     });
   });
 });
