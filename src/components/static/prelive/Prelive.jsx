@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import GetInvolved from "./getInvolved/GetInvolved";
 import FAQ from "./FAQ";
 import Boards from "../prelive/board/Boards";
+import Committee from "../prelive/Committees.jsx";
 const Prelive = () => {
   return (
     <div className="w-full flex justify-center items-center flex-col">
@@ -14,6 +15,7 @@ const Prelive = () => {
       <Welcome />
       <GetInvolved />
       <Boards />
+      <Committee />
       <FAQ />
       <Footer />
     </div>
