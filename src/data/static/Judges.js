@@ -6,6 +6,7 @@ import Falak from "../../../public/judges/Falak Tulsi.jpg";
 import Andy from "../../../public/judges/Andy Jarean.jpg";
 import Alex from "../../../public/judges/Alexander Hickerson.jpg";
 import Chloe from "../../../public/judges/Chloe Georgiou.jpg";
+import Yogitha from "../../../public/judges/Yogitha Shastri.jpg";
 
 export const judges = [
   {
@@ -22,6 +23,11 @@ export const judges = [
     name: "Rohit Manimaran",
     image: Rohit,
     position: "Azure Solutions Architect @ MolinaHealthcare",
+  },
+  {
+    name: "Yogitha Shastri",
+    image: Yogitha,
+    position: "BearHack Co-Director",
   },
   {
     name: "Aditi Behera",
