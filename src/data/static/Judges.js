@@ -7,6 +7,7 @@ import Andy from "../../../public/judges/Andy Jarean.jpg";
 import Alex from "../../../public/judges/Alexander Hickerson.jpg";
 import Chloe from "../../../public/judges/Chloe Georgiou.jpg";
 import Yogitha from "../../../public/judges/Yogitha Shastri.jpg";
+import Evi from "../../../public/judges/Evelyn Aguirre Vargas.jpg";
 
 export const judges = [
   {
@@ -38,6 +39,11 @@ export const judges = [
     name: "Falak Tulsi",
     image: Falak,
     position: "ACM Events Chair",
+  },
+  {
+    name: "Evelyn Aguirre Vargas",
+    image: Evi,
+    position: "Previous Biohack Director",
   },
   {
     name: "Andy Jarean",
