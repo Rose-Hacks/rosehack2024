@@ -11,7 +11,7 @@ import {
   Timestamp,
 } from "firebase/firestore";
 import { authenticate } from "@/utils/auth";
-import { AUTH } from "@/data/dynamic/admin/Committees";
+import { AUTH } from "@/data/dynamic/admin/Sponsors";
 import SG from "@/utils/sendgrid";
 
 export async function POST(req) {
@@ -25,14 +25,16 @@ export async function POST(req) {
     );
   }
 
-  const { discord, affiliation } = await req.json();
+  const { phone, company, position, tier } = await req.json();
 
   try {
     await updateDoc(doc(db, "users", user.id), {
-      discord: discord,
-      affiliation: affiliation,
+      phone: phone,
+      company: company,
+      position: position,
+      tier: tier,
       timestamp: Timestamp.now(),
-      "roles.committees": 0,
+      "roles.sponsors": 0,
     });
 
     SG.send({
@@ -40,7 +42,7 @@ export async function POST(req) {
       template_id: process.env.SENDGRID_CONFIRMATION_TEMPLATE,
       dynamic_template_data: {
         name: user.name,
-        position: "COMMITTEE",
+        position: "SPONSOR",
       },
     });
 
@@ -63,25 +65,25 @@ export async function GET() {
       { status: auth }
     );
   }
+
   const output = [];
 
   try {
     const snapshot = await getDocs(
-      query(
-        collection(db, "users"),
-        where("roles.committees", "in", [-1, 0, 1])
-      )
+      query(collection(db, "users"), where("roles.sponsors", "in", [-1, 0, 1]))
     );
     snapshot.forEach((doc) => {
-      const { name, email, roles, affiliation, discord, timestamp } =
+      const { name, email, phone, roles, company, position, tier, timestamp } =
         doc.data();
       output.push({
         uid: doc.id,
         name: name,
         email: email,
-        discord: discord,
-        affiliation: affiliation,
-        status: roles.committees,
+        phone: phone,
+        company: company,
+        position: position,
+        tier: tier,
+        status: roles.sponsors,
         selected: false,
         hidden: false,
         timestamp: timestamp,
@@ -118,11 +120,11 @@ export async function PUT(req) {
     objects.forEach(async (object) => {
       if (attribute === "role") {
         await updateDoc(doc(db, "users", object.uid), {
-          "roles.committees": deleteField(),
+          "roles.sponsors": deleteField(),
         });
       } else if (attribute === "status") {
         await updateDoc(doc(db, "users", object.uid), {
-          "roles.committees": status,
+          "roles.sponsors": status,
         });
 
         SG.send({
@@ -133,7 +135,7 @@ export async function PUT(req) {
               : process.env.SENDGRID_REJECTION_TEMPLATE,
           dynamic_template_data: {
             name: object.name,
-            position: "COMMITTEE",
+            position: "SPONSOR",
           },
         });
       }
