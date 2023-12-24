@@ -8,6 +8,9 @@ import Alex from "../../../public/judges/Alexander Hickerson.jpg";
 import Chloe from "../../../public/judges/Chloe Georgiou.jpg";
 import Yogitha from "../../../public/judges/Yogitha Shastri.jpg";
 import Evi from "../../../public/judges/Evelyn Aguirre Vargas.jpg";
+import Paulian from "../../../public/judges/Paulian Le.jpg";
+import Rania from "../../../public/judges/Rania Saber.jpg";
+import Ashley from "../../../public/judges/Ashley Tsai.jpg";
 
 export const judges = [
   {
@@ -46,18 +49,33 @@ export const judges = [
     position: "Previous Biohack Director",
   },
   {
+    name: "Chloe Georgiou",
+    image: Chloe,
+    position: "Former IEEE Chair",
+  },
+  {
+    name: "Paulian Le",
+    image: Paulian,
+    position: "Previous Citrus Hack Ops Lead",
+  },
+  {
     name: "Andy Jarean",
     image: Andy,
     position: "Gamespawn Project Coordinator",
   },
   {
+    name: "Ashley Tsai",
+    image: Ashley,
+    position: "Design at UCR President",
+  },
+  {
+    name: "Rania Saber",
+    image: Rania,
+    position: "DesignVerse Director",
+  },
+  {
     name: "Alexander Hickerson",
     image: Alex,
     position: "IEEE Chair",
-  },
-  {
-    name: "Chloe Georgiou",
-    image: Chloe,
-    position: "Former IEEE Chair",
   },
 ];
