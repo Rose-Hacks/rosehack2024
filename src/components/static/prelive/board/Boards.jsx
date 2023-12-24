@@ -1,6 +1,6 @@
 import Title from "../Title";
 import { boardMembers } from "../../../../data/static/Boards.js";
-import Board from "./Board";
+import Profile from "../Profile";
 import Row from "react-bootstrap/Row";
 const Boards = () => {
   return (
@@ -8,7 +8,7 @@ const Boards = () => {
       <Title label="Team" />
       <Row className="items-center justify-center text-white w-full">
         {boardMembers[0].map((item, index) => (
-          <Board
+          <Profile
             key={index}
             image={item.image}
             name={item.name}
@@ -18,7 +18,7 @@ const Boards = () => {
       </Row>
       <Row className="items-center justify-center text-white w-full">
         {boardMembers[1].map((item, index) => (
-          <Board
+          <Profile
             key={index}
             image={item.image}
             name={item.name}
