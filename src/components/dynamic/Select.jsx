@@ -55,7 +55,7 @@ const Select = ({
           <button
             onClick={() => setShow(!show)}
             className={`${
-              user[field] ? "text-black" : "text-hackathon-gray-200"
+              user[field] ? "text-white" : "text-hackathon-gray-200"
             } bg-transparent flex items-center justify-between w-full border-b-[1px] border-white pb-1`}
             data-cy="select-toggle"
           >
