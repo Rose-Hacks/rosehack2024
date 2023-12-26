@@ -1,34 +1,19 @@
-import {
-  AiFillFacebook,
-  AiOutlineInstagram,
-  AiFillLinkedin,
-  AiOutlineTwitter,
-} from "react-icons/ai";
+import { AiOutlineInstagram, AiFillLinkedin } from "react-icons/ai";
 import { CiMail } from "react-icons/ci";
 export const CONTACTS = [
   {
-    text: "facebook",
-    icon: <AiFillFacebook />,
-    link: "https://www.facebook.com/",
-  },
-  {
     text: "instagram",
     icon: <AiOutlineInstagram />,
-    link: "https://www.facebook.com/",
+    link: "https://www.instagram.com/rosehackucr/",
   },
   {
     text: "linkedin",
     icon: <AiFillLinkedin />,
-    link: "https://www.facebook.com/",
+    link: "https://www.linkedin.com/company/rose-hack/mycompany/",
   },
   {
     text: "email",
     icon: <CiMail />,
-    link: "https://www.facebook.com/",
-  },
-  {
-    text: "twitter",
-    icon: <AiOutlineTwitter />,
-    link: "https://www.facebook.com/",
+    link: "mailto:rosehackucr@gmail.com",
   },
 ];
