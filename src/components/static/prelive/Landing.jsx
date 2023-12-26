@@ -12,7 +12,7 @@ const Landing = () => {
         href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
         target="_blank"
         rel="noopener noreferrer"
-        className="right-2 lg:right-10 top-0 z-1 w-12 md:w-28 cursor-pointer absolute"
+        className="right-3 lg:right-10 top-0 z-1 w-12 md:w-28 cursor-pointer absolute"
       >
         <Image
           src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
