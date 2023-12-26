@@ -1,9 +1,8 @@
 /* eslint-disable camelcase */
 /* eslint-disable new-cap */
-"use client";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { SessionProvider } from "next-auth/react";
+import Session from "@/components/dynamic/Session";
 import { Toaster } from "react-hot-toast";
 import { Orbitron, Montserrat, Advent_Pro, Poppins } from "next/font/google";
 
@@ -33,16 +32,12 @@ export default function RootLayout({ children, session }) {
       <body
         className={`${orbitron.variable} ${montserrat.variable} ${advent.variable} ${poppins.variable} bg-black flex flex-col lg:flex-row h-full pt-0`}
       >
-        <SessionProvider
-          session={session}
-          refetchInterval={5 * 60}
-          className="h-full"
-        >
+        <Session session={session} refetchInterval={5 * 60} className="h-full">
           <div className="flex w-full">
             <Toaster />
             {children}
           </div>
-        </SessionProvider>
+        </Session>
       </body>
     </html>
   );
