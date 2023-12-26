@@ -5,11 +5,11 @@ import Landing from "./Landing";
 import Footer from "./Footer";
 import GetInvolved from "./getInvolved/GetInvolved";
 import FAQ from "./FAQ";
-import Boards from "./board/Boards";
-import Committees from "./Committees";
+import Boards from "../prelive/board/Boards";
 import Judges from "./judges/Judges";
+import Committee from "../prelive/Committees.jsx";
 
-const Live = () => {
+const Prelive = () => {
   return (
     <div className="w-full flex justify-center items-center flex-col">
       <Landing />
@@ -17,12 +17,12 @@ const Live = () => {
       <Welcome />
       <GetInvolved />
       <Boards />
-      <Committees />
       <Judges />
+      <Committee />
       <FAQ />
       <Footer />
     </div>
   );
 };
 
-export default Live;
+export default Prelive;
