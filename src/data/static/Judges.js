@@ -44,11 +44,6 @@ export const judges = [
     position: "ACM Events Chair",
   },
   {
-    name: "Evelyn Aguirre Vargas",
-    image: Evi,
-    position: "Previous Biohack Director",
-  },
-  {
     name: "Chloe Georgiou",
     image: Chloe,
     position: "Former IEEE Chair",
@@ -77,5 +72,10 @@ export const judges = [
     name: "Alexander Hickerson",
     image: Alex,
     position: "IEEE Chair",
+  },
+  {
+    name: "Evelyn Aguirre Vargas",
+    image: Evi,
+    position: "Previous Biohack Director",
   },
 ];

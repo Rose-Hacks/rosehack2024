@@ -5,8 +5,9 @@ const Board = ({ position, name, image }) => {
   return (
     <Col
       xs={6}
-      md={3}
-      lg={2}
+      md={4}
+      lg={3}
+      xl={2}
       className="flex flex-col items-center justify-center text-white p-4 justify-self-center self-start"
     >
       <Image
