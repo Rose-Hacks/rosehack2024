@@ -1,17 +1,17 @@
-import Angie from "./board/Angie_Bermudez.webp";
-import Annabelle from "./board/Annabelle_Le.webp";
-import David from "./board/David_Ryan.webp";
-import Divyank from "./board/Divyank_Shah.webp";
-import Eliot from "./board/Eliot_Lee.webp";
-import Hriyai from "./board/Hriyai_Srinath.webp";
-import Laura from "./board/Laura_Canon.webp";
-import Menthy from "./board/Menthy_Wu.webp";
-import Rama from "./board/Rama_Chunduri.webp";
-import Sachin from "./board/Sachin_Chopra.webp";
-import Samarth from "./board/Samarth_Srinivasa.webp";
-import Sneha from "./board/Sneha_Panda.webp";
-import Surabhi from "./board/Surabhi_Tadvalkar.webp";
-import Yuchen from "./board/Yuchen_Zhu.webp";
+import Angie from "../../../public/board/Angie_Bermudez.webp";
+import Annabelle from "../../../public/board/Annabelle_Le.webp";
+import David from "../../../public/board/David_Ryan.webp";
+import Divyank from "../../../public/board/Divyank_Shah.webp";
+import Eliot from "../../../public/board/Eliot_Lee.webp";
+import Hriyai from "../../../public/board/Hriyai_Srinath.webp";
+import Laura from "../../../public/board/Laura_Canon.webp";
+import Menthy from "../../../public/board/Menthy_Wu.webp";
+import Rama from "../../../public/board/Rama_Chunduri.webp";
+import Sachin from "../../../public/board/Sachin_Chopra.webp";
+import Samarth from "../../../public/board/Samarth_Srinivasa.webp";
+import Sneha from "../../../public/board/Sneha_Panda.webp";
+import Surabhi from "../../../public/board/Surabhi_Tadvalkar.webp";
+import Yuchen from "../../../public/board/Yuchen_Zhu.webp";
 
 export const boardMembers = [
   [
