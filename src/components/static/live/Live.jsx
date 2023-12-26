@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import GetInvolved from "./getInvolved/GetInvolved";
 import FAQ from "./FAQ";
 import Boards from "./board/Boards";
+import Committees from "./Committees";
 
 const Live = () => {
   return (
@@ -15,6 +16,7 @@ const Live = () => {
       <Welcome />
       <GetInvolved />
       <Boards />
+      <Committees />
       <FAQ />
       <Footer />
     </div>
