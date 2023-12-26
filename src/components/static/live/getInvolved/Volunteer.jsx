@@ -1,6 +1,6 @@
-import Link from "src/components/static/Link.jsx";
+import Link from "@/components/static/Link.jsx";
 import Image from "next/image";
-import PinkRobot from "public/svg/pink-robot.svg";
+import PinkRobot from "../../../../../public/svg/pink-robot.svg";
 const Volunteer = () => {
   return (
     <div className="font-montserrat items-center flex-col-reverse text-hackathon-tags-white flex md:flex-row w-10/12">

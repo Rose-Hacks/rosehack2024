@@ -5,8 +5,9 @@ import Landing from "./Landing";
 import Footer from "./Footer";
 import GetInvolved from "./getInvolved/GetInvolved";
 import FAQ from "./FAQ";
-import Boards from "../prelive/board/Boards";
-const Prelive = () => {
+import Boards from "./board/Boards";
+
+const Live = () => {
   return (
     <div className="w-full flex justify-center items-center flex-col">
       <Landing />
@@ -20,4 +21,4 @@ const Prelive = () => {
   );
 };
 
-export default Prelive;
+export default Live;

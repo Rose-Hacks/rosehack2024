@@ -2,7 +2,7 @@ import Image from "next/image";
 import building from "../../../../public/svg/building.svg";
 import blackBuilding from "../../../../public/svg/blackbuilding.svg";
 import Content from "./Content.jsx";
-import LandingCircle from "../upcoming/LandingCircle";
+import LandingCircle from "./LandingCircle";
 
 const Landing = () => {
   return (
