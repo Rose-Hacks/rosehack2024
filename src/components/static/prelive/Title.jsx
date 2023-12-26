@@ -4,7 +4,7 @@ import triangle from "../../../../public/svg/triangle.svg";
 
 const Title = ({ label }) => {
   return (
-    <div className="flex w-full justify-center items-center">
+    <div className="flex w-full justify-center items-center my-5">
       <Image
         src={doubleTriangle}
         alt="trangle arrow"
