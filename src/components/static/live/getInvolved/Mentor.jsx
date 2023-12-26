@@ -1,5 +1,5 @@
-import Link from "src/components/static/Link.jsx";
-import BlueRobot from "public/svg/blue-robot.svg";
+import Link from "@/components/static/Link.jsx";
+import BlueRobot from "../../../../../public/svg/blue-robot.svg";
 import Image from "next/image";
 const Volunteer = () => {
   return (

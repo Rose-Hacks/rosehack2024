@@ -34,6 +34,11 @@ const Toolbar = ({
   const [toggle, setToggle] = useState(false);
 
   const onClick = (value) => {
+    if (!objects.some((obj) => obj.selected)) {
+      toast("❌ No items selected.");
+      return;
+    }
+
     const notPending = objects.some((obj) => obj.selected && obj.status !== 0);
 
     if (notPending) {
@@ -73,10 +78,9 @@ const Toolbar = ({
 
     setToggle(false);
     const items = objects.filter((object) => object.selected);
-    axios.put(`/api/${page}`, {
+    axios.put(`/api/dashboard/${page}`, {
       objects: items,
       status: value,
-      attribute: "status",
     });
     setObjects(
       objects.map((a) => {
@@ -87,6 +91,20 @@ const Toolbar = ({
         return a;
       })
     );
+  };
+
+  const handleShortcuts = (e) => {
+    if (e.repeat) return;
+    switch (e.key) {
+      case "r": {
+        handleReload();
+        break;
+      }
+      case "Backspace": {
+        handleDelete();
+        break;
+      }
+    }
   };
 
   const handleSubmit = (e) => {
@@ -121,19 +139,29 @@ const Toolbar = ({
   };
 
   const handleDelete = () => {
+    if (!objects.some((obj) => obj.selected)) {
+      toast("❌ No items selected for deletion.");
+      return;
+    }
+
     setToggle(false);
     const remove = objects.filter((object) => object.selected);
     const keep = objects.filter((object) => !object.selected);
     setObjects(keep);
+    console.log(
+      `/api/dashboard/${page}?remove=${remove.map((a) => a.uid).toString()}`
+    );
     axios
-      .put(`/api/${page}`, { objects: remove, attribute: "role" })
+      .delete(
+        `/api/dashboard/${page}?remove=${remove.map((a) => a.uid).toString()}`
+      )
       .then(() => {
         toast("✅ Successfully Deleted");
       });
   };
 
   const handleReload = () => {
-    axios.get(`/api/${page}`).then((response) => {
+    axios.get(`/api/dashboard/${page}`).then((response) => {
       setObjects(response.data.items);
       toast("✅ Fetched Data Successfully");
     });
@@ -141,14 +169,16 @@ const Toolbar = ({
 
   useEffect(() => {
     handleReload();
+
+    document.addEventListener("keydown", handleShortcuts);
+
+    return () => document.removeEventListener("keydown", handleShortcuts);
   }, []);
 
   return (
     <div className="w-full flex items-center" data-cy="toolbar">
       <div className="w-11/12 flex items-center">
-        <div className="mr-4" data-cy="select-all">
-          <Checkbox onClick={selectAll} toggle={toggle} />
-        </div>
+        <Checkbox onClick={selectAll} toggle={toggle} />
         <div className="flex flex-row gap-2">
           {tags.map((tag, index) => (
             <Tag
