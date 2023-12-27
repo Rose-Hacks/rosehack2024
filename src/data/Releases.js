@@ -45,7 +45,7 @@ const DEV = {
 const PRODUCTION = {
   STATIC: {
     LIVE: {
-      START: new Date("10/01/2024"),
+      START: new Date("10/01/2023"),
       END: new Date("10/10/2024"),
     },
     POSTLIVE: {
