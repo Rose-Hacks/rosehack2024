@@ -8,7 +8,7 @@ import FAQ from "./FAQ";
 import Boards from "./board/Boards";
 import Committees from "./Committees";
 import Judges from "./judges/Judges";
-
+import Sponsors from "./Sponsors";
 const Live = () => {
   return (
     <div className="w-full flex justify-center items-center flex-col">
@@ -18,6 +18,7 @@ const Live = () => {
       <GetInvolved />
       <Boards />
       <Committees />
+      <Sponsors />
       <Judges />
       <FAQ />
       <Footer />
