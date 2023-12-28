@@ -8,7 +8,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { STATUSES } from "@/data/dynamic/admin/Judges.js";
 
-const judge = () => {
+const Judge = () => {
   const { data: session } = useSession();
   const [judge, setJudge] = useState({
     ...ATTRIBUTES,
@@ -20,7 +20,7 @@ const judge = () => {
 
   const handleSubmit = (setLoading, setState) => {
     axios
-      .post("/api/judges", judge)
+      .post("/api/dashboard/judges", judge)
       .then(() => toast(`✅ Submitted successfully!`))
       .catch(() => toast(`❌ Internal Server Error`))
       .finally(() => {
@@ -41,4 +41,4 @@ const judge = () => {
   );
 };
 
-export default judge;
+export default Judge;

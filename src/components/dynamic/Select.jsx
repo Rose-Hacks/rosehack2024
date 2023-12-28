@@ -55,7 +55,7 @@ const Select = ({
           <button
             onClick={() => setShow(!show)}
             className={`${
-              user[field] ? "text-black" : "text-hackathon-gray-200"
+              user[field] ? "text-white" : "text-hackathon-gray-200"
             } bg-transparent flex items-center justify-between w-full border-b-[1px] border-white pb-1`}
             data-cy="select-toggle"
           >
@@ -78,7 +78,7 @@ const Select = ({
         )}
         {editable && show && (
           <div
-            className="w-full absolute z-10 !bg-gray-600 !border-none !rounded-none !p-0 overflow-y-auto max-h-[35vh]"
+            className="w-full absolute z-10 !bg-gray-600 !border-none !rounded-none overflow-y-auto max-h-[35vh] pl-2"
             data-cy="select-menu"
           >
             {searchable && (

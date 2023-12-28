@@ -46,34 +46,21 @@ export const HEADERS = [
 
 export const DROPDOWN = ({ object }) => {
   return (
-    <div className="flex justify-center">
-      <div className="grid grid-cols-3 w-11/12">
-        {AVAILABILITY.map((text, index) => (
-          <Checkbox
-            toggle={object.availability.includes(text)}
-            text={text}
-            key={index}
-          />
-        ))}
+    <>
+      <div className="flex justify-center">
+        <div className="grid grid-rows-4 grid-flow-col w-11/12">
+          {AVAILABILITY.map((text, index) => (
+            <Checkbox
+              toggle={object.availability.includes(text)}
+              text={text}
+              key={index}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+      <p className="ml-5 mt-3">{object.response}</p>
+    </>
   );
-};
-
-export const AUTH = {
-  POST: {},
-  GET: {
-    admins: [1],
-    committees: [1],
-  },
-  PUT: {
-    admins: [1],
-    committees: [1],
-  },
-  DELETE: {
-    admins: [1],
-    committees: [1],
-  },
 };
 
 export const STATUSES = {

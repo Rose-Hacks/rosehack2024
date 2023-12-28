@@ -9,6 +9,7 @@ import Upload from "@/components/dynamic/form/Upload";
 import toast from "react-hot-toast";
 import Link from "next/link";
 import { FaLink } from "react-icons/fa";
+import { CONFIG } from "@/data/Config";
 
 const Questions = ({
   fields,
@@ -18,6 +19,7 @@ const Questions = ({
   loading,
   setLoading,
   setState,
+  packet = false,
 }) => {
   const handleSubmit = () => {
     setLoading(true);
@@ -157,11 +159,22 @@ const Questions = ({
       <Link
         href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
         target="_blank"
-        className="no-underline flex items-center"
+        className="no-underline flex items-center text-hackathon-green-300"
       >
         MLH Code of Conduct
         <FaLink className="mx-2" />
       </Link>
+      {packet && (
+        <Link
+          href={CONFIG.packet}
+          target="_blank"
+          rel="noreferrer noopener"
+          className="no-underline flex items-center"
+        >
+          Sponsorship Packet
+          <FaLink className="mx-2" />
+        </Link>
+      )}
       <div className="flex justify-center">
         <Button
           text="Submit"

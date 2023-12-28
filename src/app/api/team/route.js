@@ -1,14 +1,8 @@
 import { NextResponse } from "next/server";
-import { db } from "../../../../firebase";
+import { db } from "../../../utils/firebase";
 import { doc, getDoc, updateDoc, addDoc, collection } from "firebase/firestore";
 import { authenticate } from "@/utils/auth";
 import { AUTH } from "@/data/dynamic/user/Team";
-import {
-  uniqueNamesGenerator,
-  adjectives,
-  colors,
-  animals,
-} from "unique-names-generator";
 
 export async function POST() {
   const res = NextResponse;
@@ -22,19 +16,13 @@ export async function POST() {
   }
 
   try {
-    const randomName = uniqueNamesGenerator({
-      dictionaries: [adjectives, colors, animals],
-      separator: " ",
-    });
-
     const team = {
-      name: randomName,
       links: {
         github: "",
         devpost: "",
         figma: "",
       },
-      members: [{ email: user.email, name: user.name, uid: user.id }],
+      members: [{ discord: user.discord, name: user.name, uid: user.id }],
       status: 0,
     };
     const docRef = await addDoc(collection(db, "teams"), team);
@@ -67,11 +55,10 @@ export async function PUT(req) {
     );
   }
 
-  const { name, github, figma, devpost, members } = await req.json();
+  const { github, figma, devpost, members } = await req.json();
 
   try {
     await updateDoc(doc(db, "teams", user.team), {
-      name: name,
       links: {
         github: github,
         figma: figma,
@@ -105,12 +92,11 @@ export async function GET(req) {
     const snapshot = await getDoc(doc(db, "teams", team));
     if (!snapshot.exists())
       return res.json({ message: "Invalid Team ID" }, { status: 500 });
-    const { name, links, members } = snapshot.data();
+    const { links, members } = snapshot.data();
     return res.json(
       {
         message: "OK",
         items: {
-          name: name,
           github: links.github,
           devpost: links.devpost,
           figma: links.figma,

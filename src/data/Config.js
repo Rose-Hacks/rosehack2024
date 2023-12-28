@@ -3,6 +3,7 @@ export const CONFIG = {
   email: "rosehackucr@gmail.com",
   year: "2024",
   date: new Date("January 21, 2024 12:00:00"),
+  packet: "",
 };
 
 export const MANIFEST = {
@@ -13,5 +14,5 @@ export const MANIFEST = {
 };
 
 export const SITEMAP = {
-  domain: "https://www.placeholder.com",
+  domain: "https://www.rosehack.com",
 };
