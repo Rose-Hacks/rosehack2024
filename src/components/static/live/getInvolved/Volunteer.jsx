@@ -5,7 +5,7 @@ import bg from "../../../../../public/svg/volunteer-bg.svg";
 
 const Volunteer = () => {
   return (
-    <div className="font-montserrat flex text-white flex-col md:flex-row w-9/12 md:w-8/12 justify-between relative">
+    <div className="font-montserrat flex text-white flex-col md:flex-row w-9/12 md:w-8/12 2xl:w-1/2 justify-between relative">
       <Image className="absolute left-0 bottom-0 w-1/3 md:w-1/6" src={bg} />
       <div className="w-full md:w-3/4 flex flex-col items-center md:items-end">
         <div className="text-2xl md:text-3xl w-fit pb-2">

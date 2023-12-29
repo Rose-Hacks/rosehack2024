@@ -4,7 +4,7 @@ import bg from "../../../../../public/svg/mentor-bg.svg";
 import Image from "next/image";
 const Volunteer = () => {
   return (
-    <div className="font-montserrat flex text-white flex-col md:flex-row w-9/12 md:w-7/12 justify-between relative">
+    <div className="font-montserrat flex text-white flex-col md:flex-row w-9/12 md:w-7/12 2xl:w-1/2 justify-between relative">
       <Image
         className="absolute right-0 top-0 -translate-y-1/2 w-1/3 md:w-1/6"
         src={bg}
