@@ -1,80 +1,80 @@
-import Roy from "../../../public/judges/Roy Feng.jpg";
-import Aditi from "../../../public/judges/Aditi Behera.jpg";
-import Yosuke from "../../../public/judges/Yosuke Inagaki.jpg";
-import Rohit from "../../../public/judges/Rohit Manimaran.jpg";
-import Falak from "../../../public/judges/Falak Tulsi.jpg";
-import Andy from "../../../public/judges/Andy Jarean.jpg";
-import Alex from "../../../public/judges/Alexander Hickerson.jpg";
-import Chloe from "../../../public/judges/Chloe Georgiou.jpg";
-import Yogitha from "../../../public/judges/Yogitha Shastri.jpg";
-import Evi from "../../../public/judges/Evelyn Aguirre Vargas.jpg";
-import Paulian from "../../../public/judges/Paulian Le.jpg";
-import Rania from "../../../public/judges/Rania Saber.jpg";
-import Ashley from "../../../public/judges/Ashley Tsai.jpg";
+import webp from "../../../public/judges/webp Feng.webp";
+import webp from "../../../public/judges/webp Behera.webp";
+import webp from "../../../public/judges/webp Inagaki.webp";
+import webp from "../../../public/judges/webp Manimaran.webp";
+import webp from "../../../public/judges/webp Tulsi.webp";
+import webp from "../../../public/judges/webp Jarean.webp";
+import Alex from "../../../public/judges/webp Hickerson.webp";
+import webp from "../../../public/judges/webp Georgiou.webp";
+import webp from "../../../public/judges/webp Shastri.webp";
+import Evi from "../../../public/judges/webp webp Vargas.webp";
+import webp from "../../../public/judges/webp Le.webp";
+import webp from "../../../public/judges/webp Saber.webp";
+import webp from "../../../public/judges/webp Tsai.webp";
 
 export const judges = [
   {
-    name: "Roy Feng",
-    image: Roy,
+    name: "webp Feng",
+    image: webp,
     position: "Software Engineer @ Experian",
   },
   {
-    name: "Yosuke Inagaki",
-    image: Yosuke,
+    name: "webp Inagaki",
+    image: webp,
     position: "R&D Engineer at Applied Medical",
   },
   {
-    name: "Rohit Manimaran",
-    image: Rohit,
+    name: "webp Manimaran",
+    image: webp,
     position: "Azure Solutions Architect @ MolinaHealthcare",
   },
   {
-    name: "Yogitha Shastri",
-    image: Yogitha,
+    name: "webp Shastri",
+    image: webp,
     position: "BearHack Co-Director",
   },
   {
-    name: "Aditi Behera",
-    image: Aditi,
+    name: "webp Behera",
+    image: webp,
     position: "Former IEEE Robotics Coordinator",
   },
   {
-    name: "Falak Tulsi",
-    image: Falak,
+    name: "webp Tulsi",
+    image: webp,
     position: "ACM Events Chair",
   },
   {
-    name: "Chloe Georgiou",
-    image: Chloe,
+    name: "webp Georgiou",
+    image: webp,
     position: "Former IEEE Chair",
   },
   {
-    name: "Paulian Le",
-    image: Paulian,
+    name: "webp Le",
+    image: webp,
     position: "Previous Citrus Hack Ops Lead",
   },
   {
-    name: "Andy Jarean",
-    image: Andy,
+    name: "webp Jarean",
+    image: webp,
     position: "Gamespawn Project Coordinator",
   },
   {
-    name: "Ashley Tsai",
-    image: Ashley,
+    name: "webp Tsai",
+    image: webp,
     position: "Design at UCR President",
   },
   {
-    name: "Rania Saber",
-    image: Rania,
+    name: "webp Saber",
+    image: webp,
     position: "DesignVerse Director",
   },
   {
-    name: "Alexander Hickerson",
+    name: "webp Hickerson",
     image: Alex,
     position: "IEEE Chair",
   },
   {
-    name: "Evelyn Aguirre Vargas",
+    name: "webp webp Vargas",
     image: Evi,
     position: "Previous Biohack Director",
   },
