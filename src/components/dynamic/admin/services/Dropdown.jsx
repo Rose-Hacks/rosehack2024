@@ -66,7 +66,7 @@ const DropDown = ({ options, setOptions, option, setOption, empty }) => {
                 .map((option, index) => (
                   <div
                     data-cy={`dropdown-option-${index}`}
-                    className=" hover:!bg-hackathon-green-300 hover:!text-white bg-transparent overflow-hidden px-3 py-1 last:rounded-b-lg"
+                    className=" hover:!bg-rosehack-teal hover:!text-black bg-transparent overflow-hidden px-3 py-1 last:rounded-b-lg"
                     key={index}
                     onClick={() => {
                       setOption(option);

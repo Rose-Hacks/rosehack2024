@@ -12,7 +12,7 @@ const Dashboard = () => {
   const [edit, setEdit] = useState(false);
 
   return (
-    <div className="h-full font-poppins flex flex-col py-4 gap-3">
+    <div className="h-full font-montserrat flex flex-col py-4 gap-3">
       <Title title="Dashboard" />
       <Header email={user.email} name={user.name} />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">

@@ -109,7 +109,7 @@ const User = ({ user, setUser, edit, setEdit }) => {
                       : [...user.diet, option],
                   })
                 }
-                color="bg-hackathon-green-300"
+                color="bg-rosehack-teal"
               />
             ))
           ) : user.diet.length > 0 ? (
