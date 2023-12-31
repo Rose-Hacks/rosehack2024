@@ -28,7 +28,7 @@ module.exports = {
       },
       backgroundImage: {
         "blur-h": "url('/svg/background-h.svg')",
-        about: "url('/svg/about/borderbg.png')",
+        about: "url('/svg/about/borderbg.webp')",
       },
       colors: {
         hackathon: {

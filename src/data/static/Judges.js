@@ -1,16 +1,16 @@
-import Roy from "../../../public/judges/Roy Feng.jpg";
-import Aditi from "../../../public/judges/Aditi Behera.jpg";
-import Yosuke from "../../../public/judges/Yosuke Inagaki.jpg";
-import Rohit from "../../../public/judges/Rohit Manimaran.jpg";
-import Falak from "../../../public/judges/Falak Tulsi.jpg";
-import Andy from "../../../public/judges/Andy Jarean.jpg";
-import Alex from "../../../public/judges/Alexander Hickerson.jpg";
-import Chloe from "../../../public/judges/Chloe Georgiou.jpg";
-import Yogitha from "../../../public/judges/Yogitha Shastri.jpg";
-import Evi from "../../../public/judges/Evelyn Aguirre Vargas.jpg";
-import Paulian from "../../../public/judges/Paulian Le.jpg";
-import Rania from "../../../public/judges/Rania Saber.jpg";
-import Ashley from "../../../public/judges/Ashley Tsai.jpg";
+import Roy from "../../../public/judges/RoyFeng.jpg";
+import Aditi from "../../../public/judges/AditiBehera.jpg";
+import Yosuke from "../../../public/judges/YosukeInagaki.jpg";
+import Rohit from "../../../public/judges/RohitManimaran.jpg";
+import Falak from "../../../public/judges/FalakTulsi.jpg";
+import Andy from "../../../public/judges/AndyJarean.jpg";
+import Alex from "../../../public/judges/AlexanderHickerson.jpg";
+import Chloe from "../../../public/judges/ChloeGeorgiou.jpg";
+import Yogitha from "../../../public/judges/YogithaShastri.jpg";
+import Evi from "../../../public/judges/EvelynAguirreVargas.jpg";
+import Paulian from "../../../public/judges/PaulianLe.jpg";
+import Rania from "../../../public/judges/RaniaSaber.jpg";
+import Ashley from "../../../public/judges/AshleyTsai.jpg";
 
 export const judges = [
   {
