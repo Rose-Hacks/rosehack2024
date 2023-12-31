@@ -4,7 +4,7 @@ import Title from "../Title";
 
 const GetInvolved = () => {
   return (
-    <div className="w-full flex flex-col items-center gap-4">
+    <div className="w-full flex flex-col items-center gap-10">
       <Title label="Get Involved" />
       <Mentor />
       <Volunteer />
