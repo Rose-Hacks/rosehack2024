@@ -7,7 +7,7 @@ import Andy from "../../../public/judges/AndyJarean.jpg";
 import Alex from "../../../public/judges/AlexanderHickerson.jpg";
 import Chloe from "../../../public/judges/ChloeGeorgiou.jpg";
 import Yogitha from "../../../public/judges/YogithaShastri.jpg";
-import Evi from "../../../public/judges/Evelyn AguirreVargas.jpg";
+import Evi from "../../../public/judges/EvelynAguirreVargas.jpg";
 import Paulian from "../../../public/judges/PaulianLe.jpg";
 import Rania from "../../../public/judges/RaniaSaber.jpg";
 import Ashley from "../../../public/judges/AshleyTsai.jpg";
