@@ -10,7 +10,7 @@ export const COMMITTEES = {
     "Sean Quiambao",
     "Byron Bhuiyan",
     "Theo Fernandez",
-    "webp Thanekar",
+    "Aditi Thanekar",
     "Isabelle Celo",
   ],
 };
