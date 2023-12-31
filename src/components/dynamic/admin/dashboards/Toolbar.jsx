@@ -177,7 +177,7 @@ const Toolbar = ({
 
   return (
     <div className="w-full flex items-center" data-cy="toolbar">
-      <div className="w-11/12 flex items-center">
+      <div className="w-11/12 flex items-center gap-2">
         <Checkbox onClick={selectAll} toggle={toggle} />
         <div className="flex flex-row gap-2">
           {tags.map((tag, index) => (
@@ -191,7 +191,7 @@ const Toolbar = ({
             />
           ))}
         </div>
-        <form className="flex ml-2 w-full items-center" onSubmit={handleSubmit}>
+        <form className="flex w-full items-center" onSubmit={handleSubmit}>
           <Input
             classes="w-full"
             object={input}
