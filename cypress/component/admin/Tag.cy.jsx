@@ -11,9 +11,9 @@ describe("Tag", () => {
     cy.get('[data-cy="Accept-tag"]').contains("Accept");
     cy.get('[data-cy="Accept-tag"]').should(
       "have.class",
-      "bg-hackathon-tags-green-bg",
-      "text-hackathon-tags-green-text",
-      "hover:shadow-[inset_0px_0px_0px_2px_#00AFB9]"
+      "bg-rosehack-teal/10",
+      "text-rosehack-teal",
+      "hover:bg-rosehack-teal hover:text-black duration-200"
     );
     cy.get('[data-cy="Accept-tag"]')
       .click()
@@ -29,9 +29,9 @@ describe("Tag", () => {
     cy.get('[data-cy="Pending-tag"]').contains("Pending");
     cy.get('[data-cy="Pending-tag"]').should(
       "have.class",
-      "bg-hackathon-tags-yellow-bg",
+      "bg-hackathon-tags-yellow-text/10",
       "text-hackathon-tags-yellow-text",
-      "hover:shadow-[inset_0px_0px_0px_2px_#FFB81C]"
+      "hover:bg-hackathon-tags-yellow-text hover:text-black duration-200"
     );
     cy.get('[data-cy="Pending-tag"]')
       .click()
@@ -47,9 +47,9 @@ describe("Tag", () => {
     cy.get('[data-cy="Reject-tag"]').contains("Reject");
     cy.get('[data-cy="Reject-tag"]').should(
       "have.class",
-      "bg-hackathon-tags-red-bg",
-      "text-hackathon-tags-red-text",
-      "hover:shadow-[inset_0px_0px_0px_2px_#F07167]"
+      "bg-rosehack-pink-200/10",
+      "text-rosehack-pink-200",
+      "hover:bg-rosehack-pink-200 hover:text-black duration-200"
     );
     cy.get('[data-cy="Reject-tag"]')
       .click()
@@ -72,11 +72,11 @@ describe("Tag", () => {
     cy.get('[data-cy="Accept-tag"]').contains("Accept");
     cy.get('[data-cy="Accept-tag"]').should(
       "have.class",
-      "bg-hackathon-tags-green-bg",
-      "text-hackathon-tags-green-text",
+      "bg-rosehack-teal/10",
+      "text-rosehack-teal",
       "border-2",
       "border-black",
-      "hover:shadow-[inset_0px_0px_0px_2px_#00AFB9]"
+      "hover:bg-rosehack-teal hover:text-black duration-200"
     );
     cy.get('[data-cy="Accept-tag"]')
       .click()
@@ -91,12 +91,12 @@ describe("Tag", () => {
     cy.get('[data-cy="Accept-tag"]').contains("Accept");
     cy.get('[data-cy="Accept-tag"]').should(
       "have.class",
-      "bg-hackathon-tags-green-bg",
-      "text-hackathon-tags-green-text"
+      "bg-rosehack-teal/10",
+      "text-rosehack-teal"
     );
     cy.get('[data-cy="Accept-tag"]').should(
       "not.have.class",
-      "hover:shadow-[inset_0px_0px_0px_2px_#00AFB9]"
+      "hover:bg-rosehack-teal hover:text-black duration-200"
     );
   });
 });

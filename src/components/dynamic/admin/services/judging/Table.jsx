@@ -30,7 +30,7 @@ const Table = ({ data }) => {
                     ))}
                 </div>
                 {table && (
-                  <p className="mb-0 text-hackathon-green-300 font-semibold whitespace-nowrap">
+                  <p className="mb-0 text-rosehack-teal font-semibold whitespace-nowrap">
                     table {table}
                   </p>
                 )}

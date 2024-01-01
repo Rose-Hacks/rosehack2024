@@ -1,48 +1,54 @@
 const mappings = {
   red: {
-    background: "bg-hackathon-tags-red-bg",
-    text: "text-hackathon-tags-red-text",
-    hover: "hover:shadow-[inset_0px_0px_0px_2px_#F07167]",
+    background: "bg-rosehack-pink-200/10 border-[1px] border-rosehack-pink-200",
+    text: "text-rosehack-pink-200",
+    hover: "hover:bg-rosehack-pink-200 hover:text-black duration-200",
   },
   yellow: {
-    background: "bg-hackathon-tags-yellow-bg",
+    background:
+      "bg-hackathon-tags-yellow-text/10 border-[1px] border-hackathon-tags-yellow-text",
     text: "text-hackathon-tags-yellow-text",
-    hover: "hover:shadow-[inset_0px_0px_0px_2px_#FFB81C]",
+    hover: "hover:bg-hackathon-tags-yellow-text hover:text-black duration-200",
   },
   green: {
-    background: "bg-hackathon-tags-green-bg",
-    text: "text-hackathon-tags-green-text",
-    hover: "hover:shadow-[inset_0px_0px_0px_2px_#00AFB9]",
+    background: "bg-rosehack-teal/10 border-[1px] border-rosehack-teal",
+    text: "text-rosehack-teal",
+    hover: "hover:bg-rosehack-teal hover:text-black duration-200",
   },
   gray: {
-    background: "bg-hackathon-tags-gray-bg",
-    text: "text-hackathon-tags-gray-text",
-    hover: "hover:shadow-[inset_0px_0px_0px_2px_#969696]",
+    background: "bg-white/10 border-[1px] border-white",
+    text: "text-white",
+    hover: "hover:bg-white hover:text-black duration-200",
   },
   purple: {
-    background: "bg-hackathon-tags-purple-bg",
-    text: "text-hackathon-tags-purple-text",
-    hover: "hover:shadow-[inset_0px_0px_0px_2px_#825ED0]",
+    background:
+      "bg-rosehack-purple-100/10 border-[1px] border-rosehack-purple-100",
+    text: "text-rosehack-purple-100",
+    hover: "hover:bg-rosehack-purple-100 hover:text-black duration-200",
   },
   grayblue: {
-    background: "bg-hackathon-tags-grayblue-bg",
-    text: "text-hackathon-tags-grayblue-text",
-    hover: "hover:shadow-[inset_0px_0px_0px_2px_#29465B]",
+    background:
+      "bg-hackathon-tags-grayblue-bg/10 border-[1px] border-hackathon-tags-grayblue-bg",
+    text: "text-hackathon-tags-grayblue-bg",
+    hover: "hover:bg-hackathon-tags-grayblue-bg hover:text-black duration-200",
   },
   teal: {
-    background: "bg-hackathon-tags-teal-bg",
+    background:
+      "bg-hackathon-tags-teal-text/10 border-[1px] border-hackathon-tags-teal-text",
     text: "text-hackathon-tags-teal-text",
-    hover: "hover:shadow-[inset_0px_0px_0px_2px_#045D5D]",
+    hover: "hover:bg-hackathon-tags-teal-text hover:text-black duration-200",
   },
   lightgreen: {
-    background: "bg-hackathon-tags-lightgreen-bg",
+    background:
+      "bg-hackathon-tags-lightgreen-text/10 border-[1px] border-hackathon-tags-lightgreen-text",
     text: "text-hackathon-tags-lightgreen-text",
-    hover: "hover:shadow-[inset_0px_0px_0px_2px_#038756]",
+    hover:
+      "hover:bg-hackathon-tags-lightgreen-text hover:text-black duration-200",
   },
   pink: {
-    background: "bg-hackathon-tags-pink-bg",
-    text: "text-hackathon-tags-pink-text",
-    hover: "hover:shadow-[inset_0px_0px_0px_2px_#e384b0]",
+    background: "bg-rosehack-pink-100/10 border-[1px] border-rosehack-pink-100",
+    text: "text-rosehack-pink-100",
+    hover: "hover:bg-rosehack-pink-100 hover:text-black duration-200",
   },
 };
 

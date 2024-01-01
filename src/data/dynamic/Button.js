@@ -15,8 +15,8 @@ export const COLORS = {
     border: "border-0",
   },
   red: {
-    bg: "bg-hackathon-tags-red-text",
-    text: "text-white",
+    bg: "bg-rosehack-pink-200",
+    text: "text-black",
     border: "border-0",
   },
 };
