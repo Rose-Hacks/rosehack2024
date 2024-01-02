@@ -78,14 +78,14 @@ const Select = ({
         )}
         {editable && show && (
           <div
-            className="w-full absolute z-10 !bg-gray-600 !border-none !rounded-none overflow-y-auto max-h-[35vh] pl-2"
+            className="w-full absolute z-10 !bg-gray-600 !border-none !rounded-none overflow-y-auto max-h-[35vh]"
             data-cy="select-menu"
           >
             {searchable && (
               <input
                 value={input}
                 autoFocus
-                className="ml-3 my-1 mt-2 w-11/12 ring-0 outline-none px-2 py-1 bg-gray-500 text-white"
+                className="ml-3 my-1 mt-2 w-11/12 ring-0 outline-none px-2 py-1 bg-gray-600 text-white"
                 placeholder="search"
                 onChange={handleInput}
               />
@@ -94,7 +94,7 @@ const Select = ({
               .filter((opt) => !opt.hidden)
               .map((option, index) => (
                 <div
-                  className="hover:!bg-rosehack-blue/30 overflow-hidden"
+                  className="hover:!bg-rosehack-blue/50 overflow-hidden pl-2"
                   key={index}
                   onClick={() => {
                     setUser({ ...user, [field]: option.name });

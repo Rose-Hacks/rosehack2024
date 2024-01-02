@@ -78,7 +78,7 @@ const Messenger = () => {
   };
 
   return (
-    <div className="w-full font-poppins h-full flex flex-col justify-between">
+    <div className="w-full font-montserrat h-full flex flex-col justify-between">
       <div className="flex flex-col pb-3 pt-4 h-full items-stretch justify-between">
         <Title title="Messenger" />
         <div className="flex items-center my-1">

@@ -59,7 +59,7 @@ const Table = ({
   ) : (
     <div className="w-full rounded-xl overflow-hidden flex flex-col">
       {modal && <Modal data={modal} setModal={setModal} />}
-      <div className="w-full py-2 text-sm flex text-white bg-gradient-to-r from-rosehack-pink-200/50 to-rosehack-blue/50 font-montserrat justify-evenly px-0 m-0">
+      <div className="w-full py-2 text-sm flex text-white bg-gradient-to-r from-rosehack-blue/40 to-rosehack-purple-100/30 font-montserrat justify-evenly px-0 m-0">
         <div className="w-1/12" />
         {headers.map((header, index) => (
           <div
@@ -223,7 +223,7 @@ const Table = ({
         )}
 
         {objects.filter((object) => !object.hidden).length === 0 && (
-          <p className="text-hackathon-gray-300 font-poppins pt-3 text-center rounded-b-2xl w-full">
+          <p className="text-hackathon-gray-300 font-montserrat pt-3 text-center rounded-b-2xl w-full">
             {empty}
           </p>
         )}

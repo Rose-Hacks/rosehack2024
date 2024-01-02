@@ -23,7 +23,7 @@ const Dashboard = ({
   const [objects, setObjects] = useState(null);
 
   return (
-    <div className="h-full font-poppins flex flex-col py-4 gap-3">
+    <div className="h-full font-montserrat flex flex-col py-4 gap-3">
       <div className="flex">
         <Title title={title} />
         <Filters

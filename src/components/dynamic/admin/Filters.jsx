@@ -37,13 +37,13 @@ const Filters = ({ filters, setFilters, setObjects, objects, input }) => {
           data-cy={filter + "-filter"}
         >
           <div
-            className={`rounded hover:opacity-70 duration-300 ${
+            className={`rounded hover:opacity-70 duration-300 bg-transparent border-[1px] ${
               state
-                ? "text-white bg-hackathon-blue-100"
-                : "text-hackathon-blue-100 bg-white"
+                ? "text-white border-white"
+                : "text-white/50 border-white/50"
             } cursor-pointer flex items-center justify-between w-full`}
           >
-            <p className="my-0 mx-1 px-1 py-[2px] whitespace-nowrap">
+            <p className="my-0 mx-1 px-1 py-[1px] whitespace-nowrap">
               {filter}
             </p>
             <TiPlus

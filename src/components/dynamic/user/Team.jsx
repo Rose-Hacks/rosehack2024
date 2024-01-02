@@ -105,7 +105,7 @@ const Team = ({ user, setUser }) => {
   }, [user.team]);
 
   return (
-    <div className="bg-white rounded-lg p-4 gap-3 m-2 overflow-scroll max-h-[70vh] flex flex-col justify-start">
+    <div className="bg-white/20 rounded-lg p-4 gap-3 m-2 overflow-scroll max-h-[70vh] flex flex-col justify-start text-white">
       {user.team && !team && <Loading />}
       {team && (
         <>
@@ -146,7 +146,7 @@ const Team = ({ user, setUser }) => {
             {team.members.map((member, index) => (
               <p className="pl-3 m-0 flex items-center" key={index}>
                 {member.name}
-                <span className="ml-3 text-sm text-hackathon-green-300">
+                <span className="ml-3 text-sm text-rosehack-teal">
                   {member.email}
                 </span>
               </p>
@@ -154,18 +154,18 @@ const Team = ({ user, setUser }) => {
           </div>
           <div className="mt-3 pt-2 flex-grow">
             <p className="mb-1 font-semibold">Team ID</p>
-            <div className="text-hackathon-green-300">
+            <div className="text-rosehack-teal">
               share this team ID or join link to your teammates
             </div>
             <p className="pl-3 mb-0 flex items-center">
               {user.team}{" "}
               <BiSolidCopy
                 onClick={handleCopy}
-                className="text-lg text-gray-400 ml-2 hover:cursor-pointer hover:text-hackathon-blue-100"
+                className="text-lg text-gray-400 ml-2 hover:cursor-pointer hover:text-rosehack-pink-200"
               />
               <BiLink
                 onClick={handleCopyLink}
-                className="text-lg text-gray-400 ml-2 hover:cursor-pointer hover:text-hackathon-blue-100"
+                className="text-lg text-gray-400 ml-2 hover:cursor-pointer hover:text-rosehack-pink-200"
               />
             </p>
           </div>
@@ -181,8 +181,8 @@ const Team = ({ user, setUser }) => {
         </>
       )}
       {!user.team && (
-        <div className="flex flex-col justify-between h-full">
-          <div className="text-hackathon-green-300">
+        <div className="flex flex-col justify-between h-full text-white">
+          <div className="text-rosehack-teal">
             ask your teammates to share team ID or join link with you to join
             the team
           </div>

@@ -58,7 +58,7 @@ export default function page({ params }) {
         <Error code={error.code} error={error.error} message={error.message} />
       )}
       {team && (
-        <div className="flex flex-col w-screen h-screen items-center justify-center font-poppins">
+        <div className="flex flex-col w-screen h-screen items-center justify-center font-montserrat">
           <p className="text-3xl">
             Are you sure you want to join{" "}
             <span className="font-bold">{team.name}</span>
@@ -67,7 +67,7 @@ export default function page({ params }) {
           {team.members.map((member, index) => (
             <p className="pl-3 m-0 flex items-center" key={index}>
               {member.name}
-              <span className="ml-3 text-sm text-hackathon-green-300">
+              <span className="ml-3 text-sm text-rosehack-teal">
                 {member.email}
               </span>
             </p>

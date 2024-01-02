@@ -34,7 +34,9 @@ const Header = ({ horizontal = true }) => {
         className="mr-4 rounded-full overflow-hidden"
       />
       <div className="align-left">
-        <p className="text-2xl font-thin mb-0">{session.user.name}</p>
+        <div className="font-montserrat text-2xl font-bold bg-gradient-to-r text-transparent from-rosehack-blue to-rosehack-purple-100 bg-clip-text">
+          {session.user.name}
+        </div>
         <p className="text-base mb-1">{session.user.email}</p>
         <Tag color={COLORS[color]} text={text} />
       </div>
