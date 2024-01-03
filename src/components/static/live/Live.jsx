@@ -9,6 +9,7 @@ import Boards from "./board/Boards";
 import Committees from "./Committees";
 import Judges from "./judges/Judges";
 import Sponsors from "./Sponsors";
+import Schedules from "./schedule/Schedules";
 const Live = () => {
   return (
     <div className="w-full flex justify-center items-center flex-col">
@@ -16,6 +17,7 @@ const Live = () => {
       <About />
       <Welcome />
       <GetInvolved />
+      <Schedules />
       <Boards />
       <Committees />
       <Sponsors />
