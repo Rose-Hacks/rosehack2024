@@ -17,9 +17,9 @@ const Footer = () => {
         <div className="text-lg md:text-4xl">ROSEHACK 2024</div>
         <div className="text-xs md:text-xl">
           Made with <AiFillHeart className="inline" /> by the Rose Hack team at
-          UCR
+          University of California, Riverside.
         </div>
-        <div className="flex mb-8">
+        <div className="flex space-x-5  mb-8">
           {CONTACTS.map((contact, index) => (
             <Link
               key={index}
