@@ -11,6 +11,8 @@ import Evi from "../../../public/judges/EvelynAguirreVargas.webp";
 import Paulian from "../../../public/judges/PaulianLe.webp";
 import Rania from "../../../public/judges/RaniaSaber.webp";
 import Ashley from "../../../public/judges/AshleyTsai.webp";
+import Mariam from "../../../public/judges/MariamGolwalla.jpg";
+import Tiana from "../../../public/judges/TianaNguyen.jpg";
 
 export const judges = [
   {
@@ -77,5 +79,15 @@ export const judges = [
     name: "Evelyn Aguirre Vargas",
     image: Evi,
     position: "Previous Biohack Director",
+  },
+  {
+    name: "Mariam Golwalla",
+    image: Mariam,
+    position: "Graduate Student",
+  },
+  {
+    name: "Tiana Nguyen",
+    image: Tiana,
+    position: "DesignVerse Director",
   },
 ];
