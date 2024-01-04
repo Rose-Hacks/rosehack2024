@@ -12,5 +12,6 @@ export const COMMITTEES = {
     "Theo Fernandez",
     "Aditi Thanekar",
     "Isabelle Celo",
+    "Fuyuki Malahom",
   ],
 };
