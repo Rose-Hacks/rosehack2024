@@ -11,8 +11,8 @@ import Evi from "../../../public/judges/EvelynAguirreVargas.webp";
 import Paulian from "../../../public/judges/PaulianLe.webp";
 import Rania from "../../../public/judges/RaniaSaber.webp";
 import Ashley from "../../../public/judges/AshleyTsai.webp";
-import Mariam from "../../../public/judges/MariamGolwalla.jpg";
-import Tiana from "../../../public/judges/TianaNguyen.jpg";
+import Mariam from "../../../public/judges/MariamGolwalla.webp";
+import Tiana from "../../../public/judges/TianaNguyen.webp";
 
 export const judges = [
   {
