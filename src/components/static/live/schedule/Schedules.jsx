@@ -28,7 +28,8 @@ const Schedules = () => {
           item.end = new Date(item.end.dateTime);
           item.showDate = showDate;
 
-          item.category = item.description?.split("\n")[0]?.split("#")[1];
+          item.category =
+            item.description?.split("\n")[0]?.split("#")[1] || "general";
           item.description = item.description?.split("\n")[1];
 
           return item;

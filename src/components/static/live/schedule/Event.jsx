@@ -53,12 +53,20 @@ const Event = ({ event }) => {
           />
         </div>
         <div
-          className={`col-span-3 md:col-span-1 font-orbitron border-r-[1px] ${color.border} h-full flex items-center justify-center text-center text-xs md:text-base`}
+          className={`col-span-3 md:col-span-1 font-orbitron border-r-[1px] ${color.border} h-full flex flex-col items-center justify-center text-center text-xs md:text-base`}
         >
-          {event.start.getHours() === 12 ? 12 : event.start.getHours() % 12}:
-          {event.start.getMinutes() < 10 && "0"}
-          {event.start.getMinutes()}{" "}
-          {event.start.getHours() >= 12 ? "PM " : "AM "}
+          <div> {event.start.toDateString().split(" ")[0]}</div>
+          <div>
+            {" "}
+            {event.start.toDateString().split(" ")[1]}{" "}
+            {event.start.toDateString().split(" ")[2]}
+          </div>
+          <div>
+            {event.start.getHours() === 12 ? 12 : event.start.getHours() % 12}:
+            {event.start.getMinutes() < 10 && "0"}
+            {event.start.getMinutes()}{" "}
+            {event.start.getHours() >= 12 ? "PM " : "AM "}
+          </div>
         </div>
         <div
           className={`col-span-5 md:col-span-2 px-2 items-center justify-center text-center font-advent text-base md:text-xl flex h-full border-r-[1px] ${color.border}`}
