@@ -35,9 +35,6 @@ const CalendarEvents = () => {
       `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_LEADS}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime`
     );
 
-    console.log(hackathon);
-    console.log(leads);
-
     Promise.all([hackathon, leads]).then(([hackathonData, leadsData]) => {
       const hackathon = hackathonData;
       const leads = leadsData;

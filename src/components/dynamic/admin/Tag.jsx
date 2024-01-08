@@ -1,6 +1,4 @@
 const Tag = ({ color, text, onClick, classes, statuses }) => {
-  console.log(text);
-
   return (
     <div
       data-cy={`${text}-tag`}
