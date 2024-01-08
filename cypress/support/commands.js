@@ -8,15 +8,21 @@ Cypress.Commands.add("fetch", ({ role, portal, page }) => {
 
   cy.intercept(
     "GET",
-    `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime`,
+    `https://www.googleapis.com/calendar/v3/calendars/${Cypress.env(
+      "NEXT_PUBLIC_GOOGLE_CALENDAR"
+    )}/events?key=${Cypress.env(
+      "NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY"
+    )}&singleEvents=true&orderBy=startTime`,
     {
       fixture: "schedule.json",
     }
-  ).as("GET");
+  ).as("schedule");
+
   cy.visit("/");
   cy.wait("@session");
 
   cy.visit(`/${portal}/${page}`);
+  cy.wait("@schedule");
   cy.wait("@GET");
 });
 
