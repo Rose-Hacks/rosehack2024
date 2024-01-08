@@ -13,7 +13,6 @@ const Event = ({ event }) => {
           border: "border-rosehack-teal",
         }
       : { bg: "bg-white", text: "text-white", border: "border-white" };
-  console.log(event);
   return (
     <div className="w-full">
       <div className="flex items-center">
