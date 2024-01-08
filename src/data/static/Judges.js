@@ -13,7 +13,7 @@ import Rania from "../../../public/judges/RaniaSaber.webp";
 import Ashley from "../../../public/judges/AshleyTsai.webp";
 import Mariam from "../../../public/judges/MariamGolwalla.webp";
 import Tiana from "../../../public/judges/TianaNguyen.webp";
-import Karan from "../../../public/judges/KaranBhogal.jpg";
+import Karan from "../../../public/judges/KaranBhogal.webp";
 
 export const judges = [
   {
