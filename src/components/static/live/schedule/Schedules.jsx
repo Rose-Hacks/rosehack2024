@@ -5,8 +5,8 @@ import Event from "./Event";
 const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 const Schedules = () => {
   const [events, setEvents] = useState([]);
-  const [selectedDay, setSelectedDay] = useState("ALL");
-  const dates = ["ALL", 1, 2, 3, 4, 5, 6, 0];
+  const [selectedDay, setSelectedDay] = useState(null);
+  const dates = [1, 2, 3, 4, 5, 6, 0];
 
   useEffect(() => {
     fetch(
@@ -16,6 +16,7 @@ const Schedules = () => {
       }
     ).then(async (response) => {
       const data = await response.json();
+      let selected = null;
       const items = data.items.map((item) => {
         item.start = new Date(item.start.dateTime);
         item.end = new Date(item.end.dateTime);
@@ -23,9 +24,11 @@ const Schedules = () => {
         item.category =
           item.description?.split("\n")[0]?.split("#")[1] || "general";
         item.description = item.description?.split("\n")[1];
-
+        if (!selected && item.start >= new Date())
+          selected = item.start.getDay();
         return item;
       });
+      setSelectedDay(selected);
       setEvents(items);
     });
   }, []);
@@ -37,10 +40,7 @@ const Schedules = () => {
       </div>
       <div className="flex text-white bg-white/10 border-[1px] w-11/12 md:9/12 lg:w-1/2">
         {dates
-          .filter(
-            (date) =>
-              date === "ALL" || events.some((event) => event.day === date)
-          )
+          .filter((date) => events.some((event) => event.day === date))
           .map((date, index) => (
             <div
               className={`text-white font-montserrat font-light text-sm md:text-lg items-center justify-center flex flex-grow cursor-pointer border-[1px] border-transparent hover:bg-white/10 duration-200 ${
@@ -49,12 +49,12 @@ const Schedules = () => {
               onClick={() => setSelectedDay(date)}
               key={index}
             >
-              {date === "ALL" ? "ALL" : days[date]}
+              {days[date]}
             </div>
           ))}
       </div>
       {events
-        .filter((event) => selectedDay === "ALL" || event.day === selectedDay)
+        .filter((event) => event.day === selectedDay)
         .map((event, index) => (
           <Event event={event} key={index} />
         ))}

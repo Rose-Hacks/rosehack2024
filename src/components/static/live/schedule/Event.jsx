@@ -35,7 +35,6 @@ const Event = ({ event }) => {
         } border-[1px] ${color.border}`}
       >
         <div className="absolute left-0 bottom-0">
-          <div className={`rounded-full w-1.5 h-1.5 ${color.bg} m-1`} />
           <div className="flex gap-1">
             <div className={`${color.bg} h-2 w-10`} />
             <div className={`${color.bg} h-2 w-1`} />
@@ -55,18 +54,10 @@ const Event = ({ event }) => {
         <div
           className={`col-span-3 md:col-span-1 font-orbitron border-r-[1px] ${color.border} h-full flex flex-col items-center justify-center text-center text-xs md:text-base`}
         >
-          <div> {event.start.toDateString().split(" ")[0]}</div>
-          <div>
-            {" "}
-            {event.start.toDateString().split(" ")[1]}{" "}
-            {event.start.toDateString().split(" ")[2]}
-          </div>
-          <div>
-            {event.start.getHours() === 12 ? 12 : event.start.getHours() % 12}:
-            {event.start.getMinutes() < 10 && "0"}
-            {event.start.getMinutes()}{" "}
-            {event.start.getHours() >= 12 ? "PM " : "AM "}
-          </div>
+          {event.start.getHours() === 12 ? 12 : event.start.getHours() % 12}:
+          {event.start.getMinutes() < 10 && "0"}
+          {event.start.getMinutes()}{" "}
+          {event.start.getHours() >= 12 ? "PM " : "AM "}
         </div>
         <div
           className={`col-span-5 md:col-span-2 px-2 items-center justify-center text-center font-advent text-base md:text-xl flex h-full border-r-[1px] ${color.border}`}
