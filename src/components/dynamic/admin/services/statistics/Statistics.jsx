@@ -3,6 +3,7 @@ import Title from "@/components/dynamic/admin/Title";
 import { useEffect, useState } from "react";
 import Tabs from "./Tabs";
 import Loading from "@/components/dynamic/Loading";
+import { api } from "@/utils/api";
 
 const Statistics = () => {
   const [counts, setCounts] = useState(null);
@@ -15,7 +16,7 @@ const Statistics = () => {
   }, []);
 
   return (
-    <div className="h-full font-montserrat flex flex-col py-4">
+    <div className="h-full font-montserrat flex flex-col py-4 text-white">
       <Title title="Statistics" />
       {!counts ? (
         <Loading />
