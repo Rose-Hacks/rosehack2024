@@ -6,28 +6,19 @@ import Event from "./Event";
 const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 const Schedules = () => {
   const [events, setEvents] = useState([]);
-  const [selectedDate, setSelectedDate] = useState("ALL");
-  const dates = ["ALL", new Date("2024-1-20"), new Date("2024-1-21")];
+  const [selectedDay, setSelectedDay] = useState("ALL");
+  const dates = ["ALL", 1, 2, 3, 4, 5, 6, 0];
 
   useEffect(() => {
-    let date;
-    let showDate;
     axios
       .get(
         `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime`
       )
       .then((response) => {
         const items = response.data.items.map((item) => {
-          if (date === new Date(item.start.dateTime).getDate())
-            showDate = false;
-          else {
-            date = new Date(item.start.dateTime).getDate();
-            showDate = true;
-          }
           item.start = new Date(item.start.dateTime);
           item.end = new Date(item.end.dateTime);
-          item.showDate = showDate;
-
+          item.day = item.start.getDay();
           item.category =
             item.description?.split("\n")[0]?.split("#")[1] || "general";
           item.description = item.description?.split("\n")[1];
@@ -44,30 +35,27 @@ const Schedules = () => {
         Pacific Standard Time (PST)
       </div>
       <div className="flex text-white bg-white/10 border-[1px]">
-        {dates.map((date, index) => (
-          <div
-            className={`text-white font-montserrat font-light text-sm md:text-lg px-6 cursor-pointer border-[1px] border-transparent hover:bg-white/10 duration-200 ${
-              (selectedDate === date ||
-                (date !== "ALL" &&
-                  selectedDate !== "ALL" &&
-                  selectedDate.getDate() === date.getDate())) &&
-              "bg-white/20 border-white"
-            }`}
-            onClick={() => setSelectedDate(date)}
-            key={index}
-          >
-            {date === "ALL" ? "ALL" : days[date.getDay()]}
-          </div>
-        ))}
+        {dates
+          .filter(
+            (date) =>
+              date === "ALL" || events.some((event) => event.day === date)
+          )
+          .map((date, index) => (
+            <div
+              className={`text-white font-montserrat font-light text-sm md:text-lg px-6 cursor-pointer border-[1px] border-transparent hover:bg-white/10 duration-200 ${
+                selectedDay === date && "bg-white/20 border-white"
+              }`}
+              onClick={() => setSelectedDay(date)}
+              key={index}
+            >
+              {date === "ALL" ? "ALL" : days[date]}
+            </div>
+          ))}
       </div>
       {events
-        .filter(
-          (event) =>
-            selectedDate === "ALL" ||
-            event.start.getDate() === selectedDate.getDate()
-        )
+        .filter((event) => selectedDay === "ALL" || event.day === selectedDay)
         .map((event, index) => (
-          <Event event={event} key={index} date={event.showDate} />
+          <Event event={event} key={index} />
         ))}
     </div>
   );
