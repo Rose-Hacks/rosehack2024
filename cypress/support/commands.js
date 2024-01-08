@@ -10,7 +10,7 @@ Cypress.Commands.add("fetch", ({ role, portal, page }) => {
     "GET",
     `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime`,
     {
-      fixture: `${page}.json`,
+      fixture: "schedule.json",
     }
   ).as("GET");
   cy.visit("/");
