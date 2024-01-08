@@ -87,9 +87,6 @@ jobs:
           browser: chrome
           start: npm run start
           wait-on: "http://localhost:3000"
-          env:
-            NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY=${{secrets.CYPRESS_NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}}
-            NEXT_PUBLIC_GOOGLE_CALENDAR=${{secrets.CYPRESS_NEXT_PUBLIC_GOOGLE_CALENDAR}}
     env:
       NEXT_PUBLIC_FIREBASE_API_KEY: ${{secrets.NEXT_PUBLIC_FIREBASE_API_KEY}}
       NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: ${{secrets.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN}}
