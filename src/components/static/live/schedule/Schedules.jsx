@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Title from "../Title";
 import Event from "./Event";
+import { api } from "@/utils/api";
 const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 const Schedules = () => {
   const [events, setEvents] = useState([]);
@@ -9,15 +10,12 @@ const Schedules = () => {
   const dates = [1, 2, 3, 4, 5, 6, 0];
 
   useEffect(() => {
-    fetch(
-      `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime`,
-      {
-        method: "GET",
-      }
-    ).then(async (response) => {
-      const data = await response.json();
+    api({
+      method: "GET",
+      url: `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime`,
+    }).then(async (response) => {
       let selected = null;
-      const items = data.items.map((item) => {
+      const items = response.items.map((item) => {
         item.start = new Date(item.start.dateTime);
         item.end = new Date(item.end.dateTime);
         item.day = item.start.getDay();

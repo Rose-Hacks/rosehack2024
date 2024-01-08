@@ -16,8 +16,8 @@ const Live = () => {
       <Landing />
       <About />
       <Welcome />
-      <GetInvolved />
       <Schedules />
+      <GetInvolved />
       <Boards />
       <Committees />
       <Sponsors />
