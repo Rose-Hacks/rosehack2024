@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 
 const Judges = () => {
   return (
-    <div className="flex-col flex items-center justify-center w-9/12">
+    <div className="flex-col flex items-center justify-center w-5/6">
       <Title label="Judges" />
       <Row className="items-center justify-center text-white w-full">
         {judges.map((item, index) => (

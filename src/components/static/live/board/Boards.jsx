@@ -4,7 +4,7 @@ import Profile from "../Profile";
 import Row from "react-bootstrap/Row";
 const Boards = () => {
   return (
-    <div className="flex-col flex items-center justify-center w-9/12">
+    <div className="flex-col flex items-center justify-center w-10/12">
       <Title label="Team" />
       <Row className="items-center justify-center text-white w-full">
         {boardMembers[0].map((item, index) => (
