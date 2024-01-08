@@ -1,0 +1,707 @@
+{
+  "items": [
+    {
+      "kind": "calendar#event",
+      "etag": "\"3409368890670000\"",
+      "id": "1k1v02flq2emfv2bjb10f4a78v",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=MWsxdjAyZmxxMmVtZnYyYmpiMTBmNGE3OHYgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2024-01-08T03:26:21.000Z",
+      "updated": "2024-01-08T03:27:25.335Z",
+      "summary": "How to Hack with Vinz Angelo Madrigal",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-15T20:00:00.000Z",
+      "end": "2024-01-15T21:00:00.000Z",
+      "transparency": "transparent",
+      "iCalUID": "1k1v02flq2emfv2bjb10f4a78v@google.com",
+      "sequence": 1,
+      "eventType": "default",
+      "day": 1,
+      "category": "workshop"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3409369346932000\"",
+      "id": "5t7nt4l1vpu9enpnnoihm770gp",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=NXQ3bnQ0bDF2cHU5ZW5wbm5vaWhtNzcwZ3AgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2024-01-08T03:28:06.000Z",
+      "updated": "2024-01-08T03:31:13.466Z",
+      "summary": "Rose Hack Winners Panel ",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-17T20:00:00.000Z",
+      "end": "2024-01-17T21:00:00.000Z",
+      "iCalUID": "5t7nt4l1vpu9enpnnoihm770gp@google.com",
+      "sequence": 0,
+      "eventType": "default",
+      "day": 3,
+      "category": "workshop"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3409369408698000\"",
+      "id": "7c0qkgfg1ep777mncq6po2c48m",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=N2MwcWtnZmcxZXA3NzdtbmNxNnBvMmM0OG0gNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2024-01-08T03:30:08.000Z",
+      "updated": "2024-01-08T03:31:44.349Z",
+      "summary": "Growing Your Petals with Rose Hack (Team Building)",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-19T20:00:00.000Z",
+      "end": "2024-01-19T21:00:00.000Z",
+      "iCalUID": "7c0qkgfg1ep777mncq6po2c48m@google.com",
+      "sequence": 0,
+      "eventType": "default",
+      "day": 5,
+      "category": "event"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3409369313394000\"",
+      "id": "4c85cllk303e22phg6pnske0hi",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=NGM4NWNsbGszMDNlMjJwaGc2cG5za2UwaGkgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2024-01-08T03:30:56.000Z",
+      "updated": "2024-01-08T03:30:56.697Z",
+      "summary": "Resume Workshop with Divyank Shah",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-19T22:00:00.000Z",
+      "end": "2024-01-19T23:00:00.000Z",
+      "iCalUID": "4c85cllk303e22phg6pnske0hi@google.com",
+      "sequence": 0,
+      "eventType": "default",
+      "day": 5,
+      "category": "workshop"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3408967713738000\"",
+      "id": "0cj1fg7p0ht89eugofa3d899uc",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=MGNqMWZnN3AwaHQ4OWV1Z29mYTNkODk5dWMgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T07:16:11.000Z",
+      "updated": "2024-01-05T19:44:16.869Z",
+      "summary": "Hacker Check-In",
+      "description": "@Hacker Be sure to come and check in! We have swag and an opening ceremoney coming up soon! [MSE116]",
+      "location": "MSE 116",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-20T16:30:00.000Z",
+      "end": "2024-01-20T17:30:00.000Z",
+      "iCalUID": "0cj1fg7p0ht89eugofa3d899uc@google.com",
+      "sequence": 2,
+      "eventType": "default",
+      "day": 6,
+      "category": "general"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3408967922246000\"",
+      "id": "7a8cu0uv2rpdh7s4u0iendliv5",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=N2E4Y3UwdXYycnBkaDdzNHUwaWVuZGxpdjUgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2024-01-05T19:45:47.000Z",
+      "updated": "2024-01-05T19:46:01.123Z",
+      "summary": "Rose Hack Opening Ceremony",
+      "location": "MSE116",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-20T17:00:00.000Z",
+      "end": "2024-01-20T18:00:00.000Z",
+      "iCalUID": "7a8cu0uv2rpdh7s4u0iendliv5@google.com",
+      "sequence": 0,
+      "eventType": "default",
+      "day": 6,
+      "category": "general"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3408967559260000\"",
+      "id": "05ser3qcfd6n93hitrbvql5ceb",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=MDVzZXIzcWNmZDZuOTNoaXRyYnZxbDVjZWIgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T07:26:21.000Z",
+      "updated": "2024-01-05T19:42:59.630Z",
+      "summary": "Hacking Begins / Icebreakers!!",
+      "description": "Hacking has officially begun! If you still haven't found a team yet, come to WCH 205/206 to participate in an icebreakers activity to find new people and create your team. Happy hacking fellow rosies!",
+      "location": "WCH 205/206",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-20T18:00:00.000Z",
+      "end": "2024-01-20T18:30:00.000Z",
+      "iCalUID": "05ser3qcfd6n93hitrbvql5ceb@google.com",
+      "sequence": 0,
+      "eventType": "default",
+      "day": 6,
+      "category": "general"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3409369986952000\"",
+      "id": "53o12e1l0enqcpnu9s6cqlnp1g",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=NTNvMTJlMWwwZW5xY3BudTlzNmNxbG5wMWcgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T08:45:03.000Z",
+      "updated": "2024-01-08T03:36:33.476Z",
+      "summary": "Intro to Git by Divyank",
+      "location": "WCH 141",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-20T18:00:00.000Z",
+      "end": "2024-01-20T19:00:00.000Z",
+      "iCalUID": "53o12e1l0enqcpnu9s6cqlnp1g@google.com",
+      "sequence": 2,
+      "eventType": "default",
+      "day": 6,
+      "category": "workshop"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3409376114582000\"",
+      "id": "5m2ngrca0f89fn2as71dtd71jq",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=NW0ybmdyY2EwZjg5Zm4yYXM3MWR0ZDcxanEgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T07:42:31.000Z",
+      "updated": "2024-01-08T04:27:37.291Z",
+      "summary": "Intro to UI/UX by DesignVerse",
+      "description": "Unlock the secrets of exceptional user experiences at our UI/UX Workshop! Join us for a workshop where you'll dive into the world of user interface and user experience design, led by DesignVerse directors Rania Saber and Tiana Nguyen.",
+      "location": "WCH 205/206",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-20T19:00:00.000Z",
+      "end": "2024-01-20T19:45:00.000Z",
+      "iCalUID": "5m2ngrca0f89fn2as71dtd71jq@google.com",
+      "sequence": 1,
+      "eventType": "default",
+      "day": 6,
+      "category": "general"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3408844403238000\"",
+      "id": "0nuo6gmd8m9e4s7iapc7gobr3n",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=MG51bzZnbWQ4bTllNHM3aWFwYzdnb2JyM24gNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T07:37:07.000Z",
+      "updated": "2024-01-05T02:36:41.619Z",
+      "summary": "Lunch (Chick-Fil-A)",
+      "description": "Chicky Chicky Chick-Fil-A! My fellow rosies, come get your lunch from our sponsor Chick-Fil-A. Lunch will be served at the Bytes Lounge.",
+      "location": "WCH Bytes Lounge",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-20T20:00:00.000Z",
+      "end": "2024-01-20T21:00:00.000Z",
+      "iCalUID": "0nuo6gmd8m9e4s7iapc7gobr3n@google.com",
+      "sequence": 0,
+      "eventType": "default",
+      "day": 6,
+      "category": "general"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3409376095638000\"",
+      "id": "4ofchgdrjt3l03h05sbl683v5i",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=NG9mY2hnZHJqdDNsMDNoMDVzYmw2ODN2NWkgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T07:45:29.000Z",
+      "updated": "2024-01-08T04:27:27.819Z",
+      "summary": "AI/ML Panel by Prof. Yue Dong",
+      "location": "WCH 205/206",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-20T21:00:00.000Z",
+      "end": "2024-01-20T21:45:00.000Z",
+      "iCalUID": "4ofchgdrjt3l03h05sbl683v5i@google.com",
+      "sequence": 0,
+      "eventType": "default",
+      "day": 6,
+      "category": "workshop"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3409376137146000\"",
+      "id": "1so30t04kkftd8glcqfnd28kmq",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=MXNvMzB0MDRra2Z0ZDhnbGNxZm5kMjhrbXEgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T08:36:20.000Z",
+      "updated": "2024-01-08T04:27:48.573Z",
+      "summary": "Intro to Game Dev by Niko Udria",
+      "location": "WCH 205/206",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-20T22:00:00.000Z",
+      "end": "2024-01-20T22:45:00.000Z",
+      "iCalUID": "1so30t04kkftd8glcqfnd28kmq@google.com",
+      "sequence": 0,
+      "eventType": "default",
+      "day": 6,
+      "category": "workshop"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3409376153974000\"",
+      "id": "4cso3btbf5qldmkf3p76unu1a9",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=NGNzbzNidGJmNXFsZG1rZjNwNzZ1bnUxYTkgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T08:38:40.000Z",
+      "updated": "2024-01-08T04:27:56.987Z",
+      "summary": "Python/Pandas Workshop by Josh C",
+      "location": "WCH 205/206",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-20T23:00:00.000Z",
+      "end": "2024-01-20T23:45:00.000Z",
+      "iCalUID": "4cso3btbf5qldmkf3p76unu1a9@google.com",
+      "sequence": 0,
+      "eventType": "default",
+      "day": 6,
+      "category": "workshop"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3409376173746000\"",
+      "id": "7edfv1glalf11d3b69t4vijn69",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=N2VkZnYxZ2xhbGYxMWQzYjY5dDR2aWpuNjkgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T08:45:26.000Z",
+      "updated": "2024-01-08T04:28:06.873Z",
+      "summary": "Intro to Mobile Dev: Rachit Prajapati ",
+      "location": "WCH 205/206",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-21T00:00:00.000Z",
+      "end": "2024-01-21T00:45:00.000Z",
+      "iCalUID": "7edfv1glalf11d3b69t4vijn69@google.com",
+      "sequence": 0,
+      "eventType": "default",
+      "day": 6,
+      "category": "workshop"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3408968425000000\"",
+      "id": "6u90taune020m9avhdp6u43v2n",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=NnU5MHRhdW5lMDIwbTlhdmhkcDZ1NDN2Mm4gNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T08:51:14.000Z",
+      "updated": "2024-01-05T19:50:12.500Z",
+      "summary": "Tallest Tower Stacking ",
+      "location": "WCH 143",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-21T01:00:00.000Z",
+      "end": "2024-01-21T02:00:00.000Z",
+      "iCalUID": "6u90taune020m9avhdp6u43v2n@google.com",
+      "sequence": 1,
+      "eventType": "default",
+      "day": 6,
+      "category": "event"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3408844547018000\"",
+      "id": "0pc03q6vo1g5blhtq323lja3u9",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=MHBjMDNxNnZvMWc1YmxodHEzMjNsamEzdTkgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T08:56:41.000Z",
+      "updated": "2024-01-05T02:37:53.509Z",
+      "summary": "Dinner Time",
+      "location": "WCH Bytes Lounge",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-21T02:00:00.000Z",
+      "end": "2024-01-21T03:00:00.000Z",
+      "iCalUID": "0pc03q6vo1g5blhtq323lja3u9@google.com",
+      "sequence": 0,
+      "eventType": "default",
+      "day": 6,
+      "category": "general"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3408844523748000\"",
+      "id": "2a7f5otjo9kun3anrb60ojcp00",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=MmE3ZjVvdGpvOWt1bjNhbnJiNjBvamNwMDAgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T08:44:40.000Z",
+      "updated": "2024-01-05T02:37:41.874Z",
+      "summary": "Intern Panel",
+      "location": "Bourns A265",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-21T03:00:00.000Z",
+      "end": "2024-01-21T03:45:00.000Z",
+      "iCalUID": "2a7f5otjo9kun3anrb60ojcp00@google.com",
+      "sequence": 1,
+      "eventType": "default",
+      "day": 6,
+      "category": "workshop"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3409376214446000\"",
+      "id": "04rv4rj342i12l3t8n7iai5lcq",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=MDRydjRyajM0MmkxMmwzdDhuN2lhaTVsY3EgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T08:50:37.000Z",
+      "updated": "2024-01-08T04:28:27.223Z",
+      "summary": "How to publish a project: SWE Leads",
+      "location": "WCH 205/206",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-21T04:00:00.000Z",
+      "end": "2024-01-21T04:45:00.000Z",
+      "iCalUID": "04rv4rj342i12l3t8n7iai5lcq@google.com",
+      "sequence": 2,
+      "eventType": "default",
+      "day": 6,
+      "category": "workshop"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3408844590912000\"",
+      "id": "6fgcq5tpl51079ll99l2qguu32",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=NmZnY3E1dHBsNTEwNzlsbDk5bDJxZ3V1MzIgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T09:01:15.000Z",
+      "updated": "2024-01-05T02:38:15.456Z",
+      "summary": "Movie/Hot Cocoa",
+      "location": "WCH 205/206",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-21T05:00:00.000Z",
+      "end": "2024-01-21T07:00:00.000Z",
+      "iCalUID": "6fgcq5tpl51079ll99l2qguu32@google.com",
+      "sequence": 5,
+      "eventType": "default",
+      "day": 6,
+      "category": "event"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3408970255538000\"",
+      "id": "7gpq9apmllpv9ffdjlu56smms8",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=N2dwcTlhcG1sbHB2OWZmZGpsdTU2c21tczggNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T09:13:44.000Z",
+      "updated": "2024-01-05T20:05:27.769Z",
+      "summary": "Just Dance Competition",
+      "location": "WCH 127",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-21T07:00:00.000Z",
+      "end": "2024-01-21T08:00:00.000Z",
+      "iCalUID": "7gpq9apmllpv9ffdjlu56smms8@google.com",
+      "sequence": 2,
+      "eventType": "default",
+      "day": 6,
+      "category": "event"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3408970268822000\"",
+      "id": "5q1qdge1c2ee0nel61v6uk5ifr",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=NXExcWRnZTFjMmVlMG5lbDYxdjZ1azVpZnIgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T18:03:35.000Z",
+      "updated": "2024-01-05T20:05:34.411Z",
+      "summary": "Smash Bros Tournament",
+      "location": "WCH 127",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-21T08:00:00.000Z",
+      "end": "2024-01-21T09:00:00.000Z",
+      "iCalUID": "5q1qdge1c2ee0nel61v6uk5ifr@google.com",
+      "sequence": 1,
+      "eventType": "default",
+      "day": 0,
+      "category": "event"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3408844684096000\"",
+      "id": "1pfgpvj9jnhm233tjq3p6n4v6r",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=MXBmZ3B2ajlqbmhtMjMzdGpxM3A2bjR2NnIgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T09:15:56.000Z",
+      "updated": "2024-01-05T02:39:02.048Z",
+      "summary": "Breakfast Time",
+      "location": "WCH Bytes Lounge",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-21T16:30:00.000Z",
+      "end": "2024-01-21T17:30:00.000Z",
+      "iCalUID": "1pfgpvj9jnhm233tjq3p6n4v6r@google.com",
+      "sequence": 0,
+      "eventType": "default",
+      "day": 0,
+      "category": "general"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3408692554866000\"",
+      "id": "7bbcnod39hm28lb9qle80frbdc",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=N2JiY25vZDM5aG0yOGxiOXFsZTgwZnJiZGMgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T09:16:07.000Z",
+      "updated": "2024-01-04T05:31:17.433Z",
+      "summary": "Soft Deadline at 9AM",
+      "location": "WCH",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-21T17:00:00.000Z",
+      "end": "2024-01-21T18:00:00.000Z",
+      "iCalUID": "7bbcnod39hm28lb9qle80frbdc@google.com",
+      "sequence": 2,
+      "eventType": "default",
+      "day": 0,
+      "category": "general"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3408692572362000\"",
+      "id": "37cba4ubua027qo88ck8ue7bda",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=MzdjYmE0dWJ1YTAyN3FvODhjazh1ZTdiZGEgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T09:16:20.000Z",
+      "updated": "2024-01-04T05:31:26.181Z",
+      "summary": "Hard Deadline at 10AM",
+      "location": "WCH",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-21T18:00:00.000Z",
+      "end": "2024-01-21T19:00:00.000Z",
+      "iCalUID": "37cba4ubua027qo88ck8ue7bda@google.com",
+      "sequence": 1,
+      "eventType": "default",
+      "day": 0,
+      "category": "general"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3408844713966000\"",
+      "id": "1j22uubb1vta25c7cfni0h03vl",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=MWoyMnV1YmIxdnRhMjVjN2NmbmkwaDAzdmwgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T09:16:49.000Z",
+      "updated": "2024-01-05T02:39:16.983Z",
+      "summary": "Brunch",
+      "location": "WCH Bytes Lounge",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-21T19:00:00.000Z",
+      "end": "2024-01-21T20:00:00.000Z",
+      "iCalUID": "1j22uubb1vta25c7cfni0h03vl@google.com",
+      "sequence": 1,
+      "eventType": "default",
+      "day": 0,
+      "category": "general"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3409367237244000\"",
+      "id": "3j72l73sqnpe5n0prldjmociua",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=M2o3Mmw3M3NxbnBlNW4wcHJsZGptb2NpdWEgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2024-01-05T02:45:07.000Z",
+      "updated": "2024-01-08T03:13:38.622Z",
+      "summary": "Judging Period",
+      "location": "WCH",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-21T20:00:00.000Z",
+      "end": "2024-01-21T23:00:00.000Z",
+      "iCalUID": "3j72l73sqnpe5n0prldjmociua@google.com",
+      "sequence": 0,
+      "eventType": "default",
+      "day": 0,
+      "category": "general"
+    },
+    {
+      "kind": "calendar#event",
+      "etag": "\"3408845313616000\"",
+      "id": "3hrqt81hnq76qgk7ulrblvia6f",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=M2hycXQ4MWhucTc2cWdrN3VscmJsdmlhNmYgNzdlM2I4Yjg0NGM3OGZiNGRiNmFhNDhiNGVmMGNjZGU5NWRkYzg0ZmE5M2IzNTc2NmFhMmM0ODc0ZDhmOThlNEBn",
+      "created": "2023-12-28T09:16:59.000Z",
+      "updated": "2024-01-05T02:44:16.808Z",
+      "summary": "Closing Ceremony",
+      "location": "MSE",
+      "creator": {
+        "email": "rosehackucr@gmail.com"
+      },
+      "organizer": {
+        "email": "77e3b8b844c78fb4db6aa48b4ef0ccde95ddc84fa93b35766aa2c4874d8f98e4@group.calendar.google.com",
+        "displayName": "Rosehack 2024",
+        "self": true
+      },
+      "start": "2024-01-21T23:00:00.000Z",
+      "end": "2024-01-22T00:00:00.000Z",
+      "iCalUID": "3hrqt81hnq76qgk7ulrblvia6f@google.com",
+      "sequence": 3,
+      "eventType": "default",
+      "day": 0,
+      "category": "general"
+    }
+  ]
+}
