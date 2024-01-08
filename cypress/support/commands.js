@@ -6,10 +6,15 @@ Cypress.Commands.add("fetch", ({ role, portal, page }) => {
     fixture: `${page}.json`,
   }).as("GET");
 
+  cy.intercept("GET", `https://www.googleapis.com/calendar/v3/calendars/**`, {
+    fixture: "schedule.json",
+  }).as("schedule");
+
   cy.visit("/");
   cy.wait("@session");
 
   cy.visit(`/${portal}/${page}`);
+  cy.wait("@schedule");
   cy.wait("@GET");
 });
 

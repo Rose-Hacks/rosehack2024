@@ -11,6 +11,9 @@ import Evi from "../../../public/judges/EvelynAguirreVargas.webp";
 import Paulian from "../../../public/judges/PaulianLe.webp";
 import Rania from "../../../public/judges/RaniaSaber.webp";
 import Ashley from "../../../public/judges/AshleyTsai.webp";
+import Mariam from "../../../public/judges/MariamGolwalla.webp";
+import Tiana from "../../../public/judges/TianaNguyen.webp";
+import Karan from "../../../public/judges/KaranBhogal.webp";
 
 export const judges = [
   {
@@ -72,6 +75,21 @@ export const judges = [
     name: "Alexander Hickerson",
     image: Alex,
     position: "IEEE Chair",
+  },
+  {
+    name: "Mariam Golwalla",
+    image: Mariam,
+    position: "Graduate Student",
+  },
+  {
+    name: "Tiana Nguyen",
+    image: Tiana,
+    position: "DesignVerse Director",
+  },
+  {
+    name: "Karan Bhogal",
+    image: Karan,
+    position: "Graduate Student",
   },
   {
     name: "Evelyn Aguirre Vargas",
