@@ -2,8 +2,7 @@ import Image from "next/image";
 import LOGO from "../../../../public/LOGO.svg";
 import building from "../../../../public/svg/building.svg";
 import { AiFillHeart } from "react-icons/ai";
-import { CONTACTS } from "@/data/static/Contacts";
-import Link from "next/link";
+import Contacts from "./Contacts";
 
 const Footer = () => {
   return (
@@ -19,19 +18,7 @@ const Footer = () => {
           Made with <AiFillHeart className="inline" /> by the Rose Hack team at
           University of California, Riverside.
         </div>
-        <div className="flex space-x-5  mb-8">
-          {CONTACTS.map((contact, index) => (
-            <Link
-              key={index}
-              href={contact.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white no-underline text-2xl hover:cursor-pointer hover:!text-rosehack-teal hover:-translate-y-1 duration-200"
-            >
-              {contact.icon}
-            </Link>
-          ))}
-        </div>
+        <Contacts />
       </div>
     </div>
   );
