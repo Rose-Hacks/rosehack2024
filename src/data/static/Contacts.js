@@ -1,10 +1,16 @@
 import { AiOutlineInstagram, AiFillLinkedin } from "react-icons/ai";
 import { CiMail } from "react-icons/ci";
+import { FaDiscord } from "react-icons/fa";
 export const CONTACTS = [
   {
     text: "instagram",
     icon: <AiOutlineInstagram />,
     link: "https://www.instagram.com/rosehackucr/",
+  },
+  {
+    text: "discord",
+    icon: <FaDiscord />,
+    link: "https://discord.gg/FDSXp3XZFq",
   },
   {
     text: "linkedin",
