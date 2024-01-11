@@ -1,18 +1,25 @@
+const colors = {
+  event: {
+    bg: "bg-rosehack-pink-200",
+    text: "text-rosehack-pink-200",
+    border: "border-rosehack-pink-200",
+  },
+  workshop: {
+    bg: "bg-rosehack-teal",
+    text: "text-rosehack-teal",
+    border: "border-rosehack-teal",
+  },
+  general: { bg: "bg-white", text: "text-white", border: "border-white" },
+  food: {
+    bg: "bg-purple-300",
+    text: "text-purple-300",
+    border: "border-purple-300",
+  },
+};
+
 const Event = ({ event }) => {
-  const color =
-    event.category === "event"
-      ? {
-          bg: "bg-rosehack-pink-200",
-          text: "text-rosehack-pink-200",
-          border: "border-rosehack-pink-200",
-        }
-      : event.category === "workshop"
-      ? {
-          bg: "bg-rosehack-teal",
-          text: "text-rosehack-teal",
-          border: "border-rosehack-teal",
-        }
-      : { bg: "bg-white", text: "text-white", border: "border-white" };
+  const color = colors[event.category];
+
   return (
     <div className="w-full">
       <div className="flex items-center">
