@@ -19,7 +19,7 @@ const colors = {
 
 const Event = ({ event }) => {
   const color = colors[event.category];
-  console.log(event.category, color);
+
   return (
     <div className="w-full">
       <div className="flex items-center">
