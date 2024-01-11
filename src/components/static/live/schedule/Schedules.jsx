@@ -13,14 +13,18 @@ const Schedules = () => {
     api({
       method: "GET",
       url: `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime`,
-    }).then(async (response) => {
+    }).then((response) => {
       let selected = null;
       const items = response.items.map((item) => {
         item.start = new Date(item.start.dateTime);
         item.end = new Date(item.end.dateTime);
         item.day = item.start.getDay();
-        item.category =
-          item.description?.split("\n")[0]?.split("#")[1] || "general";
+        const [category] = item.description
+          .split("\n")[0]
+          .split("#")
+          .map((item) => item.trim())
+          .filter((item) => item !== "");
+        item.category = category;
         item.description = item.description?.split("\n")[1];
         if (!selected && item.start >= new Date())
           selected = item.start.getDay();

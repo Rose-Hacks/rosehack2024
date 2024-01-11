@@ -56,7 +56,9 @@ const Table = ({
         ))}
       </div>
       <div>
-        {getRowModel().rows.length === 0 && empty}
+        {getRowModel().rows.length === 0 && (
+          <p className="text-white">{empty}</p>
+        )}
         {getRowModel().rows.map(
           ({ id, getVisibleCells, original, getIsSelected }) => (
             <Body
@@ -69,7 +71,7 @@ const Table = ({
           )
         )}
       </div>
-      <div className="flex">
+      <div className="flex text-white">
         <div className="mx-2">Showing {getRowModel().rows.length} rows</div>
         <button onClick={() => previousPage()} disabled={!getCanPreviousPage()}>
           {"<"}
