@@ -1,21 +1,34 @@
-import Roy from "../../../public/judges/RoyFeng.webp";
-import Aditi from "../../../public/judges/AditiBehera.webp";
-import Yosuke from "../../../public/judges/YosukeInagaki.webp";
-import Rohit from "../../../public/judges/RohitManimaran.webp";
-import Falak from "../../../public/judges/FalakTulsi.webp";
-import Andy from "../../../public/judges/AndyJarean.webp";
-import Alex from "../../../public/judges/AlexanderHickerson.webp";
-import Chloe from "../../../public/judges/ChloeGeorgiou.webp";
-import Yogitha from "../../../public/judges/YogithaShastri.webp";
-import Evi from "../../../public/judges/EvelynAguirreVargas.webp";
-import Paulian from "../../../public/judges/PaulianLe.webp";
-import Rania from "../../../public/judges/RaniaSaber.webp";
-import Ashley from "../../../public/judges/AshleyTsai.webp";
-import Mariam from "../../../public/judges/MariamGolwalla.webp";
-import Tiana from "../../../public/judges/TianaNguyen.webp";
-import Karan from "../../../public/judges/KaranBhogal.webp";
+import Roy from "@/public/judges/RoyFeng.webp";
+import Aditi from "@/public/judges/AditiBehera.webp";
+import Yosuke from "@/public/judges/YosukeInagaki.webp";
+import Rohit from "@/public/judges/RohitManimaran.webp";
+import Falak from "@/public/judges/FalakTulsi.webp";
+import Andy from "@/public/judges/AndyJarean.webp";
+import Alex from "@/public/judges/AlexanderHickerson.webp";
+import Chloe from "@/public/judges/ChloeGeorgiou.webp";
+import Yogitha from "@/public/judges/YogithaShastri.webp";
+import Evi from "@/public/judges/EvelynAguirreVargas.webp";
+import Paulian from "@/public/judges/PaulianLe.webp";
+import Rania from "@/public/judges/RaniaSaber.webp";
+import Ashley from "@/public/judges/AshleyTsai.webp";
+import Mariam from "@/public/judges/MariamGolwalla.webp";
+import Tiana from "@/public/judges/TianaNguyen.webp";
+import Karan from "@/public/judges/KaranBhogal.webp";
+import Perseus from "@/public/judges/PerseusYang.jpg";
+import Shirin from "@/public/judges/Shirin.jpg";
+import Coco from "@/public/judges/CocoChen.jpg";
 
 export const judges = [
+  {
+    name: "Coco Chen",
+    image: Coco,
+    position: "Co-Founder at Dream Voyage",
+  },
+  {
+    name: "Perseus Yang",
+    image: Perseus,
+    position: "Co-Founder at Dream Voyage",
+  },
   {
     name: "Roy Feng",
     image: Roy,
@@ -30,6 +43,11 @@ export const judges = [
     name: "Rohit Manimaran",
     image: Rohit,
     position: "Azure Solutions Architect @ MolinaHealthcare",
+  },
+  {
+    name: "Shirin Haji Amin Shirazi",
+    image: Shirin,
+    position: "PhD Candidate",
   },
   {
     name: "Yogitha Shastri",
