@@ -50,10 +50,7 @@ describe("Radio", () => {
 
     cy.get("[data-cy=radio-button-Female]").click();
 
-    cy.get("[data-cy=radio-button-Female]").should(
-      "have.class",
-      "bg-hackathon-green-300"
-    );
+    cy.get("[data-cy=radio-button-Female]").should("have.class", "bg-white");
 
     cy.get("[data-cy=radio-button-Male]").should(
       "have.class",
@@ -61,10 +58,7 @@ describe("Radio", () => {
     );
 
     cy.get("[data-cy=radio-button-Male]").click();
-    cy.get("[data-cy=radio-button-Male]").should(
-      "have.class",
-      "bg-hackathon-green-300"
-    );
+    cy.get("[data-cy=radio-button-Male]").should("have.class", "bg-white");
 
     cy.get("[data-cy=radio-button-Female]").should(
       "have.class",
