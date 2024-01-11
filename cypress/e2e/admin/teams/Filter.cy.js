@@ -12,10 +12,10 @@ describe("Teams Filters", () => {
   });
 
   it("Default Filters", () => {
-    cy.get('[data-cy="reject-filter"]')
+    cy.get('[data-cy="rejected-filter"]')
       .get("div")
       .should("have.class", "border-white", "text-white");
-    cy.get('[data-cy="accept-filter"]')
+    cy.get('[data-cy="accepted-filter"]')
       .get("div")
       .should("have.class", "border-white", "text-white");
     cy.get('[data-cy="pending-filter"]')
@@ -24,22 +24,22 @@ describe("Teams Filters", () => {
   });
 
   it("Click Filters", () => {
-    cy.get('[data-cy="reject-filter"]').click();
-    cy.get('[data-cy="reject-filter"]')
-      .get("div")
-      .should("have.class", "border-white/50", "text-white/50");
-    cy.get('[data-cy="accept-filter"]').click();
-    cy.get('[data-cy="accept-filter"]')
-      .get("div")
-      .should("have.class", "border-white/50", "text-white/50");
     cy.get('[data-cy="pending-filter"]').click();
     cy.get('[data-cy="pending-filter"]')
       .get("div")
-      .should("have.class", "border-white/50", "text-white/50");
+      .should("have.class", "text-white", "border-white");
+    cy.get('[data-cy="rejected-filter"]').click();
+    cy.get('[data-cy="rejected-filter"]')
+      .get("div")
+      .should("have.class", "text-white", "border-white");
+    cy.get('[data-cy="accepted-filter"]').click();
+    cy.get('[data-cy="accepted-filter"]')
+      .get("div")
+      .should("have.class", "text-white", "border-white");
   });
 
   it("Click Disqualify", () => {
-    cy.get('[data-cy="reject-filter"]').click();
+    cy.get('[data-cy="rejected-filter"]').click();
     teams.forEach((team) => {
       if (team.status === -1)
         cy.get(`[data-cy="${team.uid}"]`).should("not.exist");
@@ -48,7 +48,7 @@ describe("Teams Filters", () => {
   });
 
   it("Click Qualify", () => {
-    cy.get('[data-cy="accept-filter"]').click();
+    cy.get('[data-cy="accepted-filter"]').click();
     teams.forEach((team) => {
       if (team.status === 1)
         cy.get(`[data-cy="${team.uid}"]`).should("not.exist");
@@ -66,8 +66,8 @@ describe("Teams Filters", () => {
   });
 
   it("Click 2 Filters", () => {
-    cy.get('[data-cy="accept-filter"]').click();
-    cy.get('[data-cy="reject-filter"]').click();
+    cy.get('[data-cy="accepted-filter"]').click();
+    cy.get('[data-cy="rejected-filter"]').click();
     teams.forEach((team) => {
       if (team.status === 1 || team.status === -1)
         cy.get(`[data-cy="${team.uid}"]`).should("not.exist");

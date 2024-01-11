@@ -15,10 +15,10 @@ describe("Sponsors Filters", () => {
     cy.get('[data-cy="pending-filter"]')
       .get("div")
       .should("have.class", "border-white", "text-white");
-    cy.get('[data-cy="reject-filter"]')
+    cy.get('[data-cy="rejected-filter"]')
       .get("div")
       .should("have.class", "border-white", "text-white");
-    cy.get('[data-cy="accept-filter"]')
+    cy.get('[data-cy="accepted-filter"]')
       .get("div")
       .should("have.class", "border-white", "text-white");
   });
@@ -27,19 +27,19 @@ describe("Sponsors Filters", () => {
     cy.get('[data-cy="pending-filter"]').click();
     cy.get('[data-cy="pending-filter"]')
       .get("div")
-      .should("have.class", "text-white/50", "border-white/50");
-    cy.get('[data-cy="reject-filter"]').click();
-    cy.get('[data-cy="reject-filter"]')
+      .should("have.class", "text-white", "border-white");
+    cy.get('[data-cy="rejected-filter"]').click();
+    cy.get('[data-cy="rejected-filter"]')
       .get("div")
-      .should("have.class", "text-white/50", "border-white/50");
-    cy.get('[data-cy="accept-filter"]').click();
-    cy.get('[data-cy="accept-filter"]')
+      .should("have.class", "text-white", "border-white");
+    cy.get('[data-cy="accepted-filter"]').click();
+    cy.get('[data-cy="accepted-filter"]')
       .get("div")
-      .should("have.class", "text-white/50", "border-white/50");
+      .should("have.class", "text-white", "border-white");
   });
 
   it("Click Confirm", () => {
-    cy.get('[data-cy="accept-filter"]').click();
+    cy.get('[data-cy="accepted-filter"]').click();
     sponsors.forEach((sponsor) => {
       if (sponsor.status === 1)
         cy.get(`[data-cy="${sponsor.uid}"]`).should("not.exist");
@@ -48,7 +48,7 @@ describe("Sponsors Filters", () => {
   });
 
   it("Click Not Attending", () => {
-    cy.get('[data-cy="reject-filter"]').click();
+    cy.get('[data-cy="rejected-filter"]').click();
     sponsors.forEach((sponsor) => {
       if (sponsor.status === -1)
         cy.get(`[data-cy="${sponsor.uid}"]`).should("not.exist");
@@ -66,8 +66,8 @@ describe("Sponsors Filters", () => {
   });
 
   it("Click 2 Filters", () => {
-    cy.get('[data-cy="accept-filter"]').click();
-    cy.get('[data-cy="reject-filter"]').click();
+    cy.get('[data-cy="accepted-filter"]').click();
+    cy.get('[data-cy="rejected-filter"]').click();
     sponsors.forEach((sponsor) => {
       if (sponsor.status === 1 || sponsor.status === -1)
         cy.get(`[data-cy="${sponsor.uid}"]`).should("not.exist");
