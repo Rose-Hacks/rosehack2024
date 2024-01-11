@@ -15,10 +15,10 @@ describe("Participant Filters", () => {
     cy.get('[data-cy="pending-filter"]')
       .get("div")
       .should("have.class", "border-white", "text-white");
-    cy.get('[data-cy="reject-filter"]')
+    cy.get('[data-cy="rejected-filter"]')
       .get("div")
       .should("have.class", "border-white", "text-white");
-    cy.get('[data-cy="accept-filter"]')
+    cy.get('[data-cy="accepted-filter"]')
       .get("div")
       .should("have.class", "border-white", "text-white");
   });
@@ -27,15 +27,15 @@ describe("Participant Filters", () => {
     cy.get('[data-cy="pending-filter"]').click();
     cy.get('[data-cy="pending-filter"]')
       .get("div")
-      .should("have.class", "text-white/50", "border-white/50");
-    cy.get('[data-cy="reject-filter"]').click();
-    cy.get('[data-cy="reject-filter"]')
+      .should("have.class", "text-white", "border-white");
+    cy.get('[data-cy="rejected-filter"]').click();
+    cy.get('[data-cy="rejected-filter"]')
       .get("div")
-      .should("have.class", "text-white/50", "border-white/50");
-    cy.get('[data-cy="accept-filter"]').click();
-    cy.get('[data-cy="accept-filter"]')
+      .should("have.class", "text-white", "border-white");
+    cy.get('[data-cy="accepted-filter"]').click();
+    cy.get('[data-cy="accepted-filter"]')
       .get("div")
-      .should("have.class", "text-white/50", "border-white/50");
+      .should("have.class", "text-white", "border-white");
   });
 
   it("Click Pending", () => {
@@ -48,7 +48,7 @@ describe("Participant Filters", () => {
   });
 
   it("Click Rejected", () => {
-    cy.get('[data-cy="reject-filter"]').click();
+    cy.get('[data-cy="rejected-filter"]').click();
     participants.forEach((participant) => {
       if (participant.status === -1)
         cy.get(`[data-cy="${participant.uid}"]`).should("not.exist");
@@ -57,7 +57,7 @@ describe("Participant Filters", () => {
   });
 
   it("Click Accepted", () => {
-    cy.get('[data-cy="accept-filter"]').click();
+    cy.get('[data-cy="accepted-filter"]').click();
     participants.forEach((participant) => {
       if (participant.status === 1)
         cy.get(`[data-cy="${participant.uid}"]`).should("not.exist");
@@ -66,7 +66,7 @@ describe("Participant Filters", () => {
   });
 
   it("Click 2 Filters", () => {
-    cy.get('[data-cy="accept-filter"]').click();
+    cy.get('[data-cy="accepted-filter"]').click();
     cy.get('[data-cy="pending-filter"]').click();
     participants.forEach((participant) => {
       if (participant.status === 1 || participant.status === 0)

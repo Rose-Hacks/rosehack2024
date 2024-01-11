@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import img from "../../../public/svg/blue-robot.svg";
 
@@ -15,9 +14,11 @@ const Error = ({ code, error, message, dev }) => {
       <p className="text-center text-sm md:text-lg  text-rosehack-teal m-0">
         {message}
       </p>
-      <p className="text-center text-sm md:text-lg text-hackathon-blue-200 m-0">
-        Developer Notes: {dev}
-      </p>
+      {dev && (
+        <p className="text-center text-sm md:text-lg text-hackathon-blue-200 m-0">
+          Developer Notes: {dev}
+        </p>
+      )}
     </div>
   );
 };
