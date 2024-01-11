@@ -24,18 +24,18 @@ describe("Teams Filters", () => {
   });
 
   it("Click Filters", () => {
-    cy.get('[data-cy="rejected-filter"]').click();
-    cy.get('[data-cy="rejected-filter"]')
-      .get("div")
-      .should("have.class", "border-white/50", "text-white/50");
-    cy.get('[data-cy="accepted-filter"]').click();
-    cy.get('[data-cy="accepted-filter"]')
-      .get("div")
-      .should("have.class", "border-white/50", "text-white/50");
     cy.get('[data-cy="pending-filter"]').click();
     cy.get('[data-cy="pending-filter"]')
       .get("div")
-      .should("have.class", "border-white/50", "text-white/50");
+      .should("have.class", "text-white", "border-white");
+    cy.get('[data-cy="rejected-filter"]').click();
+    cy.get('[data-cy="rejected-filter"]')
+      .get("div")
+      .should("have.class", "text-white", "border-white");
+    cy.get('[data-cy="accepted-filter"]').click();
+    cy.get('[data-cy="accepted-filter"]')
+      .get("div")
+      .should("have.class", "text-white", "border-white");
   });
 
   it("Click Disqualify", () => {
