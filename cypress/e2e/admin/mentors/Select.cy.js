@@ -13,7 +13,7 @@ describe("Mentor Select", () => {
   });
 
   it("Select All", () => {
-    cy.get('[data-cy="toolbar"]').find('[data-cy="checkbox"]').click();
+    cy.get('[data-cy="header"]').find('[data-cy="checkbox"]').click();
     mentors.forEach((mentor) => {
       cy.get(`[data-cy="${mentor.uid}"]`).should(
         "have.class",
@@ -24,7 +24,7 @@ describe("Mentor Select", () => {
 
   it("Select First 5 Entries", () => {
     five.map((mentor) =>
-      cy.get(`[data-cy="${mentor.uid}"]`).find('[data-cy="select"]').click()
+      cy.get(`[data-cy="${mentor.uid}"]`).find('[data-cy="checkbox"]').click()
     );
     mentors.forEach((mentor, index) => {
       if (index < 5)
