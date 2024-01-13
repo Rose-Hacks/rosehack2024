@@ -1,7 +1,12 @@
 import { flexRender } from "@tanstack/react-table";
 import Body from "./Body";
 import { FaArrowRightArrowLeft } from "react-icons/fa6";
-import { FaSortAlphaDown, FaSortAlphaUp } from "react-icons/fa";
+import {
+  FaChevronLeft,
+  FaChevronRight,
+  FaSortAlphaDown,
+  FaSortAlphaUp,
+} from "react-icons/fa";
 
 const Table = ({
   getHeaderGroups,
@@ -17,70 +22,82 @@ const Table = ({
 }) => {
   return (
     <>
-      <div className="text-white bg-hackathon-blue-200 rounded-t-lg">
-        {getHeaderGroups().map(({ headers, id }) => (
-          <div key={id} className="flex items-center px-3 py-2">
-            {headers.map(({ id, column, getContext }) => (
-              <div
-                key={id}
-                className={`${column.columnDef.width} flex items-center`}
-                data-cy="header"
-              >
-                {flexRender(column.columnDef.header, getContext())}
-                {column.getCanSort() && (
-                  <FaArrowRightArrowLeft
-                    className={`mx-2 rotate-90 hover:cursor-pointer ${
-                      column.getIsSorted() && "hidden"
-                    }`}
-                    data-cy={`${column.id}-sorting`}
-                    onClick={column.getToggleSortingHandler()}
-                  />
-                )}
-                {column.getIsSorted() === "asc" && (
-                  <FaSortAlphaDown
-                    onClick={column.getToggleSortingHandler()}
-                    data-cy={`${column.id}-sorting-desc`}
-                    className="mx-2 hover:cursor-pointer text-hackathon-green-300"
-                  />
-                )}
-                {column.getIsSorted() === "desc" && (
-                  <FaSortAlphaUp
-                    onClick={column.getToggleSortingHandler()}
-                    data-cy={`${column.columnDef.header}-sorting-asc`}
-                    className="mx-2 hover:cursor-pointer text-hackathon-green-300"
-                  />
-                )}
+      <div className="bg-white/10 h-[75vh] overflow-y-scroll flex flex-col justify-between">
+        <div>
+          <div className="text-white bg-rosehack-blue/30 rounded-t-lg">
+            {getHeaderGroups().map(({ headers, id }) => (
+              <div key={id} className="flex items-center px-3 py-2">
+                {headers.map(({ id, column, getContext }) => (
+                  <div
+                    key={id}
+                    className={`${column.columnDef.width} flex items-center`}
+                    data-cy="header"
+                  >
+                    {flexRender(column.columnDef.header, getContext())}
+                    {column.getCanSort() && (
+                      <FaArrowRightArrowLeft
+                        className={`mx-2 rotate-90 hover:cursor-pointer ${
+                          column.getIsSorted() && "hidden"
+                        }`}
+                        data-cy={`${column.id}-sorting`}
+                        onClick={column.getToggleSortingHandler()}
+                      />
+                    )}
+                    {column.getIsSorted() === "asc" && (
+                      <FaSortAlphaDown
+                        onClick={column.getToggleSortingHandler()}
+                        data-cy={`${column.id}-sorting-desc`}
+                        className="mx-2 hover:cursor-pointer text-hackathon-green-300"
+                      />
+                    )}
+                    {column.getIsSorted() === "desc" && (
+                      <FaSortAlphaUp
+                        onClick={column.getToggleSortingHandler()}
+                        data-cy={`${column.columnDef.header}-sorting-asc`}
+                        className="mx-2 hover:cursor-pointer text-hackathon-green-300"
+                      />
+                    )}
+                  </div>
+                ))}
               </div>
             ))}
           </div>
-        ))}
+          <>
+            {getRowModel().rows.length === 0 && (
+              <p className="w-full text-center py-8 text-white">{empty}</p>
+            )}
+            {getRowModel().rows.map(
+              ({ id, getVisibleCells, original, getIsSelected }) => (
+                <Body
+                  getIsSelected={getIsSelected}
+                  key={id}
+                  getVisibleCells={getVisibleCells}
+                  Dropdown={Dropdown}
+                  original={original}
+                />
+              )
+            )}
+          </>
+        </div>
       </div>
-      <div>
-        {getRowModel().rows.length === 0 && (
-          <p className="text-white">{empty}</p>
-        )}
-        {getRowModel().rows.map(
-          ({ id, getVisibleCells, original, getIsSelected }) => (
-            <Body
-              getIsSelected={getIsSelected}
-              key={id}
-              getVisibleCells={getVisibleCells}
-              Dropdown={Dropdown}
-              original={original}
-            />
-          )
-        )}
-      </div>
-      <div className="flex text-white">
-        <div className="mx-2">Showing {getRowModel().rows.length} rows</div>
-        <button onClick={() => previousPage()} disabled={!getCanPreviousPage()}>
-          {"<"}
+      <div className="bg-white/10 flex justify-end items-center p-4 text-lg text-white w-full rounded-b-lg">
+        <div className="mx-2">{getRowModel().rows.length} row(s)</div>
+        <button
+          onClick={() => previousPage()}
+          disabled={!getCanPreviousPage()}
+          className="mx-2 disabled:text-hackathon-gray-200"
+        >
+          <FaChevronLeft />
         </button>
         <div>
           Page {getState().pagination.pageIndex + 1} of {getPageCount()}
         </div>
-        <button onClick={() => nextPage()} disabled={!getCanNextPage()}>
-          {">"}
+        <button
+          onClick={() => nextPage()}
+          disabled={!getCanNextPage()}
+          className="mx-2 disabled:text-hackathon-gray-200"
+        >
+          <FaChevronRight />
         </button>
       </div>
     </>
