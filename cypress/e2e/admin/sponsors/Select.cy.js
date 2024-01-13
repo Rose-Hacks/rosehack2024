@@ -17,7 +17,7 @@ describe("Sponsors Select", () => {
     sponsors.forEach((sponsor) => {
       cy.get(`[data-cy="${sponsor.uid}"]`).should(
         "have.class",
-        "bg-rosehack-teal/30"
+        "bg-rosehack-blue/30"
       );
     });
   });
@@ -30,7 +30,7 @@ describe("Sponsors Select", () => {
       if (index < 5)
         cy.get(`[data-cy="${sponsor.uid}"]`).should(
           "have.class",
-          "bg-rosehack-teal/30"
+          "bg-rosehack-blue/30"
         );
       else
         cy.get(`[data-cy="${sponsor.uid}"]`).should(
