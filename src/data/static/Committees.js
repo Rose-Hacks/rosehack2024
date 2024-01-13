@@ -5,7 +5,7 @@ export const COMMITTEES = {
     "Madison Juliana Oliva",
     "Yana Padte",
   ],
-  Marketing: ["Katty Ramos", "Fardin Zaman", "Jade Someda"],
+  Marketing: ["Fardin Zaman", "Jade Someda", "Katty Ramos"],
   "Software Engineering": [
     "Sean Quiambao",
     "Byron Bhuiyan",
