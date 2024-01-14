@@ -58,7 +58,7 @@ export const COLUMNS = [
 export const DROPDOWN = ({ object }) => {
   return (
     <>
-      <p className="ml-5 mt-3">{object.response}</p>
+      <p className="ml-5 mt-3 text-white">{object.response}</p>
     </>
   );
 };

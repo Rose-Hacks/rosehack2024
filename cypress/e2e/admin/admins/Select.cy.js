@@ -17,7 +17,7 @@ describe("Admin Select", () => {
     admins.forEach((admin) => {
       cy.get(`[data-cy="${admin.uid}"]`).should(
         "have.class",
-        "bg-rosehack-teal/30"
+        "bg-rosehack-blue/30"
       );
     });
   });
@@ -30,7 +30,7 @@ describe("Admin Select", () => {
       if (index < 5)
         cy.get(`[data-cy="${admin.uid}"]`).should(
           "have.class",
-          "bg-rosehack-teal/30"
+          "bg-rosehack-blue/30"
         );
       else
         cy.get(`[data-cy="${admin.uid}"]`).should("have.class", "bg-white/10");

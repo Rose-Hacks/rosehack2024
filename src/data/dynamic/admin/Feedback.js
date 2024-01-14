@@ -47,7 +47,7 @@ export const COLUMNS = [
 
 export const DROPDOWN = ({ object }) => {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center text-white">
       <div className="grid grid-cols-2 w-11/12">
         <div>
           <span className="font-bold">Additional Comments: </span>

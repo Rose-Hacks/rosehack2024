@@ -17,6 +17,7 @@ import Karan from "@/public/judges/KaranBhogal.webp";
 import Perseus from "@/public/judges/PerseusYang.webp";
 import Shirin from "@/public/judges/Shirin.webp";
 import Coco from "@/public/judges/CocoChen.webp";
+import Westin from "@/public/judges/WestinMontano.webp";
 
 export const judges = [
   {
@@ -45,10 +46,11 @@ export const judges = [
     position: "Azure Solutions Architect @ MolinaHealthcare",
   },
   {
-    name: "Shirin Haji Amin Shirazi",
-    image: Shirin,
-    position: "PhD Candidate",
+    name: "Westin Montano",
+    image: Westin,
+    position: "Professor",
   },
+
   {
     name: "Yogitha Shastri",
     image: Yogitha,
@@ -75,6 +77,11 @@ export const judges = [
     position: "Previous Citrus Hack Ops Lead",
   },
   {
+    name: "Shirin Haji Amin Shirazi",
+    image: Shirin,
+    position: "PhD Candidate",
+  },
+  {
     name: "Andy Jarean",
     image: Andy,
     position: "Gamespawn Project Coordinator",
@@ -90,11 +97,6 @@ export const judges = [
     position: "DesignVerse Director",
   },
   {
-    name: "Alexander Hickerson",
-    image: Alex,
-    position: "IEEE Chair",
-  },
-  {
     name: "Mariam Golwalla",
     image: Mariam,
     position: "Graduate Student",
@@ -103,6 +105,11 @@ export const judges = [
     name: "Tiana Nguyen",
     image: Tiana,
     position: "DesignVerse Director",
+  },
+  {
+    name: "Alexander Hickerson",
+    image: Alex,
+    position: "IEEE Chair",
   },
   {
     name: "Karan Bhogal",
