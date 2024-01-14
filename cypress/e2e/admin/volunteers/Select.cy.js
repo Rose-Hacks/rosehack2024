@@ -17,7 +17,7 @@ describe("Volunteers Select", () => {
     volunteers.forEach((volunteer) => {
       cy.get(`[data-cy="${volunteer.uid}"]`).should(
         "have.class",
-        "bg-rosehack-teal/30"
+        "bg-rosehack-blue/30"
       );
     });
   });
@@ -33,7 +33,7 @@ describe("Volunteers Select", () => {
       if (index < 5)
         cy.get(`[data-cy="${volunteer.uid}"]`).should(
           "have.class",
-          "bg-rosehack-teal/30"
+          "bg-rosehack-blue/30"
         );
       else
         cy.get(`[data-cy="${volunteer.uid}"]`).should(

@@ -47,7 +47,7 @@ export const COLUMNS = [
 export const DROPDOWN = ({ object }) => {
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center text-white">
         <div className="grid grid-rows-4 grid-flow-col w-11/12">
           {AVAILABILITY.map((text, index) => (
             <Checkbox
@@ -58,7 +58,7 @@ export const DROPDOWN = ({ object }) => {
           ))}
         </div>
       </div>
-      <p className="ml-5 mt-3">{object.response}</p>
+      <p className="ml-5 mt-3 text-white">{object.response}</p>
     </>
   );
 };
