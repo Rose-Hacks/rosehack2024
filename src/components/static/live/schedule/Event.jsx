@@ -18,7 +18,7 @@ const colors = {
 };
 
 const Event = ({ event }) => {
-  const color = colors[event.category];
+  const color = colors[event.category] ?? colors['general'];
 
   return (
     <div className="w-full">
