@@ -16,8 +16,8 @@ import Karan from "@/public/judges/KaranBhogal.webp";
 import Shirin from "@/public/judges/Shirin.webp";
 import Coco from "@/public/judges/CocoChen.webp";
 import Westin from "@/public/judges/WestinMontano.webp";
-import Steve from "@/public/judges/Steve.jpg";
-import Qian from "@/public/judges/Qian.jpg";
+import Steve from "@/public/judges/Steve.webp";
+import Qian from "@/public/judges/Qian.webp";
 
 export const judges = [
   {
