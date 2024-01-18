@@ -5,13 +5,11 @@ import Rohit from "@/public/judges/RohitManimaran.webp";
 import Falak from "@/public/judges/FalakTulsi.webp";
 import Andy from "@/public/judges/AndyJarean.webp";
 import Alex from "@/public/judges/AlexanderHickerson.webp";
-import Chloe from "@/public/judges/ChloeGeorgiou.webp";
 import Evi from "@/public/judges/EvelynAguirreVargas.webp";
 import Paulian from "@/public/judges/PaulianLe.webp";
 import Rania from "@/public/judges/RaniaSaber.webp";
 import Ashley from "@/public/judges/AshleyTsai.webp";
 import Mariam from "@/public/judges/MariamGolwalla.webp";
-import Tiana from "@/public/judges/TianaNguyen.webp";
 import Karan from "@/public/judges/KaranBhogal.webp";
 import Shirin from "@/public/judges/Shirin.webp";
 import Coco from "@/public/judges/CocoChen.webp";
@@ -67,11 +65,6 @@ export const judges = [
     position: "ACM Events Chair",
   },
   {
-    name: "Chloe Georgiou",
-    image: Chloe,
-    position: "Former IEEE Chair",
-  },
-  {
     name: "Paulian Le",
     image: Paulian,
     position: "Previous Citrus Hack Ops Lead",
@@ -99,12 +92,7 @@ export const judges = [
   {
     name: "Mariam Golwalla",
     image: Mariam,
-    position: "Graduate Student",
-  },
-  {
-    name: "Tiana Nguyen",
-    image: Tiana,
-    position: "DesignVerse Director",
+    position: "Previous Citrushack Director",
   },
   {
     name: "Alexander Hickerson",
