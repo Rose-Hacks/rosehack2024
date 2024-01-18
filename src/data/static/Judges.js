@@ -6,7 +6,6 @@ import Falak from "@/public/judges/FalakTulsi.webp";
 import Andy from "@/public/judges/AndyJarean.webp";
 import Alex from "@/public/judges/AlexanderHickerson.webp";
 import Chloe from "@/public/judges/ChloeGeorgiou.webp";
-import Yogitha from "@/public/judges/YogithaShastri.webp";
 import Evi from "@/public/judges/EvelynAguirreVargas.webp";
 import Paulian from "@/public/judges/PaulianLe.webp";
 import Rania from "@/public/judges/RaniaSaber.webp";
@@ -14,7 +13,6 @@ import Ashley from "@/public/judges/AshleyTsai.webp";
 import Mariam from "@/public/judges/MariamGolwalla.webp";
 import Tiana from "@/public/judges/TianaNguyen.webp";
 import Karan from "@/public/judges/KaranBhogal.webp";
-import Perseus from "@/public/judges/PerseusYang.webp";
 import Shirin from "@/public/judges/Shirin.webp";
 import Coco from "@/public/judges/CocoChen.webp";
 import Westin from "@/public/judges/WestinMontano.webp";
@@ -23,11 +21,6 @@ export const judges = [
   {
     name: "Coco Chen",
     image: Coco,
-    position: "Co-Founder at Dream Voyage",
-  },
-  {
-    name: "Perseus Yang",
-    image: Perseus,
     position: "Co-Founder at Dream Voyage",
   },
   {
@@ -49,12 +42,6 @@ export const judges = [
     name: "Westin Montano",
     image: Westin,
     position: "Professor",
-  },
-
-  {
-    name: "Yogitha Shastri",
-    image: Yogitha,
-    position: "BearHack Co-Director",
   },
   {
     name: "Aditi Behera",
