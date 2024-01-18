@@ -16,12 +16,29 @@ import Karan from "@/public/judges/KaranBhogal.webp";
 import Shirin from "@/public/judges/Shirin.webp";
 import Coco from "@/public/judges/CocoChen.webp";
 import Westin from "@/public/judges/WestinMontano.webp";
+import Steve from "@/public/judges/Steve.jpg";
+import Qian from "@/public/judges/Qian.jpg";
 
 export const judges = [
   {
     name: "Coco Chen",
     image: Coco,
     position: "Co-Founder at Dream Voyage",
+  },
+  {
+    name: "Steve Zhong",
+    image: Steve,
+    position: "Mentor at Techstars",
+  },
+  {
+    name: "Qian Zhang",
+    image: Qian,
+    position: "Associate Professor",
+  },
+  {
+    name: "Westin Montano",
+    image: Westin,
+    position: "Lecturer",
   },
   {
     name: "Roy Feng",
@@ -38,11 +55,7 @@ export const judges = [
     image: Rohit,
     position: "Azure Solutions Architect @ MolinaHealthcare",
   },
-  {
-    name: "Westin Montano",
-    image: Westin,
-    position: "Professor",
-  },
+
   {
     name: "Aditi Behera",
     image: Aditi,
