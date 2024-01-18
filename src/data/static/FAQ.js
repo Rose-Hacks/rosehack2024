@@ -56,6 +56,6 @@ export const QUESTIONS = [
   {
     question: "What is the theme this year?",
     answer:
-      "The theme for this year’s Rose Hack is Cyberpunk! The tracks that will be featured for you to make projects for are Sustainability, Women-Centric, Futuristic/Techno, Beginner-Friendly, and Startup! ",
+      "The theme for this year’s Rose Hack is Cyberpunk! The tracks that will be featured for you to make projects for are Beginner Friendly, Social Impact, Women centric, UI/UX, Hardware, Data!",
   },
 ];
