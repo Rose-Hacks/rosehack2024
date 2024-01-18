@@ -5,8 +5,8 @@ import Status from "./Status";
 import Questions from "./Questions";
 import Confirmation from "./Confirmation";
 import Image from "next/image";
-import LOGO from "../../../../public/LOGO.svg";
-import Button from "../Button";
+import LOGO from "@/public/LOGO.svg";
+import Button from "../../Button";
 import { signOut } from "next-auth/react";
 
 const Form = ({
@@ -23,16 +23,12 @@ const Form = ({
     typeof object.roles[object.form] !== "undefined" && !bypass ? 0 : 1
   );
 
-  const handleSignOut = () => {
-    signOut({ callbackUrl: "/", redirect: true });
-  };
-
   return (
     <div className="w-full h-full overflow-y-scroll overflow-x-hidden flex flex-col items-center font-montserrat text-white">
       <div className="w-full flex flex-row justify-end mr-[10%]">
         <Button
           text="Sign Out"
-          onClick={handleSignOut}
+          onClick={() => signOut({ callbackUrl: "/", redirect: true })}
           loading={loading}
           color="green"
         />
