@@ -2,7 +2,7 @@ export const CONFIG = {
   name: "ROSEHACK",
   email: "rosehackucr@gmail.com",
   year: "2024",
-  date: new Date("January 21, 2024 12:00:00"),
+  date: new Date("January 20, 2024 9:00:00"),
   packet: "",
 };
 
