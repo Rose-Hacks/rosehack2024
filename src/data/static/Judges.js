@@ -22,7 +22,7 @@ import Gwendolyn from "@/public/judges/GwendolynKiler.webp";
 import Mahitha from "@/public/judges/MahithaSannala.webp";
 import Abinila from "@/public/judges/AbinilaSiva.webp";
 import MariamS from "@/public/judges/MariamSalloum.webp";
-import Lavi from "@/public/judges/Lavi.jpg";
+import Lavi from "@/public/judges/Lavi.webp";
 
 export const judges = [
   {
