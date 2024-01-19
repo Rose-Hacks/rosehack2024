@@ -15,14 +15,14 @@ import Coco from "@/public/judges/CocoChen.webp";
 import Westin from "@/public/judges/WestinMontano.webp";
 import Steve from "@/public/judges/Steve.webp";
 import Qian from "@/public/judges/Qian.webp";
-import Lisa from "@/public/judges/LisaChen.jpg";
-import Mika from "@/public/judges/MikaShanelaCarodan.jpg";
-import Hallie from "@/public/judges/HalliePham.jpg";
-import Daisy from "@/public/judges/DaisyRojasGarcia.jpg";
-import Gwendolyn from "@/public/judges/GwendolynKiler.jpg";
-import Mahitha from "@/public/judges/MahithaSannala.jpg";
-import Abinila from "@/public/judges/AbinilaSiva.jpg";
-import MariamS from "@/public/judges/MariamSalloum.jpg";
+import Lisa from "@/public/judges/LisaChen.webp";
+import Mika from "@/public/judges/MikaShanelaCarodan.webp";
+import Hallie from "@/public/judges/HalliePham.webp";
+import Daisy from "@/public/judges/DaisyRojasGarcia.webp";
+import Gwendolyn from "@/public/judges/GwendolynKiler.webp";
+import Mahitha from "@/public/judges/MahithaSannala.webp";
+import Abinila from "@/public/judges/AbinilaSiva.webp";
+import MariamS from "@/public/judges/MariamSalloum.webp";
 export const judges = [
   {
     name: "Coco Chen",
