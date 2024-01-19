@@ -23,6 +23,8 @@ import Gwendolyn from "@/public/judges/GwendolynKiler.webp";
 import Mahitha from "@/public/judges/MahithaSannala.webp";
 import Abinila from "@/public/judges/AbinilaSiva.webp";
 import MariamS from "@/public/judges/MariamSalloum.webp";
+import Lavi from "@/public/judges/Lavi.jpg";
+
 export const judges = [
   {
     name: "Coco Chen",
@@ -69,22 +71,6 @@ export const judges = [
     image: Rohit,
     position: "Azure Solutions Architect @ MolinaHealthcare",
   },
-
-  {
-    name: "Aditi Behera",
-    image: Aditi,
-    position: "Former IEEE Robotics Coordinator",
-  },
-  {
-    name: "Mariam Golwalla",
-    image: MariamG,
-    position: "Previous Citrushack Director",
-  },
-  {
-    name: "Paulian Le",
-    image: Paulian,
-    position: "Previous Citrus Hack Ops Lead",
-  },
   {
     name: "Lisa Chen",
     image: Lisa,
@@ -94,36 +80,6 @@ export const judges = [
     name: "Shirin Haji Amin Shirazi",
     image: Shirin,
     position: "PhD Candidate",
-  },
-  {
-    name: "Hallie Pham",
-    image: Hallie,
-    position: "Previous Rose Hack Director",
-  },
-  {
-    name: "Andy Jarean",
-    image: Andy,
-    position: "Gamespawn Project Coordinator",
-  },
-  {
-    name: "Ashley Tsai",
-    image: Ashley,
-    position: "Design at UCR President",
-  },
-  {
-    name: "Rania Saber",
-    image: Rania,
-    position: "DesignVerse Director",
-  },
-  {
-    name: "Falak Tulsi",
-    image: Falak,
-    position: "ACM Events Chair",
-  },
-  {
-    name: "Alexander Hickerson",
-    image: Alex,
-    position: "IEEE Chair",
   },
   {
     name: "Karan Bhogal",
@@ -146,8 +102,58 @@ export const judges = [
     position: "Graduate Student",
   },
   {
+    name: "Lavanya Sharma",
+    image: Lavi,
+    position: "Coach at Major League Hacking",
+  },
+  {
+    name: "Rania Saber",
+    image: Rania,
+    position: "DesignVerse Director",
+  },
+  {
+    name: "Mariam Golwalla",
+    image: MariamG,
+    position: "Previous Citrushack Director",
+  },
+  {
+    name: "Hallie Pham",
+    image: Hallie,
+    position: "Previous Rose Hack Director",
+  },
+  {
+    name: "Ashley Tsai",
+    image: Ashley,
+    position: "Design at UCR President",
+  },
+  {
+    name: "Alexander Hickerson",
+    image: Alex,
+    position: "IEEE Chair",
+  },
+  {
     name: "Daisy Rojas Garcia",
     image: Daisy,
-    position: "Undergraduate Student",
+    position: "Solar Car President",
+  },
+  {
+    name: "Paulian Le",
+    image: Paulian,
+    position: "Previous Citrus Hack Ops Lead",
+  },
+  {
+    name: "Aditi Behera",
+    image: Aditi,
+    position: "Former IEEE Robotics Coordinator",
+  },
+  {
+    name: "Andy Jarean",
+    image: Andy,
+    position: "Gamespawn Project Coordinator",
+  },
+  {
+    name: "Falak Tulsi",
+    image: Falak,
+    position: "ACM Events Chair",
   },
 ];
