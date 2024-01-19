@@ -27,10 +27,22 @@ const Countdown = () => {
       const diff = CONFIG.date - new Date();
 
       setTime({
-        DAYS: Math.ceil(diff / (1000 * 60 * 60 * 24)),
-        HOURS: Math.ceil((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-        MINUTES: Math.ceil((diff % (1000 * 60 * 60)) / (1000 * 60)),
-        SECONDS: Math.ceil((diff % (1000 * 60 * 60)) / 1000) % 60,
+        DAYS:
+          Math.floor(diff / (1000 * 60 * 60 * 24)) > 0
+            ? Math.floor(diff / (1000 * 60 * 60 * 24))
+            : 0,
+        HOURS:
+          Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) > 0
+            ? Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+            : 0,
+        MINUTES:
+          Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)) > 0
+            ? Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
+            : 0,
+        SECONDS:
+          Math.floor((diff % (1000 * 60 * 60)) / 1000) % 60 > 0
+            ? Math.floor((diff % (1000 * 60 * 60)) / 1000) % 60
+            : 0,
       });
     }, 1000);
 
