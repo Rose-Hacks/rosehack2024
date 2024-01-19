@@ -17,7 +17,6 @@ import Steve from "@/public/judges/Steve.webp";
 import Qian from "@/public/judges/Qian.webp";
 import Lisa from "@/public/judges/LisaChen.webp";
 import Mika from "@/public/judges/MikaShanelaCarodan.webp";
-import Hallie from "@/public/judges/HalliePham.webp";
 import Daisy from "@/public/judges/DaisyRojasGarcia.webp";
 import Gwendolyn from "@/public/judges/GwendolynKiler.webp";
 import Mahitha from "@/public/judges/MahithaSannala.webp";
@@ -115,11 +114,6 @@ export const judges = [
     name: "Mariam Golwalla",
     image: MariamG,
     position: "Previous Citrushack Director",
-  },
-  {
-    name: "Hallie Pham",
-    image: Hallie,
-    position: "Previous Rose Hack Director",
   },
   {
     name: "Ashley Tsai",
