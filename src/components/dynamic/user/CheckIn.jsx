@@ -41,7 +41,9 @@ const CheckinPage = () => {
           <QRCodeSVG
             bgColor="#000000"
             fgColor="#ffffff"
-            value={`${session.user.id}&${date.toISOString()}`}
+            value={`${session.user.id}&${date.toISOString()}&${
+              session.user.name
+            }`}
             className="w-2/3 h-2/3"
           />
         </div>

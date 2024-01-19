@@ -11,6 +11,7 @@ const CheckIn = () => {
   const [event, setEvent] = useState({ name: "No events" });
   const [events, setEvents] = useState(null);
   const [code, setCode] = useState(null);
+  const [userName, setUserName] = useState(null);
 
   useEffect(() => {
     api({
@@ -24,10 +25,14 @@ const CheckIn = () => {
       );
     });
   }, []);
-
+  useEffect(() => {
+    if (code) setUserName(code.split("&")[2]);
+  }, [code]);
   const setResult = async (result) => {
-    setCode(result);
-    toast("✅ QR Code Scanned");
+    if (code != result) {
+      setCode(result);
+      toast("✅ QR Code Scanned");
+    }
   };
 
   const handleCheckIn = async () => {
@@ -41,7 +46,7 @@ const CheckIn = () => {
       return;
     }
 
-    const [user, date] = code.split("&");
+    const [user, date, name] = code.split("&");
     const delta = Math.round((new Date() - new Date(date)) / 1000);
 
     // TODO: CHANGE TO 5 SECONDS ONCE DEPLOYED
@@ -82,6 +87,7 @@ const CheckIn = () => {
             />
           )}
           <Scanner setResult={setResult} />
+          <div className="text-white">{userName}</div>
           <Button
             text="Check In"
             color="green"

@@ -225,7 +225,7 @@ const Team = ({ user, setUser }) => {
             <Button color="green" size="lg" text="join" onClick={handleJoin} />
           </div>
           <div className="">
-            <div className="text-hackathon-green-300">
+            <div className="text-rosehack-teal">
               Type a team name to create a new team
             </div>
             <Input
