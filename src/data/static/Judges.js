@@ -17,13 +17,13 @@ import Steve from "@/public/judges/Steve.webp";
 import Qian from "@/public/judges/Qian.webp";
 import Lisa from "@/public/judges/LisaChen.webp";
 import Mika from "@/public/judges/MikaShanelaCarodan.webp";
-import Hallie from "@/public/judges/HalliePham.webp";
 import Daisy from "@/public/judges/DaisyRojasGarcia.webp";
 import Gwendolyn from "@/public/judges/GwendolynKiler.webp";
 import Mahitha from "@/public/judges/MahithaSannala.webp";
 import Abinila from "@/public/judges/AbinilaSiva.webp";
 import MariamS from "@/public/judges/MariamSalloum.webp";
-import Lavi from "@/public/judges/Lavi.jpg";
+import Lavi from "@/public/judges/Lavi.webp";
+import Abhignan from "@/public/judges/Abhignan.jpg";
 
 export const judges = [
   {
@@ -50,6 +50,11 @@ export const judges = [
     name: "Westin Montano",
     image: Westin,
     position: "Lecturer",
+  },
+  {
+    name: "Abhignan Telakapalli",
+    image: Abhignan,
+    position: "Lead Firmware/Electrical Engineer",
   },
   {
     name: "Roy Feng",
@@ -115,11 +120,6 @@ export const judges = [
     name: "Mariam Golwalla",
     image: MariamG,
     position: "Previous Citrushack Director",
-  },
-  {
-    name: "Hallie Pham",
-    image: Hallie,
-    position: "Previous Rose Hack Director",
   },
   {
     name: "Ashley Tsai",
