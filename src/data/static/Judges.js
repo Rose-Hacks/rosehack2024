@@ -24,7 +24,7 @@ import Abinila from "@/public/judges/AbinilaSiva.webp";
 import MariamS from "@/public/judges/MariamSalloum.webp";
 import Lavi from "@/public/judges/Lavi.webp";
 import Abhignan from "@/public/judges/Abhignan.webp";
-import Crystal from "@/public/judges/CrystalT.png";
+import Crystal from "@/public/judges/CrystalT.webp";
 export const judges = [
   {
     name: "Coco Chen",
