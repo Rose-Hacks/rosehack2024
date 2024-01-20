@@ -5,9 +5,9 @@ import ACM from "../../../public/sponsors/acm.webp";
 import WINC from "../../../public/sponsors/winc.webp";
 import STICKERS from "../../../public/sponsors/stickers.webp";
 import CHICKFILA from "../../../public/sponsors/chickfila.webp";
-import NORDVPN from "@/public/sponsors/NordVPN.png";
-import NORDPASS from "@/public/sponsors/NordPass.png";
-import INCOGNI from "@/public/sponsors/Incogni.png";
+import NORDVPN from "@/public/sponsors/NordVPN.webp";
+import NORDPASS from "@/public/sponsors/NordPass.webp";
+import INCOGNI from "@/public/sponsors/Incogni.webp";
 
 export const sponsorCompanyLogos = [
   { logo: MLH },
