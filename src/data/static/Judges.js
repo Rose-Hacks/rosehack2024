@@ -23,6 +23,7 @@ import Mahitha from "@/public/judges/MahithaSannala.webp";
 import Abinila from "@/public/judges/AbinilaSiva.webp";
 import MariamS from "@/public/judges/MariamSalloum.webp";
 import Lavi from "@/public/judges/Lavi.webp";
+import Abhignan from "@/public/judges/Abhignan.jpg";
 
 export const judges = [
   {
@@ -49,6 +50,11 @@ export const judges = [
     name: "Westin Montano",
     image: Westin,
     position: "Lecturer",
+  },
+  {
+    name: "Abhignan Telakapalli",
+    image: Abhignan,
+    position: "Lead Firmware/Electrical Engineer",
   },
   {
     name: "Roy Feng",
