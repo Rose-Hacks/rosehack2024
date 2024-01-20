@@ -24,7 +24,7 @@ import Abinila from "@/public/judges/AbinilaSiva.webp";
 import MariamS from "@/public/judges/MariamSalloum.webp";
 import Lavi from "@/public/judges/Lavi.webp";
 import Abhignan from "@/public/judges/Abhignan.webp";
-
+import Crystal from "@/public/judges/CrystalT.webp";
 export const judges = [
   {
     name: "Coco Chen",
@@ -35,6 +35,11 @@ export const judges = [
     name: "Steve Zhong",
     image: Steve,
     position: "Mentor at Techstars",
+  },
+  {
+    name: "Crystal T",
+    image: Crystal,
+    position: "Technical Consultant",
   },
   {
     name: "Mariam Salloum",
@@ -127,11 +132,6 @@ export const judges = [
     position: "Design at UCR President",
   },
   {
-    name: "Alexander Hickerson",
-    image: Alex,
-    position: "IEEE President",
-  },
-  {
     name: "Daisy Rojas Garcia",
     image: Daisy,
     position: "Solar Car President",
@@ -140,6 +140,11 @@ export const judges = [
     name: "Paulian Le",
     image: Paulian,
     position: "Previous Citrus Hack Ops Lead",
+  },
+  {
+    name: "Alexander Hickerson",
+    image: Alex,
+    position: "IEEE President",
   },
   {
     name: "Aditi Behera",
