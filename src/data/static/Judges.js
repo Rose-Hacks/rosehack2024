@@ -129,7 +129,7 @@ export const judges = [
   {
     name: "Alexander Hickerson",
     image: Alex,
-    position: "IEEE Chair",
+    position: "IEEE President",
   },
   {
     name: "Daisy Rojas Garcia",
