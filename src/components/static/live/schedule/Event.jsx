@@ -1,3 +1,4 @@
+import Link from "@/components/static/Link";
 const colors = {
   event: {
     bg: "bg-rosehack-pink-200",
@@ -72,9 +73,11 @@ const Event = ({ event }) => {
           {event.summary}
         </div>
         <div
-          className={`hidden md:flex col-span-8 py-3 px-2 items-center justify-center text-center font-montserrat text-base h-full border-r-[1px] ${color.border}`}
+          className={`hidden md:flex md:flex-col md:gap-2 col-span-8 py-3 px-2 items-center justify-center text-center font-montserrat text-base h-full border-r-[1px] ${color.border}`}
         >
           {event.description}
+
+          {event.link && <Link text={"Link"} link={event.link} />}
         </div>
         <div className="col-span-4 md:col-span-1 p-2">
           <div

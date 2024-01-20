@@ -8,7 +8,6 @@ const Schedules = () => {
   const [events, setEvents] = useState([]);
   const [selectedDay, setSelectedDay] = useState(null);
   const dates = [1, 2, 3, 4, 5, 6, 0];
-
   useEffect(() => {
     api({
       method: "GET",
@@ -25,6 +24,10 @@ const Schedules = () => {
           .map((item) => item.trim())
           .filter((item) => item !== "");
         item.category = category;
+        if (item.description.includes("http")) {
+          const startIndex = item.description.indexOf("http");
+          item.link = item.description.substring(startIndex);
+        }
         item.description = item.description?.split("\n")[1];
         if (!selected && item.start >= new Date())
           selected = item.start.getDay();
@@ -40,7 +43,7 @@ const Schedules = () => {
       <div className="text-sm md:text-base font-montserrat text-white font-light">
         Pacific Standard Time (PST)
       </div>
-      <div className="flex text-white bg-white/10 border-[1px] w-11/12 md:9/12 lg:w-1/2">
+      <div className="flex text-white bg-white/10 border-[1px] w-11/12 md:9/12 lg:w-1/2 b">
         {dates
           .filter((date) => events.some((event) => event.day === date))
           .map((date, index) => (
