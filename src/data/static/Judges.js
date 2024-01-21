@@ -25,7 +25,7 @@ import MariamS from "@/public/judges/MariamSalloum.webp";
 import Lavi from "@/public/judges/Lavi.webp";
 import Abhignan from "@/public/judges/Abhignan.webp";
 import Crystal from "@/public/judges/CrystalT.webp";
-import Elena from "@/public/judges/Elena.jpeg";
+import Elena from "@/public/judges/Elena.webp";
 export const judges = [
   {
     name: "Coco Chen",
