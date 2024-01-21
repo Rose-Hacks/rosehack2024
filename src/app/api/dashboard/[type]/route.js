@@ -89,7 +89,7 @@ export async function GET(req, { params }) {
         query(
           collection(db, "users"),
           where(`roles.${params.type}`, "in", [-1, 0, 1]),
-          limit(100)
+          limit(75)
         )
       );
       snapshot.forEach((doc) => {
