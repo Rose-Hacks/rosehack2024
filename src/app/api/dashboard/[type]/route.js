@@ -11,6 +11,7 @@ import {
   deleteField,
   Timestamp,
   increment,
+  limit,
 } from "firebase/firestore";
 import { authenticate } from "@/utils/auth";
 import { AUTH, ATTRIBUTES } from "@/data/dynamic/admin/Dashboard";
@@ -87,7 +88,8 @@ export async function GET(req, { params }) {
       snapshot = await getDocs(
         query(
           collection(db, "users"),
-          where(`roles.${params.type}`, "in", [-1, 0, 1])
+          where(`roles.${params.type}`, "in", [-1, 0, 1]),
+          limit(75)
         )
       );
       snapshot.forEach((doc) => {
