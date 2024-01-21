@@ -199,9 +199,7 @@ const Toolbar = ({ data, setData, view, setView, setJudgesView }) => {
       data.forEach((team) => {
         team.rounds.forEach((round, index) => {
           if (round.some((individual) => individual.name === judge.name))
-            judge.rounds[index] = [
-              { name: team.table, affiliation: "student" },
-            ];
+            judge.rounds[index] = [{ name: team.name, affiliation: "student" }];
         });
       });
     });
