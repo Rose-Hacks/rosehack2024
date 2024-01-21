@@ -25,6 +25,7 @@ import MariamS from "@/public/judges/MariamSalloum.webp";
 import Lavi from "@/public/judges/Lavi.webp";
 import Abhignan from "@/public/judges/Abhignan.webp";
 import Crystal from "@/public/judges/CrystalT.webp";
+import Elena from "@/public/judges/Elena.jpeg";
 export const judges = [
   {
     name: "Coco Chen",
@@ -50,6 +51,11 @@ export const judges = [
     name: "Qian Zhang",
     image: Qian,
     position: "Associate Professor",
+  },
+  {
+    name: "Elena Strzheletska",
+    image: Elena,
+    position: "Lecturer",
   },
   {
     name: "Westin Montano",
