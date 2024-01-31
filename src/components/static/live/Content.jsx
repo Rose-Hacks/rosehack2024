@@ -27,7 +27,13 @@ const Content = () => {
               />
             ) : null}
           </div>
-          <div className="flex flex-col justify-between md:flex-row gap-3">
+          <Link
+            link="https://docs.google.com/forms/u/5/d/e/1FAIpQLSdyRCXldlBdXSuy-9szLdOF4bWp9NEnWzi1dakY9xq7sd1hyw/viewform"
+            text="2025 Director's Application"
+            fromColor="from-rosehack-pink-200"
+            toColor="to-rosehack-blue"
+          />
+          <div className="flex flex-row justify-between gap-3 mt-4">
             <Link
               link="/form/feedback"
               text="feedback"
@@ -40,12 +46,6 @@ const Content = () => {
               fromColor="from-rosehack-pink-200"
               toColor="to-rosehack-blue"
             />
-            {/* <Link
-                link=""
-                text="2025 Director's Application"
-                fromColor="from-rosehack-pink-200"
-                toColor="to-rosehack-blue"
-              /> */}
           </div>
         </div>
       </div>
