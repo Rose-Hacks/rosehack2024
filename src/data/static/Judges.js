@@ -1,4 +1,3 @@
-import Roy from "@/public/judges/RoyFeng.webp";
 import Aditi from "@/public/judges/AditiBehera.webp";
 import Yosuke from "@/public/judges/YosukeInagaki.webp";
 import Rohit from "@/public/judges/RohitManimaran.webp";
@@ -11,27 +10,20 @@ import Ashley from "@/public/judges/AshleyTsai.webp";
 import MariamG from "@/public/judges/MariamGolwalla.webp";
 import Karan from "@/public/judges/KaranBhogal.webp";
 import Shirin from "@/public/judges/Shirin.webp";
-import Coco from "@/public/judges/CocoChen.webp";
 import Westin from "@/public/judges/WestinMontano.webp";
 import Steve from "@/public/judges/Steve.webp";
 import Qian from "@/public/judges/Qian.webp";
 import Lisa from "@/public/judges/LisaChen.webp";
 import Mika from "@/public/judges/MikaShanelaCarodan.webp";
 import Daisy from "@/public/judges/DaisyRojasGarcia.webp";
-import Gwendolyn from "@/public/judges/GwendolynKiler.webp";
 import Mahitha from "@/public/judges/MahithaSannala.webp";
 import Abinila from "@/public/judges/AbinilaSiva.webp";
 import MariamS from "@/public/judges/MariamSalloum.webp";
 import Lavi from "@/public/judges/Lavi.webp";
-import Abhignan from "@/public/judges/Abhignan.webp";
 import Crystal from "@/public/judges/CrystalT.webp";
 import Elena from "@/public/judges/Elena.webp";
+
 export const judges = [
-  {
-    name: "Coco Chen",
-    image: Coco,
-    position: "Co-Founder at Dream Voyage",
-  },
   {
     name: "Steve Zhong",
     image: Steve,
@@ -63,16 +55,6 @@ export const judges = [
     position: "Lecturer",
   },
   {
-    name: "Abhignan Telakapalli",
-    image: Abhignan,
-    position: "Lead Firmware/Electrical Engineer",
-  },
-  {
-    name: "Roy Feng",
-    image: Roy,
-    position: "Software Engineer @ Experian",
-  },
-  {
     name: "Mika Shanela Carodan",
     image: Mika,
     position: "Software Engineer @ Turion Space",
@@ -100,11 +82,6 @@ export const judges = [
   {
     name: "Karan Bhogal",
     image: Karan,
-    position: "Graduate Student",
-  },
-  {
-    name: "Gwendolyn Kiler",
-    image: Gwendolyn,
     position: "Graduate Student",
   },
   {
